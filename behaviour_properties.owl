@@ -1,0 +1,77 @@
+@prefix : <https://purl.org/turbbo/behaviour_properties#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://purl.org/turbbo/behaviour_properties> .
+
+<https://purl.org/turbbo/behaviour_properties> rdf:type owl:Ontology .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isChangeable
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isChangeable> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                 rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isDeliberate
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isDeliberate> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                 rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isEffortless
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isEffortless> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                 rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isHabit
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isHabit> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                            rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isHeterogenous
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isHeterogenous> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                   rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isMoral
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isMoral> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                            rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isNew
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isNew> rdf:type owl:DatatypeProperty ;
+                                                                          rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                          rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isOpportunistic
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isOpportunistic> rdf:type owl:DatatypeProperty ;
+                                                                                    rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                                    rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isOptional
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isOptional> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                                               rdfs:range xsd:boolean .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour
+<http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

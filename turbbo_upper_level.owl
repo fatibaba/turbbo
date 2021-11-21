@@ -1,4 +1,4 @@
-@prefix : <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#> .
+@prefix : <https://purl.org/turbbo#> .
 @prefix bo: <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -26,20 +26,20 @@ dc:description rdf:type owl:AnnotationProperty .
 dc:title rdf:type owl:AnnotationProperty .
 
 
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#definition
-bo:definition rdf:type owl:AnnotationProperty .
+###  https://purl.org/turbbo#definition
+:definition rdf:type owl:AnnotationProperty .
 
 
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#noteToSelf
-bo:noteToSelf rdf:type owl:AnnotationProperty .
+###  https://purl.org/turbbo#noteToSelf
+:noteToSelf rdf:type owl:AnnotationProperty .
 
 
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#synonym
-bo:synonym rdf:type owl:AnnotationProperty .
+###  https://purl.org/turbbo#synonym
+:synonym rdf:type owl:AnnotationProperty .
 
 
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#title
-bo:title rdf:type owl:AnnotationProperty .
+###  https://purl.org/turbbo#title
+:title rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -47,186 +47,54 @@ bo:title rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue
-<http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> rdfs:domain <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> ;
-                                                                     rdfs:range bo:OWLClass_00000000000000000004 .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#OWLObjectProperty_00000000000000000001
-bo:OWLObjectProperty_00000000000000000001 rdf:type owl:ObjectProperty ;
-                                          rdfs:domain bo:Behaviour ;
-                                          rdfs:range bo:OWLClass_00000000000000000000 ;
-                                          rdfs:label "hasFrequency"@en .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#OWLObjectProperty_00000000000000000002
-bo:OWLObjectProperty_00000000000000000002 rdf:type owl:ObjectProperty ;
-                                          rdfs:domain bo:Action ;
-                                          rdfs:range bo:Action ;
-                                          rdfs:label "happensBefore"@en .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#OWLObjectProperty_00000000000000000003
-bo:OWLObjectProperty_00000000000000000003 rdf:type owl:ObjectProperty ;
-                                          rdfs:domain bo:Action ;
-                                          rdfs:range bo:Action ;
-                                          rdfs:label "happensAfter"@en .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#OWLObjectProperty_00000000000000000005
-bo:OWLObjectProperty_00000000000000000005 rdf:type owl:ObjectProperty ;
-                                          rdfs:subPropertyOf bo:correlatesWith ;
-                                          rdfs:domain bo:Behaviour ;
-                                          rdfs:range bo:Behaviour ;
-                                          rdfs:label "smallCorrelation"@en .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#composedOf
-bo:composedOf rdf:type owl:ObjectProperty ;
-              rdfs:domain bo:Behaviour ;
-              rdfs:range bo:Action .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#correlatesWith
-bo:correlatesWith rdf:type owl:ObjectProperty ;
-                  rdfs:domain bo:Behaviour ;
-                  rdfs:range bo:Behaviour ;
-                  bo:definition "The property showing a relationship or connection between two behaviours. The sub-properties model the degree/strength and type of correlation using use Cohen’s (1992) criteria for the strength of correlations (i.e., if the correlation coefficient  r is 0.10 then it represents a small association,  if r is 0.30 then it is considered a medium correlation and  if r is 0.50 or more then the association is large)." .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#facilitatedBy
-bo:facilitatedBy rdf:type owl:ObjectProperty ;
-                 rdfs:domain bo:Behaviour ;
-                 rdfs:range bo:Facilitator .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#hasEffectiveness
-bo:hasEffectiveness rdf:type owl:ObjectProperty ;
-                    rdfs:domain bo:Behaviour ;
-                    rdfs:range bo:Effectiveness .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#hasGoal
-bo:hasGoal rdf:type owl:ObjectProperty ;
-           rdfs:domain bo:Behaviour ;
-           rdfs:range bo:Goal .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#hasImpact
-bo:hasImpact rdf:type owl:ObjectProperty ;
-             rdfs:domain bo:Behaviour ;
-             rdfs:range bo:Impact .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#hasIntention
-bo:hasIntention rdf:type owl:ObjectProperty ;
-                rdfs:domain bo:Behaviour ;
-                rdfs:range bo:Intention .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#hasLegality
-bo:hasLegality rdf:type owl:ObjectProperty ;
-               rdfs:domain bo:Behaviour ;
-               rdfs:range bo:Legality .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#hasOutcome
-bo:hasOutcome rdf:type owl:ObjectProperty ;
-              rdfs:domain bo:Behaviour ;
-              rdfs:range bo:Outcome .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#hasType
-bo:hasType rdf:type owl:ObjectProperty ;
-           rdfs:domain bo:Behaviour ,
-                       bo:Motivation ,
-                       <http://xmlns.com/foaf/0.1/Document> ;
-           rdfs:range bo:Nature ,
-                      :OWLClass_0000004 .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isAuthor
-bo:isAuthor rdf:type owl:ObjectProperty ;
-            rdfs:domain <http://xmlns.com/foaf/0.1/Agent> ;
-            rdfs:range <http://xmlns.com/foaf/0.1/Document> .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isReflectiveOf
-bo:isReflectiveOf rdf:type owl:ObjectProperty ;
-                  rdfs:domain bo:Behaviour ;
-                  rdfs:range bo:Identity .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#largeCorrelation
-bo:largeCorrelation rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf bo:correlatesWith ;
-                    rdfs:domain bo:Behaviour ;
-                    rdfs:range bo:Behaviour .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#measuredBy
-bo:measuredBy rdf:type owl:ObjectProperty ;
-              rdfs:domain bo:Context ,
-                          bo:Effectiveness ,
-                          bo:Impact ,
-                          bo:Outcome ;
-              rdfs:range <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#mediumCorrelation
-bo:mediumCorrelation rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf bo:correlatesWith ;
-                     rdfs:domain bo:Behaviour ;
-                     rdfs:range bo:Behaviour .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#motivatedBy
-bo:motivatedBy rdf:type owl:ObjectProperty ;
-               rdfs:domain bo:Behaviour ;
-               rdfs:range bo:Motivation .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#occursWithin
-bo:occursWithin rdf:type owl:ObjectProperty ;
-                rdfs:domain bo:Behaviour ;
-                rdfs:range bo:Context .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#requiresMaterial
-bo:requiresMaterial rdf:type owl:ObjectProperty ;
-                    rdfs:domain bo:Behaviour ;
-                    rdfs:range bo:Material .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#requiresSkill
-bo:requiresSkill rdf:type owl:ObjectProperty ;
-                 rdfs:domain bo:Behaviour ;
-                 rdfs:range bo:Skill .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#restrictedBy
-bo:restrictedBy rdf:type owl:ObjectProperty ;
-                rdfs:domain bo:Behaviour ;
-                rdfs:range bo:Barrier .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#toAchieve
-bo:toAchieve rdf:type owl:ObjectProperty ;
-             rdfs:domain bo:Intention ;
-             rdfs:range bo:Goal .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> rdf:type owl:ObjectProperty ;
+                                                                     rdfs:domain <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> ;
+                                                                     rdfs:range :OWLClass_00000000000000000004 .
 
 
 ###  http://www.w3.org/2006/time#hasDuration
-<http://www.w3.org/2006/time#hasDuration> rdfs:domain bo:Behaviour .
+<http://www.w3.org/2006/time#hasDuration> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain :Behaviour .
 
 
 ###  http://www.w3.org/2006/time#hasTime
-<http://www.w3.org/2006/time#hasTime> rdfs:domain bo:Behaviour .
+<http://www.w3.org/2006/time#hasTime> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain :Behaviour .
+
+
+###  https://purl.org/turbbo#OWLObjectProperty_00000000000000000001
+:OWLObjectProperty_00000000000000000001 rdf:type owl:ObjectProperty ;
+                                        rdfs:domain :Behaviour ;
+                                        rdfs:range :OWLClass_00000000000000000000 ;
+                                        rdfs:label "hasFrequency"@en .
+
+
+###  https://purl.org/turbbo#OWLObjectProperty_00000000000000000002
+:OWLObjectProperty_00000000000000000002 rdf:type owl:ObjectProperty ;
+                                        rdfs:domain :Action ;
+                                        rdfs:range :Action ;
+                                        rdfs:label "happensBefore"@en .
+
+
+###  https://purl.org/turbbo#OWLObjectProperty_00000000000000000003
+:OWLObjectProperty_00000000000000000003 rdf:type owl:ObjectProperty ;
+                                        rdfs:domain :Action ;
+                                        rdfs:range :Action ;
+                                        rdfs:label "happensAfter"@en .
+
+
+###  https://purl.org/turbbo#OWLObjectProperty_00000000000000000005
+:OWLObjectProperty_00000000000000000005 rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf :correlatesWith ;
+                                        rdfs:domain :Behaviour ;
+                                        rdfs:range :Behaviour ;
+                                        rdfs:label "smallCorrelation"@en .
 
 
 ###  https://purl.org/turbbo#OWLObjectProperty_0000003
 :OWLObjectProperty_0000003 rdf:type owl:ObjectProperty ;
                            rdfs:domain :OWLClass_0000001 ;
-                           rdfs:range bo:Behaviour ;
+                           rdfs:range :Behaviour ;
                            rdfs:label "reportsOn"@en .
 
 
@@ -237,181 +105,246 @@ bo:toAchieve rdf:type owl:ObjectProperty ;
                            rdfs:label "hasIdentifier"@en .
 
 
-#################################################################
-#    Data properties
-#################################################################
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isChangeable
-bo:isChangeable rdf:type owl:DatatypeProperty ;
-                rdfs:domain bo:Behaviour ;
-                rdfs:range xsd:boolean .
+###  https://purl.org/turbbo#composedOf
+:composedOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :Behaviour ;
+            rdfs:range :Action .
 
 
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isDeliberate
-bo:isDeliberate rdf:type owl:DatatypeProperty ;
-                rdfs:domain bo:Behaviour ;
-                rdfs:range xsd:boolean .
+###  https://purl.org/turbbo#correlatesWith
+:correlatesWith rdf:type owl:ObjectProperty ;
+                rdfs:domain :Behaviour ;
+                rdfs:range :Behaviour ;
+                :definition "The property showing a relationship or connection between two behaviours. The sub-properties model the degree/strength and type of correlation using use Cohen’s (1992) criteria for the strength of correlations (i.e., if the correlation coefficient  r is 0.10 then it represents a small association,  if r is 0.30 then it is considered a medium correlation and  if r is 0.50 or more then the association is large)." .
 
 
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isEffortless
-bo:isEffortless rdf:type owl:DatatypeProperty ;
-                rdfs:domain bo:Behaviour ;
-                rdfs:range xsd:boolean .
+###  https://purl.org/turbbo#facilitatedBy
+:facilitatedBy rdf:type owl:ObjectProperty ;
+               rdfs:domain :Behaviour ;
+               rdfs:range :Facilitator .
 
 
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isHabit
-bo:isHabit rdf:type owl:DatatypeProperty ;
-           rdfs:domain bo:Behaviour ;
-           rdfs:range xsd:boolean .
+###  https://purl.org/turbbo#hasEffectiveness
+:hasEffectiveness rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Behaviour ;
+                  rdfs:range :Effectiveness .
 
 
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isHeterogenous
-bo:isHeterogenous rdf:type owl:DatatypeProperty ;
-                  rdfs:domain bo:Behaviour ;
-                  rdfs:range xsd:boolean .
+###  https://purl.org/turbbo#hasGoal
+:hasGoal rdf:type owl:ObjectProperty ;
+         rdfs:domain :Behaviour ;
+         rdfs:range :Goal .
 
 
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isMoral
-bo:isMoral rdf:type owl:DatatypeProperty ;
-           rdfs:domain bo:Behaviour ;
-           rdfs:range xsd:boolean .
+###  https://purl.org/turbbo#hasImpact
+:hasImpact rdf:type owl:ObjectProperty ;
+           rdfs:domain :Behaviour ;
+           rdfs:range :Impact .
 
 
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isNew
-bo:isNew rdf:type owl:DatatypeProperty ;
-         rdfs:domain bo:Behaviour ;
-         rdfs:range xsd:boolean .
+###  https://purl.org/turbbo#hasIntention
+:hasIntention rdf:type owl:ObjectProperty ;
+              rdfs:domain :Behaviour ;
+              rdfs:range :Intention .
 
 
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isOpportunistic
-bo:isOpportunistic rdf:type owl:DatatypeProperty ;
-                   rdfs:domain bo:Behaviour ;
-                   rdfs:range xsd:boolean .
+###  https://purl.org/turbbo#hasLegality
+:hasLegality rdf:type owl:ObjectProperty ;
+             rdfs:domain :Behaviour ;
+             rdfs:range :Legality .
 
 
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#isOptional
-bo:isOptional rdf:type owl:DatatypeProperty ;
-              rdfs:domain bo:Behaviour ;
-              rdfs:range xsd:boolean .
+###  https://purl.org/turbbo#hasOutcome
+:hasOutcome rdf:type owl:ObjectProperty ;
+            rdfs:domain :Behaviour ;
+            rdfs:range :Outcome .
+
+
+###  https://purl.org/turbbo#hasType
+:hasType rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://xmlns.com/foaf/0.1/Document> ,
+                     :Behaviour ,
+                     :Motivation ;
+         rdfs:range :Nature ,
+                    :OWLClass_0000004 .
+
+
+###  https://purl.org/turbbo#isAuthor
+:isAuthor rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://xmlns.com/foaf/0.1/Agent> ;
+          rdfs:range <http://xmlns.com/foaf/0.1/Document> .
+
+
+###  https://purl.org/turbbo#isReflectiveOf
+:isReflectiveOf rdf:type owl:ObjectProperty ;
+                rdfs:domain :Behaviour ;
+                rdfs:range :Identity .
+
+
+###  https://purl.org/turbbo#largeCorrelation
+:largeCorrelation rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :correlatesWith ;
+                  rdfs:domain :Behaviour ;
+                  rdfs:range :Behaviour .
+
+
+###  https://purl.org/turbbo#measuredBy
+:measuredBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :Context ,
+                        :Effectiveness ,
+                        :Impact ,
+                        :Outcome ;
+            rdfs:range <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> .
+
+
+###  https://purl.org/turbbo#mediumCorrelation
+:mediumCorrelation rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :correlatesWith ;
+                   rdfs:domain :Behaviour ;
+                   rdfs:range :Behaviour .
+
+
+###  https://purl.org/turbbo#motivatedBy
+:motivatedBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :Behaviour ;
+             rdfs:range :Motivation .
+
+
+###  https://purl.org/turbbo#occursWithin
+:occursWithin rdf:type owl:ObjectProperty ;
+              rdfs:domain :Behaviour ;
+              rdfs:range :Context .
+
+
+###  https://purl.org/turbbo#produces
+:produces rdf:type owl:ObjectProperty ;
+          rdfs:domain :OWLClass_0000001 ;
+          rdfs:range <http://xmlns.com/foaf/0.1/Document> .
+
+
+###  https://purl.org/turbbo#requiresMaterial
+:requiresMaterial rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Behaviour ;
+                  rdfs:range :Material .
+
+
+###  https://purl.org/turbbo#requiresSkill
+:requiresSkill rdf:type owl:ObjectProperty ;
+               rdfs:domain :Behaviour ;
+               rdfs:range :Skill .
+
+
+###  https://purl.org/turbbo#restrictedBy
+:restrictedBy rdf:type owl:ObjectProperty ;
+              rdfs:domain :Behaviour ;
+              rdfs:range :Barrier .
+
+
+###  https://purl.org/turbbo#toAchieve
+:toAchieve rdf:type owl:ObjectProperty ;
+           rdfs:domain :Intention ;
+           rdfs:range :Goal .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Action
-bo:Action rdf:type owl:Class .
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/Measure
+<http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Barrier
-bo:Barrier rdf:type owl:Class .
+###  http://www.w3.org/2006/time#TemporalEntity
+<http://www.w3.org/2006/time#TemporalEntity> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour
-bo:Behaviour rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Context
-bo:Context rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Controlled
-bo:Controlled rdf:type owl:Class ;
-              rdfs:subClassOf bo:Nature .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Effectiveness
-bo:Effectiveness rdf:type owl:Class ;
-                 bo:noteToSelf "Revise this concept" .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Facilitator
-bo:Facilitator rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Goal
-bo:Goal rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Identity
-bo:Identity rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Impact
-bo:Impact rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Intention
-bo:Intention rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Intrinsic
-bo:Intrinsic rdf:type owl:Class ;
-             rdfs:subClassOf bo:Nature .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Legality
-bo:Legality rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Material
-bo:Material rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Motivation
-bo:Motivation rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Nature
-bo:Nature rdf:type owl:Class ;
-          bo:noteToSelf "needs revision" .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#OWLClass_00000000000000000000
-bo:OWLClass_00000000000000000000 rdf:type owl:Class ;
-                                 rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity> ;
-                                 rdfs:label "Frequency"@en .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#OWLClass_00000000000000000004
-bo:OWLClass_00000000000000000004 rdf:type owl:Class ;
-                                 rdfs:label "MeasureValue"@en .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Outcome
-bo:Outcome rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Physical
-bo:Physical rdf:type owl:Class ;
-            rdfs:subClassOf bo:Nature .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Psychological
-bo:Psychological rdf:type owl:Class ;
-                 rdfs:subClassOf bo:Nature .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Skill
-bo:Skill rdf:type owl:Class ;
-         bo:noteToSelf "further discussion on Knowledge and Skill. Also decide on how to include expertise level for a skill." ;
-         bo:synonym "Knowledge" .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#autonomous
-bo:autonomous rdf:type owl:Class ;
-              rdfs:subClassOf bo:Nature .
-
-
-###  http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#extrinsic
-bo:extrinsic rdf:type owl:Class ;
-             rdfs:subClassOf bo:Nature .
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class .
 
 
 ###  http://xmlns.com/foaf/0.1/Document
 <http://xmlns.com/foaf/0.1/Document> rdf:type owl:Class ;
                                      rdfs:comment "any source of evidence" ;
                                      rdfs:label "Document" .
+
+
+###  https://purl.org/turbbo#Action
+:Action rdf:type owl:Class .
+
+
+###  https://purl.org/turbbo#Barrier
+:Barrier rdf:type owl:Class .
+
+
+###  https://purl.org/turbbo#Behaviour
+:Behaviour rdf:type owl:Class .
+
+
+###  https://purl.org/turbbo#Context
+:Context rdf:type owl:Class .
+
+
+###  https://purl.org/turbbo#Controlled
+:Controlled rdf:type owl:Class ;
+            rdfs:subClassOf :Nature .
+
+
+###  https://purl.org/turbbo#Effectiveness
+:Effectiveness rdf:type owl:Class ;
+               :noteToSelf "Revise this concept" .
+
+
+###  https://purl.org/turbbo#Facilitator
+:Facilitator rdf:type owl:Class .
+
+
+###  https://purl.org/turbbo#Goal
+:Goal rdf:type owl:Class .
+
+
+###  https://purl.org/turbbo#Identity
+:Identity rdf:type owl:Class .
+
+
+###  https://purl.org/turbbo#Impact
+:Impact rdf:type owl:Class .
+
+
+###  https://purl.org/turbbo#Intention
+:Intention rdf:type owl:Class .
+
+
+###  https://purl.org/turbbo#Intrinsic
+:Intrinsic rdf:type owl:Class ;
+           rdfs:subClassOf :Nature .
+
+
+###  https://purl.org/turbbo#Legality
+:Legality rdf:type owl:Class .
+
+
+###  https://purl.org/turbbo#Material
+:Material rdf:type owl:Class .
+
+
+###  https://purl.org/turbbo#Motivation
+:Motivation rdf:type owl:Class .
+
+
+###  https://purl.org/turbbo#Nature
+:Nature rdf:type owl:Class ;
+        :noteToSelf "needs revision" .
+
+
+###  https://purl.org/turbbo#OWLClass_00000000000000000000
+:OWLClass_00000000000000000000 rdf:type owl:Class ;
+                               rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity> ;
+                               rdfs:label "Frequency"@en .
+
+
+###  https://purl.org/turbbo#OWLClass_00000000000000000004
+:OWLClass_00000000000000000004 rdf:type owl:Class ;
+                               rdfs:label "MeasureValue"@en .
 
 
 ###  https://purl.org/turbbo#OWLClass_0000001
@@ -427,6 +360,36 @@ bo:extrinsic rdf:type owl:Class ;
 ###  https://purl.org/turbbo#OWLClass_0000005
 :OWLClass_0000005 rdf:type owl:Class ;
                   rdfs:label "DOI"@en .
+
+
+###  https://purl.org/turbbo#Outcome
+:Outcome rdf:type owl:Class .
+
+
+###  https://purl.org/turbbo#Physical
+:Physical rdf:type owl:Class ;
+          rdfs:subClassOf :Nature .
+
+
+###  https://purl.org/turbbo#Psychological
+:Psychological rdf:type owl:Class ;
+               rdfs:subClassOf :Nature .
+
+
+###  https://purl.org/turbbo#Skill
+:Skill rdf:type owl:Class ;
+       :noteToSelf "further discussion on Knowledge and Skill. Also decide on how to include expertise level for a skill." ;
+       :synonym "Knowledge" .
+
+
+###  https://purl.org/turbbo#autonomous
+:autonomous rdf:type owl:Class ;
+            rdfs:subClassOf :Nature .
+
+
+###  https://purl.org/turbbo#extrinsic
+:extrinsic rdf:type owl:Class ;
+           rdfs:subClassOf :Nature .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

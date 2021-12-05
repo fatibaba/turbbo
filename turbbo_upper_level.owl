@@ -11,8 +11,16 @@
 <https://purl.org/turbbo> rdf:type owl:Ontology ;
                            owl:imports <http://purl.org/turbbo/foaf-imports> ,
                                        <http://purl.org/turbbo/om-imports> ,
+                                       <http://purl.org/turbbo/sepio-imports> ,
                                        <http://purl.org/turbbo/time-imports> ;
-                           dc:title "Behaviour Ontology" .
+                           dc:title "Behaviour Ontology" ;
+                           rdfs:comment """The TURBBO ontologies are at the early stages of development. The upper level ontology core file imports four files which can be resolved with Protege as follows:
+
+1. Download the om-imports.owl, sepio-imports.owl, FOAF-imports.owl and time-imports.owl files from the private project GitHub repository.
+
+2. Directly import the downloaded files with Protege.
+
+At a later stage in the development, the imported files will be accessible from a web location.""" .
 
 #################################################################
 #    Annotation properties
@@ -91,16 +99,9 @@ dc:title rdf:type owl:AnnotationProperty .
                                         rdfs:label "smallCorrelation"@en .
 
 
-###  https://purl.org/turbbo#OWLObjectProperty_0000003
-:OWLObjectProperty_0000003 rdf:type owl:ObjectProperty ;
-                           rdfs:domain :OWLClass_0000001 ;
-                           rdfs:range :Behaviour ;
-                           rdfs:label "reportsOn"@en .
-
-
 ###  https://purl.org/turbbo#OWLObjectProperty_0000006
 :OWLObjectProperty_0000006 rdf:type owl:ObjectProperty ;
-                           rdfs:domain <http://xmlns.com/foaf/0.1/Document> ;
+                           rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000311> ;
                            rdfs:range :OWLClass_0000005 ;
                            rdfs:label "hasIdentifier"@en .
 
@@ -109,6 +110,16 @@ dc:title rdf:type owl:AnnotationProperty .
 :composedOf rdf:type owl:ObjectProperty ;
             rdfs:domain :Behaviour ;
             rdfs:range :Action .
+
+
+###  https://purl.org/turbbo#convertedFrom
+:convertedFrom rdf:type owl:ObjectProperty .
+
+
+###  https://purl.org/turbbo#convertedWithTool
+:convertedWithTool rdf:type owl:ObjectProperty ;
+                   rdfs:domain <https://purl.org/turbbo/turrbo_0000021> ;
+                   rdfs:range :CorrelationCoefficientConversionTool .
 
 
 ###  https://purl.org/turbbo#correlatesWith
@@ -162,17 +173,20 @@ dc:title rdf:type owl:AnnotationProperty .
 
 ###  https://purl.org/turbbo#hasType
 :hasType rdf:type owl:ObjectProperty ;
-         rdfs:domain <http://xmlns.com/foaf/0.1/Document> ,
-                     :Behaviour ,
-                     :Motivation ;
-         rdfs:range :Nature ,
-                    :OWLClass_0000004 .
+         rdfs:domain :Motivation ;
+         rdfs:range :Nature .
+
+
+###  https://purl.org/turbbo#has_correlation_type
+:has_correlation_type rdf:type owl:ObjectProperty ;
+                      rdfs:label "has correlation type" .
 
 
 ###  https://purl.org/turbbo#isAuthor
 :isAuthor rdf:type owl:ObjectProperty ;
           rdfs:domain <http://xmlns.com/foaf/0.1/Agent> ;
-          rdfs:range <http://xmlns.com/foaf/0.1/Document> .
+          rdfs:range <http://purl.obolibrary.org/obo/IAO_0000100> ,
+                     <http://purl.obolibrary.org/obo/IAO_0000310> .
 
 
 ###  https://purl.org/turbbo#isReflectiveOf
@@ -210,6 +224,12 @@ dc:title rdf:type owl:AnnotationProperty .
              rdfs:range :Motivation .
 
 
+###  https://purl.org/turbbo#occursIn
+:occursIn rdf:type owl:ObjectProperty ;
+          rdfs:domain :Behaviour ;
+          rdfs:range :Setting .
+
+
 ###  https://purl.org/turbbo#occursWithin
 :occursWithin rdf:type owl:ObjectProperty ;
               rdfs:domain :Behaviour ;
@@ -218,8 +238,9 @@ dc:title rdf:type owl:AnnotationProperty .
 
 ###  https://purl.org/turbbo#produces
 :produces rdf:type owl:ObjectProperty ;
-          rdfs:domain :OWLClass_0000001 ;
-          rdfs:range <http://xmlns.com/foaf/0.1/Document> .
+          rdfs:domain <http://purl.obolibrary.org/obo/SEPIO_0000125> ;
+          rdfs:range <http://purl.obolibrary.org/obo/IAO_0000100> ,
+                     <http://purl.obolibrary.org/obo/IAO_0000310> .
 
 
 ###  https://purl.org/turbbo#requiresMaterial
@@ -246,6 +267,87 @@ dc:title rdf:type owl:AnnotationProperty .
            rdfs:range :Goal .
 
 
+###  https://purl.org/turbbo/turrbo_0000017
+<https://purl.org/turbbo/turrbo_0000017> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <http://purl.obolibrary.org/obo/SEPIO_0000125> ;
+                                         rdfs:range :Behaviour ;
+                                         rdfs:label "measures" .
+
+
+###  https://purl.org/turbbo/turrbo_0000020
+<https://purl.org/turbbo/turrbo_0000020> rdf:type owl:ObjectProperty ;
+                                         rdfs:label "hasParticipant" .
+
+
+###  https://purl.org/turbbo/turrbo_0000022
+<https://purl.org/turbbo/turrbo_0000022> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <https://purl.org/turbbo/turrbo_0000021> ;
+                                         rdfs:range :Behaviour ;
+                                         rdfs:label "relatesBehaviourA" .
+
+
+###  https://purl.org/turbbo/turrbo_0000023
+<https://purl.org/turbbo/turrbo_0000023> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <https://purl.org/turbbo/turrbo_0000021> ;
+                                         rdfs:range :Behaviour ;
+                                         rdfs:label "relatesBehaviourB" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://xmlns.com/foaf/0.1/age
+<http://xmlns.com/foaf/0.1/age> rdfs:domain <http://xmlns.com/foaf/0.1/Person> .
+
+
+###  http://xmlns.com/foaf/0.1/birthday
+<http://xmlns.com/foaf/0.1/birthday> rdfs:domain <http://xmlns.com/foaf/0.1/Person> .
+
+
+###  http://xmlns.com/foaf/0.1/gender
+<http://xmlns.com/foaf/0.1/gender> rdfs:domain <http://xmlns.com/foaf/0.1/Person> .
+
+
+###  http://xmlns.com/foaf/0.1/title
+<http://xmlns.com/foaf/0.1/title> rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
+                                  rdfs:range rdfs:Literal .
+
+
+###  https://purl.org/turbbo#hasValue
+:hasValue rdf:type owl:DatatypeProperty ;
+          rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000027> ;
+          rdfs:range xsd:decimal .
+
+
+###  https://purl.org/turbbo/turrbo_0000018
+<https://purl.org/turbbo/turrbo_0000018> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000310> ;
+                                         rdfs:range rdfs:Literal ;
+                                         rdfs:label "docTitle" .
+
+
+###  https://purl.org/turbbo/turrbo_0000019
+<https://purl.org/turbbo/turrbo_0000019> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000100> ;
+                                         rdfs:range rdfs:Literal ;
+                                         rdfs:label "datasetName" .
+
+
+###  https://purl.org/turbbo/turrbo_0000024
+<https://purl.org/turbbo/turrbo_0000024> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <https://purl.org/turbbo/turrbo_0000021> ;
+                                         rdfs:range xsd:decimal ;
+                                         rdfs:label "hasRValue" .
+
+
+###  https://purl.org/turbbo/turrbo_0000025
+<https://purl.org/turbbo/turrbo_0000025> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <https://purl.org/turbbo/turrbo_0000021> ;
+                                         rdfs:range xsd:int ;
+                                         rdfs:label "hasSampleSize" .
+
+
 #################################################################
 #    Classes
 #################################################################
@@ -262,26 +364,28 @@ dc:title rdf:type owl:AnnotationProperty .
 <http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class .
 
 
-###  http://xmlns.com/foaf/0.1/Document
-<http://xmlns.com/foaf/0.1/Document> rdf:type owl:Class ;
-                                     rdfs:comment "any source of evidence" ;
-                                     rdfs:label "Document" .
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdfs:label "Person" .
 
 
 ###  https://purl.org/turbbo#Action
-:Action rdf:type owl:Class .
+:Action rdf:type owl:Class ;
+        rdfs:label "Action" .
 
 
 ###  https://purl.org/turbbo#Barrier
-:Barrier rdf:type owl:Class .
+:Barrier rdf:type owl:Class ;
+         rdfs:label "Barrier" .
 
 
 ###  https://purl.org/turbbo#Behaviour
-:Behaviour rdf:type owl:Class .
+:Behaviour rdf:type owl:Class ;
+           rdfs:label "Behaviour" .
 
 
 ###  https://purl.org/turbbo#Context
-:Context rdf:type owl:Class .
+:Context rdf:type owl:Class ;
+         rdfs:label "Context" .
 
 
 ###  https://purl.org/turbbo#Controlled
@@ -289,29 +393,50 @@ dc:title rdf:type owl:AnnotationProperty .
             rdfs:subClassOf :Nature .
 
 
+###  https://purl.org/turbbo#CorrelationCoefficientConversionTool
+:CorrelationCoefficientConversionTool rdf:type owl:Class ;
+                                      rdfs:label "Correlation Coefficient Conversion Tool" .
+
+
+###  https://purl.org/turbbo#Correlation_Type
+:Correlation_Type rdf:type owl:Class ;
+                  rdfs:label "Correlation Type" .
+
+
 ###  https://purl.org/turbbo#Effectiveness
 :Effectiveness rdf:type owl:Class ;
                :noteToSelf "Revise this concept" .
 
 
+###  https://purl.org/turbbo#Eta_Squared
+:Eta_Squared rdf:type owl:Class ;
+             rdfs:subClassOf :effect_size ;
+             rdfs:label "Eta Squared" .
+
+
 ###  https://purl.org/turbbo#Facilitator
-:Facilitator rdf:type owl:Class .
+:Facilitator rdf:type owl:Class ;
+             rdfs:label "Facilitator" .
 
 
 ###  https://purl.org/turbbo#Goal
-:Goal rdf:type owl:Class .
+:Goal rdf:type owl:Class ;
+      rdfs:label "Goal" .
 
 
 ###  https://purl.org/turbbo#Identity
-:Identity rdf:type owl:Class .
+:Identity rdf:type owl:Class ;
+          rdfs:label "Identity" .
 
 
 ###  https://purl.org/turbbo#Impact
-:Impact rdf:type owl:Class .
+:Impact rdf:type owl:Class ;
+        rdfs:label "Impact" .
 
 
 ###  https://purl.org/turbbo#Intention
-:Intention rdf:type owl:Class .
+:Intention rdf:type owl:Class ;
+           rdfs:label "Intention" .
 
 
 ###  https://purl.org/turbbo#Intrinsic
@@ -319,21 +444,30 @@ dc:title rdf:type owl:AnnotationProperty .
            rdfs:subClassOf :Nature .
 
 
+###  https://purl.org/turbbo#Kendall_rank
+:Kendall_rank rdf:type owl:Class ;
+              rdfs:subClassOf :Correlation_Type ;
+              rdfs:label "Kendall rank" .
+
+
 ###  https://purl.org/turbbo#Legality
-:Legality rdf:type owl:Class .
+:Legality rdf:type owl:Class ;
+          rdfs:label "Legality" .
 
 
 ###  https://purl.org/turbbo#Material
-:Material rdf:type owl:Class .
+:Material rdf:type owl:Class ;
+          rdfs:label "Material" .
 
 
 ###  https://purl.org/turbbo#Motivation
-:Motivation rdf:type owl:Class .
+:Motivation rdf:type owl:Class ;
+            rdfs:label "Motivation" .
 
 
 ###  https://purl.org/turbbo#Nature
 :Nature rdf:type owl:Class ;
-        :noteToSelf "needs revision" .
+        :noteToSelf "Revise when Middle ontology is ready" .
 
 
 ###  https://purl.org/turbbo#OWLClass_00000000000000000000
@@ -347,23 +481,26 @@ dc:title rdf:type owl:AnnotationProperty .
                                rdfs:label "MeasureValue"@en .
 
 
-###  https://purl.org/turbbo#OWLClass_0000001
-:OWLClass_0000001 rdf:type owl:Class ;
-                  rdfs:label "Study"@en .
-
-
-###  https://purl.org/turbbo#OWLClass_0000004
-:OWLClass_0000004 rdf:type owl:Class ;
-                  rdfs:label "DocumentType"@en .
-
-
 ###  https://purl.org/turbbo#OWLClass_0000005
 :OWLClass_0000005 rdf:type owl:Class ;
                   rdfs:label "DOI"@en .
 
 
+###  https://purl.org/turbbo#Odds_Ratios
+:Odds_Ratios rdf:type owl:Class ;
+             rdfs:subClassOf :effect_size ;
+             rdfs:label "Odds Ratios" .
+
+
 ###  https://purl.org/turbbo#Outcome
-:Outcome rdf:type owl:Class .
+:Outcome rdf:type owl:Class ;
+         rdfs:label "Outcome" .
+
+
+###  https://purl.org/turbbo#Pearsons
+:Pearsons rdf:type owl:Class ;
+          rdfs:subClassOf :Correlation_Type ;
+          rdfs:label "Pearsons" .
 
 
 ###  https://purl.org/turbbo#Physical
@@ -371,9 +508,24 @@ dc:title rdf:type owl:AnnotationProperty .
           rdfs:subClassOf :Nature .
 
 
+###  https://purl.org/turbbo#Point-biserial
+:Point-biserial rdf:type owl:Class ;
+                rdfs:subClassOf :Correlation_Type ;
+                rdfs:label "Point-biserial" .
+
+
 ###  https://purl.org/turbbo#Psychological
 :Psychological rdf:type owl:Class ;
                rdfs:subClassOf :Nature .
+
+
+###  https://purl.org/turbbo#Psychometrica
+:Psychometrica rdf:type owl:Class ;
+               rdfs:subClassOf :CorrelationCoefficientConversionTool .
+
+
+###  https://purl.org/turbbo#Setting
+:Setting rdf:type owl:Class .
 
 
 ###  https://purl.org/turbbo#Skill
@@ -387,9 +539,85 @@ dc:title rdf:type owl:AnnotationProperty .
             rdfs:subClassOf :Nature .
 
 
+###  https://purl.org/turbbo#effect_size
+:effect_size rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000027> ;
+             rdfs:label "effect size" .
+
+
 ###  https://purl.org/turbbo#extrinsic
 :extrinsic rdf:type owl:Class ;
            rdfs:subClassOf :Nature .
+
+
+###  https://purl.org/turbbo#Cohen’s_d
+<https://purl.org/turbbo#Cohen’s_d> rdf:type owl:Class ;
+                                    rdfs:subClassOf :effect_size ;
+                                    rdfs:label "Cohen’s d" .
+
+
+###  https://purl.org/turbbo#Spearman’s
+<https://purl.org/turbbo#Spearman’s> rdf:type owl:Class ;
+                                     rdfs:subClassOf :Correlation_Type ;
+                                     rdfs:label "Spearman’s" .
+
+
+###  https://purl.org/turbbo/turrbo_0000014
+<https://purl.org/turbbo/turrbo_0000014> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000311> ;
+                                         rdfs:label "thesis" .
+
+
+###  https://purl.org/turbbo/turrbo_0000015
+<https://purl.org/turbbo/turrbo_0000015> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000311> ;
+                                         rdfs:label "dissertation" .
+
+
+###  https://purl.org/turbbo/turrbo_0000016
+<https://purl.org/turbbo/turrbo_0000016> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000311> ;
+                                         rdfs:label "conference proceeding" .
+
+
+###  https://purl.org/turbbo/turrbo_0000021
+<https://purl.org/turbbo/turrbo_0000021> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000039> ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :convertedFrom ;
+                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000039>
+                                                         ] ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :convertedFrom ;
+                                                           owl:someValuesFrom :effect_size
+                                                         ] ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :convertedWithTool ;
+                                                           owl:someValuesFrom :CorrelationCoefficientConversionTool
+                                                         ] ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :has_correlation_type ;
+                                                           owl:someValuesFrom :Correlation_Type
+                                                         ] ;
+                                         rdfs:label "correlation coefficient r" .
+
+
+###  https://purl.org/turbbo/turrbo_0000026
+<https://purl.org/turbbo/turrbo_0000026> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://purl.org/turbbo/turrbo_0000021> ;
+                                         rdfs:label "small correlation" .
+
+
+###  https://purl.org/turbbo/turrbo_0000027
+<https://purl.org/turbbo/turrbo_0000027> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://purl.org/turbbo/turrbo_0000021> ;
+                                         rdfs:label "medium correlation" .
+
+
+###  https://purl.org/turbbo/turrbo_0000028
+<https://purl.org/turbbo/turrbo_0000028> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://purl.org/turbbo/turrbo_0000021> ;
+                                         rdfs:label "large correlation" .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

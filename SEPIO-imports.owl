@@ -1,0 +1,279 @@
+@prefix : <http://purl.org/turbbo/sepio-imports#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://purl.org/turbbo/sepio-imports> .
+
+<http://purl.org/turbbo/sepio-imports> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000111
+<http://purl.obolibrary.org/obo/IAO_0000111> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000112
+<http://purl.obolibrary.org/obo/IAO_0000112> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000114
+<http://purl.obolibrary.org/obo/IAO_0000114> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000116
+<http://purl.obolibrary.org/obo/IAO_0000116> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000117
+<http://purl.obolibrary.org/obo/IAO_0000117> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000118
+<http://purl.obolibrary.org/obo/IAO_0000118> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000119
+<http://purl.obolibrary.org/obo/IAO_0000119> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000232
+<http://purl.obolibrary.org/obo/IAO_0000232> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000412
+<http://purl.obolibrary.org/obo/IAO_0000412> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/SEPIO_0000061
+<http://purl.obolibrary.org/obo/SEPIO_0000061> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasDbXref
+<http://www.geneontology.org/formats/oboInOwl#hasDbXref> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000013
+<http://purl.obolibrary.org/obo/IAO_0000013> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000311> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "journal article"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "Examples are articles published in the journals, Nature and Science. The content can often be cited by reference to a paper based encoding, e.g.  Authors, Title of article, Journal name, date or year of publication, volume and page number."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000120> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "a report that is published in a journal"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "person:Alan Ruttenberg"@en ,
+                                                                                          "person:Chris Stoeckert"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "OBI_0000159"@en ,
+                                                                                          "group:OBI"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ;
+                                             rdfs:label "journal article"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000027
+<http://purl.obolibrary.org/obo/IAO_0000027> rdf:type owl:Class ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "data item"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "Data items include counts of things, analyte concentrations, and statistical summaries."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers."@en ,
+                                                                                          "2009-03-16: data item deliberatly ambiguous: we merged data set and datum to be one entity, not knowing how to define singular versus plural. So data item is more general than datum."@en ,
+                                                                                          "2009-03-16: removed datum as alternative term as datum specifically refers to singular form, and is thus not an exact synonym."@en ,
+                                                                                          "2014-03-31: See discussion at http://odontomachus.wordpress.com/2014/03/30/aboutness-objects-propositions/" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Alan Ruttenberg"@en ,
+                                                                                          "PERSON: Chris Stoeckert"@en ,
+                                                                                          "PERSON: Jonathan Rees"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000118> "data"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ;
+                                             rdfs:label "data item"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000088
+<http://purl.obolibrary.org/obo/IAO_0000088> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000310> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "report"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "Examples of reports are gene lists and investigation reports. These are not published (journal) articles but may be included in a journal article."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "a document assembled by an author for the purpose of providing information for the audience. A report is the output of a documenting process and has the objective to be consumed by a specific audience. Topic of the report is on something that has completed. A report is not a single figure. Examples of reports are journal article, patent application, grant progress report, case report (not patient record)"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "2009-03-16: this was report of results with definition: A report is a narrative object that is a formal statement of the results of an investigation, or of any matter on which definite information is required, made by some person or body instructed or required to do so."@en ,
+                                                                                          "2009-03-16: work has been done on this term during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI."@en ,
+                                                                                          "2009-08-10 Alan Ruttenberg: Larry Hunter suggests that this be obsoleted and replaced by 'document'. Alan restored as there are OBI dependencies and this merits further discussion"@en ,
+                                                                                          "disagreement about where reports go. alan: only some gene lists are reports. Is a report all the content of some document? The example of usage suggests that a report may be part of  some article. Term needs clarification"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Alan Ruttenberg"@en ,
+                                                                                          "PERSON: Melanie Courtot"@en ,
+                                                                                          "PERSON:Chris Stoeckert"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "GROUP: OBI"@en ,
+                                                                                          "OBI_0000099"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ;
+                                             rdfs:label "report"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000100
+<http://purl.obolibrary.org/obo/IAO_0000100> rdf:type owl:Class ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "data set"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "Intensity values in a CEL file or from multiple CEL files comprise a data set (as opposed to the CEL files themselves)."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A data item that is an aggregate of other data items of the same type that have something in common. Averages and distributions can be determined for data sets."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "2009/10/23 Alan Ruttenberg. The intention is that this term represent collections of like data. So this isn't for, e.g. the whole contents of a cel file, which includes parameters, metadata etc. This is more like java arrays of a certain rather specific type"@en ,
+                                                                                          "2014-05-05: Data sets are aggregates and thus must include two or more data items. We have chosen not to add logical axioms to make this restriction." ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "person:Allyson Lister"@en ,
+                                                                                          "person:Chris Stoeckert"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "OBI_0000042"@en ,
+                                                                                          "group:OBI"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ;
+                                             rdfs:label "data set"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000109
+<http://purl.obolibrary.org/obo/IAO_0000109> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000027> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "measurement datum"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "Examples of measurement data are the recoding of the weight of a mouse as {40,mass,\"grams\"}, the recording of an observation of the behavior of the mouse {,process,\"agitated\"}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "2/2/2009 is_specified_output of some assay?"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "person:Chris Stoeckert"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "OBI_0000305"@en ,
+                                                                                          "group:OBI"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ;
+                                             rdfs:label "measurement datum"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000310
+<http://purl.obolibrary.org/obo/IAO_0000310> rdf:type owl:Class ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "document"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "A journal article, patent application, laboratory notebook, or a book"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000120> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A collection of information content entities intended to be understood together as a whole"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Lawrence Hunter"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ;
+                                             rdfs:label "document"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000311
+<http://purl.obolibrary.org/obo/IAO_0000311> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000310> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "publication"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "A journal article or book"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000120> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A document that has been accepted by a publisher"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Lawrence Hunter"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ;
+                                             rdfs:label "publication"@en .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000175
+<http://purl.obolibrary.org/obo/OBI_0000175> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000039> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "p-value"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000121> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A quantitative confidence value that represents the probability of obtaining a result at least as extreme as that actually obtained, assuming that the actual value was the result of chance alone."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "May be outside the scope of OBI long term, is needed so is retained"^^xsd:string ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON:Chris Stoeckert"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "WEB: http://en.wikipedia.org/wiki/P-value"^^xsd:string ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ;
+                                             rdfs:label "p-value"@en .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000235
+<http://purl.obolibrary.org/obo/OBI_0000235> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000039> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "standard error"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A quantitative confidence value which is the standard deviations of the sample in a frequency distribution, obtained by dividing the standard deviation by the total number of cases in the frequency distribution."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "person:Chris Stoeckert"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "group:OBI"^^xsd:string ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000232> "see P-Value"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ;
+                                             rdfs:label "standard error"@en .
+
+
+###  http://purl.obolibrary.org/obo/SEPIO_0000004
+<http://purl.obolibrary.org/obo/SEPIO_0000004> rdf:type owl:Class ;
+                                               rdfs:label "research activity" .
+
+
+###  http://purl.obolibrary.org/obo/SEPIO_0000066
+<http://purl.obolibrary.org/obo/SEPIO_0000066> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/SEPIO_0000125> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "A study that involves primary research of subjects or specimens in a natural, cliniclal, or laboratory setting." ;
+                                               rdfs:label "primary research study"@en .
+
+
+###  http://purl.obolibrary.org/obo/SEPIO_0000079
+<http://purl.obolibrary.org/obo/SEPIO_0000079> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/SEPIO_0000125> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "A study based only on analysis of existing data, as found in artifacts such as community/curated databases, raw datasets, or publications." ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000118> "data-driven study" ;
+                                               rdfs:label "secondary research study"@en .
+
+
+###  http://purl.obolibrary.org/obo/SEPIO_0000125
+<http://purl.obolibrary.org/obo/SEPIO_0000125> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/SEPIO_0000004> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "A planned process that executes some study design or protocol to generate scientific data that is interpreted to test or generate a hypothesis." ;
+                                               <http://purl.obolibrary.org/obo/SEPIO_0000061> """Explore the classification of study types here as a possibility to implement in SEPIO. 
+https://mcw.libguides.com/evidencebased/studies
+Useful because these map to the strength of the evidence each might provide.""" ;
+                                               rdfs:comment "A research study is considered broadly to be any scientific activity aimed at answering a research question. Studies can be simple or complex, depending on the scope of the question being explored and the extent of resources deployed in doing so.  They may include a full research investigation, a set of experiments, or a single experiment or assay. Regardless, that act of summarizing any results as a finding statement is considered part of the study." ,
+                                                            """A research study is considered broadly to be any scientific activity aimed at answering a research question. Studies can be simple or complex, depending on the scope of the question being explored and the extent of resources deployed in doing so.  They may include a full research investigation, a set of related experiments, or a single experiment or assay. Regardless, that act of summarizing any results as a finding statement is considered part of the study.
+
+
+'Study' here is broadly considered to include any defined activity performed to address a scientific question or generate a scientific hypothesis.  It covers scientific inquiry at different scales of complexity, from a single assay, experiment or observation, to a complex research investigation addressing a broader scientific question.   Studies can be based on a broad range of methods, including in silico algorithms, in vitro or in vivo experimentation on model systems, clinical studies on human subjects, or curation and analysis of existing knowledge, e.g. from publications, datasets, or knowledegbases, to derive novel insight.""" ;
+                                               rdfs:label "research study"@en .
+
+
+###  http://purl.obolibrary.org/obo/SEPIO_000383
+<http://purl.obolibrary.org/obo/SEPIO_000383> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000310> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A document containing a collection of data or statements about some entity." ;
+                                              <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://semanticscience.org/resource/SIO_000088 ! 'record'" ;
+                                              rdfs:comment """'Record' here is broadly defined to include any document holding (typically) structured information about a particular entity. This can include individual records from a database or knowledgebase that hold information about the subject of the record. 
+
+Specific examples include:
+- A single row of a table in a relational database.
+- A JSON or XML document holding information describing some entity.
+- A VCF File describing varaints in a patient, or a single row in this VCF file describinng a particular variant.
+- A Uniprot knowldgebase record describing the BRCA2 protein (http://www.uniprot.org/uniprot/P51587)
+- A ClinVar knwoledgebase record describing an assertion about the pathogenicity of the NM_000059.3(BRCA2):c.10G>T variant (https://www.ncbi.nlm.nih.gov/clinvar/variation/51063/)
+- An EHR record for a hospital patient.""" ;
+                                              rdfs:label "record" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000039
+<http://purl.obolibrary.org/obo/STATO_0000039> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000027> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000112> [ ] ;
+<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+<http://purl.obolibrary.org/obo/IAO_0000115> "a statistic is a measurement datum to describe a dataset or a variable. It is generated by a calculation on set of observed data."@en ;
+<http://purl.obolibrary.org/obo/IAO_0000117> "Alejandra Gonzalez-Beltran"@en ,
+                                             "Orlaith Burke"^^xsd:string ,
+                                             "Philippe Rocca-Serra"@en ;
+<http://purl.obolibrary.org/obo/IAO_0000119> "STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Statistic)."@en ;
+<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obofoundry.org/obo/stato.owl> ;
+rdfs:label "statistic"@en .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000104
+<http://purl.obolibrary.org/obo/STATO_0000104> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000039> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "A z-score (also known as z-value, standard score, or normal score) is a measure of the divergence of an individual experimental result from the most probable result, the mean. Z is expressed in terms of the number of standard deviations from the mean value."@en ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000117> "Alejandra Gonzalez-Beltran"@en ,
+                                                                                            "Orlaith Burke"@en ,
+                                                                                            "Philippe Rocca-Serra"@en ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000119> "https://controls.engin.umich.edu/wiki/index.php/Basic_statistics:_mean,_median,_average,_standard_deviation,_z-scores,_and_p-value#Z-Scores"@en ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obofoundry.org/obo/stato.owl> ;
+                                               rdfs:label "z-score"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

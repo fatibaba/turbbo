@@ -4,142 +4,148 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://purl.org/turbbo/foaf-imports> .
 
-<http://purl.org/turbbo/foaf-imports> rdf:type owl:Ontology .
+<http://purl.org/turbbo/foaf-imports> a owl:Ontology .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
 
-#################################################################
-#    Annotation properties
-#################################################################
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> a owl:AnnotationProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/phone
 
-###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
-<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+:phone a owl:ObjectProperty ;
+	rdfs:comment "A phone,  specified using fully qualified tel: URI scheme (refs: http://www.w3.org/Addressing/schemes.html#tel)." ;
+	rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	rdfs:label "phone" ;
+	<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# http://xmlns.com/foaf/0.1/publications
 
+:publications a owl:ObjectProperty ;
+	rdfs:domain :Person ;
+	rdfs:comment "A link to the publications of this person." ;
+	rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	rdfs:label "publications" ;
+	<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/age
 
-#################################################################
-#    Object Properties
-#################################################################
+:age a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:range rdfs:Literal ;
+	rdfs:comment "The age in years of some agent." ;
+	rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	rdfs:label "age" ;
+	<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+# http://xmlns.com/foaf/0.1/birthday
 
-###  http://xmlns.com/foaf/0.1/phone
-:phone rdf:type owl:ObjectProperty ;
-       rdfs:comment "A phone,  specified using fully qualified tel: URI scheme (refs: http://www.w3.org/Addressing/schemes.html#tel)." ;
-       rdfs:isDefinedBy : ;
-       rdfs:label "phone" ;
-       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+:birthday a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:range rdfs:Literal ;
+	rdfs:comment "The birthday of this Agent, represented in mm-dd string form, eg. '12-31'." ;
+	rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	rdfs:label "birthday" ;
+	<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+# http://xmlns.com/foaf/0.1/firstName
 
+:firstName a owl:DatatypeProperty ;
+	rdfs:domain :Person ;
+	rdfs:range rdfs:Literal ;
+	rdfs:comment "The first name of a person." ;
+	rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	rdfs:label "firstName" ;
+	<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# http://xmlns.com/foaf/0.1/gender
 
-###  http://xmlns.com/foaf/0.1/publications
-:publications rdf:type owl:ObjectProperty ;
-              rdfs:domain :Person ;
-              rdfs:range :Document ;
-              rdfs:comment "A link to the publications of this person." ;
-              rdfs:isDefinedBy : ;
-              rdfs:label "publications" ;
-              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+:gender a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:range rdfs:Literal ;
+	rdfs:comment "The gender of this Agent (typically but not necessarily 'male' or 'female')." ;
+	rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	rdfs:label "gender" ;
+	<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# http://xmlns.com/foaf/0.1/surname
 
+:surname a owl:DatatypeProperty ;
+	rdfs:domain :Person ;
+	rdfs:range rdfs:Literal ;
+	rdfs:comment "The surname of some person." ;
+	rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	rdfs:label "Surname" ;
+	<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "archaic" .
+# 
+# http://xmlns.com/foaf/0.1/title
 
-#################################################################
-#    Data properties
-#################################################################
+:title a owl:DatatypeProperty ;
+	rdfs:comment "Title (Mr, Mrs, Ms, Dr. etc)" ;
+	rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	rdfs:label "title" ;
+	<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/Agent
 
-###  http://xmlns.com/foaf/0.1/age
-:age rdf:type owl:DatatypeProperty ,
-              owl:FunctionalProperty ;
-     rdfs:domain :Agent ;
-     rdfs:range rdfs:Literal ;
-     rdfs:comment "The age in years of some agent." ;
-     rdfs:isDefinedBy : ;
-     rdfs:label "age" ;
-     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+:Agent a owl:Class ;
+	rdfs:comment "An agent (eg. person, group, software or physical artifact)." ;
+	rdfs:label "Agent" ;
+	<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://xmlns.com/foaf/0.1/Group
 
+:Group a owl:Class ;
+	rdfs:subClassOf :Agent ;
+	rdfs:comment "A class of Agents." ;
+	rdfs:label "Group" ;
+	<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://xmlns.com/foaf/0.1/Organization
 
-###  http://xmlns.com/foaf/0.1/birthday
-:birthday rdf:type owl:DatatypeProperty ,
-                   owl:FunctionalProperty ;
-          rdfs:domain :Agent ;
-          rdfs:range rdfs:Literal ;
-          rdfs:comment "The birthday of this Agent, represented in mm-dd string form, eg. '12-31'." ;
-          rdfs:isDefinedBy : ;
-          rdfs:label "birthday" ;
-          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+:Organization a owl:Class ;
+	rdfs:subClassOf :Agent ;
+	owl:disjointWith :Person ;
+	rdfs:comment "An organization." ;
+	rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+	rdfs:label "Organization" ;
+	<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://xmlns.com/foaf/0.1/Person
 
-
-###  http://xmlns.com/foaf/0.1/firstName
-:firstName rdf:type owl:DatatypeProperty ;
-           rdfs:domain :Person ;
-           rdfs:range rdfs:Literal ;
-           rdfs:comment "The first name of a person." ;
-           rdfs:isDefinedBy : ;
-           rdfs:label "firstName" ;
-           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
-
-
-###  http://xmlns.com/foaf/0.1/gender
-:gender rdf:type owl:DatatypeProperty ,
-                 owl:FunctionalProperty ;
-        rdfs:domain :Agent ;
-        rdfs:range rdfs:Literal ;
-        rdfs:comment "The gender of this Agent (typically but not necessarily 'male' or 'female')." ;
-        rdfs:isDefinedBy : ;
-        rdfs:label "gender" ;
-        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
-
-
-###  http://xmlns.com/foaf/0.1/surname
-:surname rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Person ;
-         rdfs:range rdfs:Literal ;
-         rdfs:comment "The surname of some person." ;
-         rdfs:isDefinedBy : ;
-         rdfs:label "Surname" ;
-         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "archaic" .
-
-
-###  http://xmlns.com/foaf/0.1/title
-:title rdf:type owl:DatatypeProperty ;
-       rdfs:comment "Title (Mr, Mrs, Ms, Dr. etc)" ;
-       rdfs:isDefinedBy : ;
-       rdfs:label "title" ;
-       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://xmlns.com/foaf/0.1/Agent
-:Agent rdf:type owl:Class ;
-       rdfs:comment "An agent (eg. person, group, software or physical artifact)." ;
-       rdfs:label "Agent" ;
-       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
-
-
-###  http://xmlns.com/foaf/0.1/Document
-:Document rdf:type owl:Class ;
-          owl:disjointWith :Organization .
-
-
-###  http://xmlns.com/foaf/0.1/Group
-:Group rdf:type owl:Class ;
-       rdfs:subClassOf :Agent ;
-       rdfs:comment "A class of Agents." ;
-       rdfs:label "Group" ;
-       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
-
-
-###  http://xmlns.com/foaf/0.1/Organization
-:Organization rdf:type owl:Class ;
-              rdfs:subClassOf :Agent ;
-              owl:disjointWith :Person ;
-              rdfs:comment "An organization." ;
-              rdfs:isDefinedBy : ;
-              rdfs:label "Organization" ;
-              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
-
-
-###  http://xmlns.com/foaf/0.1/Person
-:Person rdf:type owl:Class ;
-        rdfs:subClassOf :Agent .
-
-
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+:Person a owl:Class ;
+	rdfs:subClassOf :Agent .
+# 
+# Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

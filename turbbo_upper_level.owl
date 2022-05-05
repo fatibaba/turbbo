@@ -91,14 +91,6 @@ dc:title rdf:type owl:AnnotationProperty .
                                         rdfs:label "happensAfter"@en .
 
 
-###  https://purl.org/turbbo#OWLObjectProperty_00000000000000000005
-:OWLObjectProperty_00000000000000000005 rdf:type owl:ObjectProperty ;
-                                        rdfs:subPropertyOf :correlatesWith ;
-                                        rdfs:domain :Behaviour ;
-                                        rdfs:range :Behaviour ;
-                                        rdfs:label "smallCorrelation"@en .
-
-
 ###  https://purl.org/turbbo#OWLObjectProperty_0000006
 :OWLObjectProperty_0000006 rdf:type owl:ObjectProperty ;
                            rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000311> ;
@@ -195,13 +187,6 @@ dc:title rdf:type owl:AnnotationProperty .
                 rdfs:range :Identity .
 
 
-###  https://purl.org/turbbo#largeCorrelation
-:largeCorrelation rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf :correlatesWith ;
-                  rdfs:domain :Behaviour ;
-                  rdfs:range :Behaviour .
-
-
 ###  https://purl.org/turbbo#measuredBy
 :measuredBy rdf:type owl:ObjectProperty ;
             rdfs:domain :Context ,
@@ -209,13 +194,6 @@ dc:title rdf:type owl:AnnotationProperty .
                         :Impact ,
                         :Outcome ;
             rdfs:range <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> .
-
-
-###  https://purl.org/turbbo#mediumCorrelation
-:mediumCorrelation rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf :correlatesWith ;
-                   rdfs:domain :Behaviour ;
-                   rdfs:range :Behaviour .
 
 
 ###  https://purl.org/turbbo#motivatedBy
@@ -291,6 +269,20 @@ dc:title rdf:type owl:AnnotationProperty .
                                          rdfs:domain <https://purl.org/turbbo/turrbo_0000021> ;
                                          rdfs:range :Behaviour ;
                                          rdfs:label "relatesBehaviourB" .
+
+
+###  https://purl.org/turbbo/000000083
+<https://purl.org/turbbo/000000083> rdf:type owl:ObjectProperty ;
+                                    rdfs:domain <https://purl.org/turbbo/turrbo_0000021> ;
+                                    rdfs:range :effect_size ;
+                                    rdfs:label "hasEffectSize" .
+
+
+###  https://purl.org/turbbo/000000084
+<https://purl.org/turbbo/000000084> rdf:type owl:ObjectProperty ;
+                                    rdfs:domain :effect_size ;
+                                    rdfs:range :Magnitude ;
+                                    rdfs:label "hasMagnitude" .
 
 
 #################################################################
@@ -455,6 +447,12 @@ dc:title rdf:type owl:AnnotationProperty .
           rdfs:label "Legality" .
 
 
+###  https://purl.org/turbbo#Magnitude
+:Magnitude rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000027> ;
+           rdfs:label "Magnitude" .
+
+
 ###  https://purl.org/turbbo#Material
 :Material rdf:type owl:Class ;
           rdfs:label "Material" .
@@ -525,7 +523,8 @@ dc:title rdf:type owl:AnnotationProperty .
 
 
 ###  https://purl.org/turbbo#Setting
-:Setting rdf:type owl:Class .
+:Setting rdf:type owl:Class ;
+         :definition "The environment within which a behaviour occurs. For example, at home, in school, etc." .
 
 
 ###  https://purl.org/turbbo#Skill
@@ -548,12 +547,6 @@ dc:title rdf:type owl:AnnotationProperty .
 ###  https://purl.org/turbbo#extrinsic
 :extrinsic rdf:type owl:Class ;
            rdfs:subClassOf :Nature .
-
-
-###  https://purl.org/turbbo#Cohen’s_d
-<https://purl.org/turbbo#Cohen’s_d> rdf:type owl:Class ;
-                                    rdfs:subClassOf :effect_size ;
-                                    rdfs:label "Cohen’s d" .
 
 
 ###  https://purl.org/turbbo#Spearman’s
@@ -604,20 +597,42 @@ dc:title rdf:type owl:AnnotationProperty .
 
 ###  https://purl.org/turbbo/turrbo_0000026
 <https://purl.org/turbbo/turrbo_0000026> rdf:type owl:Class ;
-                                         rdfs:subClassOf <https://purl.org/turbbo/turrbo_0000021> ;
+                                         rdfs:subClassOf :Magnitude ;
                                          rdfs:label "small correlation" .
 
 
 ###  https://purl.org/turbbo/turrbo_0000027
 <https://purl.org/turbbo/turrbo_0000027> rdf:type owl:Class ;
-                                         rdfs:subClassOf <https://purl.org/turbbo/turrbo_0000021> ;
+                                         rdfs:subClassOf :Magnitude ;
                                          rdfs:label "medium correlation" .
 
 
 ###  https://purl.org/turbbo/turrbo_0000028
 <https://purl.org/turbbo/turrbo_0000028> rdf:type owl:Class ;
-                                         rdfs:subClassOf <https://purl.org/turbbo/turrbo_0000021> ;
+                                         rdfs:subClassOf :Magnitude ;
                                          rdfs:label "large correlation" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://purl.org/turbbo/000000079
+<https://purl.org/turbbo/000000079> rdf:type owl:NamedIndividual ,
+                                             :Behaviour ;
+                                    rdfs:label "green apparel shopping" .
+
+
+###  https://purl.org/turbbo/000000080
+<https://purl.org/turbbo/000000080> rdf:type owl:NamedIndividual ,
+                                             :Behaviour ;
+                                    rdfs:label "past recycling" .
+
+
+###  https://purl.org/turbbo/000000081
+<https://purl.org/turbbo/000000081> rdf:type owl:NamedIndividual ,
+                                             <https://purl.org/turbbo/turrbo_0000021> ;
+                                    rdfs:label "0.07" .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

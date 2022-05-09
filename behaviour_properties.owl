@@ -66,6 +66,13 @@
                                                                                rdfs:range xsd:boolean .
 
 
+###  https://purl.org/turbbo/behaviour_properties/000000094
+<https://purl.org/turbbo/behaviour_properties/000000094> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <http://www.semanticweb.org/ontologies/2021/4/untitled-ontology-59#Behaviour> ;
+                                                         rdfs:range xsd:boolean ;
+                                                         rdfs:label "isLegal" .
+
+
 #################################################################
 #    Classes
 #################################################################

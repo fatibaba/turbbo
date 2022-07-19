@@ -12,7 +12,8 @@
                            owl:imports <http://purl.org/turbbo/foaf-imports> ,
                                        <http://purl.org/turbbo/om-imports> ,
                                        <http://purl.org/turbbo/sepio-imports> ,
-                                       <http://purl.org/turbbo/time-imports> ;
+                                       <http://purl.org/turbbo/time-imports> ,
+                                       <https://purl.org/turbbo/behaviour_properties>;
                            dc:title "Behaviour Ontology" ;
                            rdfs:comment """The TURBBO ontologies are at the early stages of development. The upper level ontology core file imports four files which can be resolved with Protege as follows:
 

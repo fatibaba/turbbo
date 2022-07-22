@@ -13,11 +13,14 @@
                                        <http://purl.org/turbbo/om-imports> ,
                                        <http://purl.org/turbbo/sepio-imports> ,
                                        <http://purl.org/turbbo/time-imports> ,
-                                       <https://purl.org/turbbo/behaviour_properties>;
-                           dc:title "Behaviour Ontology" ;
-                           rdfs:comment """The TURBBO ontologies are at the early stages of development. The upper level ontology core file imports four files which can be resolved with Protege as follows:
+                                       <https://purl.org/turbbo/behaviour_properties> ;
+                           dc:title "Tools for Understanding Relationships Between Behaviours Using Ontologies - An Upper Level Ontology" ;
+                           rdfs:comment """This is an upper level ontology that descibes higher level concepts and main concepts associated with studies that measure behaviour and their relationships.
 
-1. Download the om-imports.owl, sepio-imports.owl, FOAF-imports.owl and time-imports.owl files from the private project GitHub repository.
+
+The TURBBO ontologies are at the early stages of development. The upper level ontology core file imports five files which can be resolved with Protege as follows:
+
+1. Download the om-imports.owl, sepio-imports.owl, FOAF-imports.owl time-imports.owl, and behaviour-properties.owl files from the private project GitHub repository.
 
 2. Directly import the downloaded files with Protege.
 
@@ -33,6 +36,27 @@ dc:description rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/elements/1.1/title
 dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/age
+<http://xmlns.com/foaf/0.1/age> rdf:type owl:AnnotationProperty ;
+                                rdfs:domain <http://xmlns.com/foaf/0.1/Person> .
+
+
+###  http://xmlns.com/foaf/0.1/birthday
+<http://xmlns.com/foaf/0.1/birthday> rdf:type owl:AnnotationProperty ;
+                                     rdfs:domain <http://xmlns.com/foaf/0.1/Person> .
+
+
+###  http://xmlns.com/foaf/0.1/gender
+<http://xmlns.com/foaf/0.1/gender> rdf:type owl:AnnotationProperty ;
+                                   rdfs:domain <http://xmlns.com/foaf/0.1/Person> .
+
+
+###  http://xmlns.com/foaf/0.1/title
+<http://xmlns.com/foaf/0.1/title> rdf:type owl:AnnotationProperty ;
+                                  rdfs:range rdfs:Literal ;
+                                  rdfs:domain <http://xmlns.com/foaf/0.1/Person> .
 
 
 ###  https://purl.org/turbbo#definition
@@ -177,9 +201,7 @@ dc:title rdf:type owl:AnnotationProperty .
 
 ###  https://purl.org/turbbo#isAuthor
 :isAuthor rdf:type owl:ObjectProperty ;
-          rdfs:domain <http://xmlns.com/foaf/0.1/Agent> ;
-          rdfs:range <http://purl.obolibrary.org/obo/IAO_0000100> ,
-                     <http://purl.obolibrary.org/obo/IAO_0000310> .
+          rdfs:domain <http://xmlns.com/foaf/0.1/Agent> .
 
 
 ###  https://purl.org/turbbo#isReflectiveOf
@@ -217,9 +239,7 @@ dc:title rdf:type owl:AnnotationProperty .
 
 ###  https://purl.org/turbbo#produces
 :produces rdf:type owl:ObjectProperty ;
-          rdfs:domain <http://purl.obolibrary.org/obo/SEPIO_0000125> ;
-          rdfs:range <http://purl.obolibrary.org/obo/IAO_0000100> ,
-                     <http://purl.obolibrary.org/obo/IAO_0000310> .
+          rdfs:domain <http://purl.obolibrary.org/obo/SEPIO_0000125> .
 
 
 ###  https://purl.org/turbbo#requiresMaterial
@@ -290,27 +310,26 @@ dc:title rdf:type owl:AnnotationProperty .
 #    Data properties
 #################################################################
 
-###  http://xmlns.com/foaf/0.1/age
-<http://xmlns.com/foaf/0.1/age> rdfs:domain <http://xmlns.com/foaf/0.1/Person> .
-
-
-###  http://xmlns.com/foaf/0.1/birthday
-<http://xmlns.com/foaf/0.1/birthday> rdfs:domain <http://xmlns.com/foaf/0.1/Person> .
-
-
-###  http://xmlns.com/foaf/0.1/gender
-<http://xmlns.com/foaf/0.1/gender> rdfs:domain <http://xmlns.com/foaf/0.1/Person> .
-
-
 ###  http://xmlns.com/foaf/0.1/title
-<http://xmlns.com/foaf/0.1/title> rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
-                                  rdfs:range rdfs:Literal .
+<http://xmlns.com/foaf/0.1/title> rdf:type owl:DatatypeProperty .
 
 
 ###  https://purl.org/turbbo#hasValue
 :hasValue rdf:type owl:DatatypeProperty ;
           rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000027> ;
           rdfs:range xsd:decimal .
+
+
+###  https://purl.org/turbbo#isAuthor
+:isAuthor rdf:type owl:DatatypeProperty ;
+          rdfs:range <http://purl.obolibrary.org/obo/IAO_0000100> ,
+                     <http://purl.obolibrary.org/obo/IAO_0000310> .
+
+
+###  https://purl.org/turbbo#produces
+:produces rdf:type owl:DatatypeProperty ;
+          rdfs:range <http://purl.obolibrary.org/obo/IAO_0000100> ,
+                     <http://purl.obolibrary.org/obo/IAO_0000310> .
 
 
 ###  https://purl.org/turbbo/turrbo_0000018
@@ -345,6 +364,22 @@ dc:title rdf:type owl:AnnotationProperty .
 #    Classes
 #################################################################
 
+###  http://purl.obolibrary.org/obo/IAO_0000027
+<http://purl.obolibrary.org/obo/IAO_0000027> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000311
+<http://purl.obolibrary.org/obo/IAO_0000311> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/SEPIO_0000125
+<http://purl.obolibrary.org/obo/SEPIO_0000125> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000039
+<http://purl.obolibrary.org/obo/STATO_0000039> rdf:type owl:Class .
+
+
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/Measure
 <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> rdf:type owl:Class .
 
@@ -355,10 +390,6 @@ dc:title rdf:type owl:AnnotationProperty .
 
 ###  http://xmlns.com/foaf/0.1/Agent
 <http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class .
-
-
-###  http://xmlns.com/foaf/0.1/Person
-<http://xmlns.com/foaf/0.1/Person> rdfs:label "Person" .
 
 
 ###  https://purl.org/turbbo#Action
@@ -615,25 +646,10 @@ dc:title rdf:type owl:AnnotationProperty .
 
 
 #################################################################
-#    Individuals
+#    Annotations
 #################################################################
 
-###  https://purl.org/turbbo/000000079
-<https://purl.org/turbbo/000000079> rdf:type owl:NamedIndividual ,
-                                             :Behaviour ;
-                                    rdfs:label "green apparel shopping" .
-
-
-###  https://purl.org/turbbo/000000080
-<https://purl.org/turbbo/000000080> rdf:type owl:NamedIndividual ,
-                                             :Behaviour ;
-                                    rdfs:label "past recycling" .
-
-
-###  https://purl.org/turbbo/000000081
-<https://purl.org/turbbo/000000081> rdf:type owl:NamedIndividual ,
-                                             <https://purl.org/turbbo/turrbo_0000021> ;
-                                    rdfs:label "0.07" .
+<http://xmlns.com/foaf/0.1/Person> rdfs:label "Person" .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

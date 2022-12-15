@@ -1,0 +1,44 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?behaviourA ?correlation ?behaviourB
+WHERE {
+  ?y rdfs:label ?behaviourA.
+  ?r rdfs:label "correlation coefficient r".
+  ?relates rdfs:label "correlates behaviour".
+  ?rValue rdfs:label  "rValue".
+  ?rexample rdf:type ?r.
+  ?rexample ?relates ?y.
+  ?rexample ?rValue ?correlation.
+  ?rexample ?relates ?x.
+  ?x rdfs:label ?behaviourB.
+  filter regex(?behaviourA, "moving/exercise")
+  filter(?y != ?x)
+}
+
+
+
+{ "head": {
+    "vars": [ "behaviourA" , "correlation" , "behaviourB" ]
+  } ,
+  "results": {
+    "bindings": [
+      { 
+        "behaviourA": { "type": "literal" , "xml:lang": "en" , "value": "moving/exercise 02" } ,
+        "correlation": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#decimal" , "value": "0.11" } ,
+        "behaviourB": { "type": "literal" , "xml:lang": "en" , "value": "using alcohol 02" }
+      } ,
+      { 
+        "behaviourA": { "type": "literal" , "xml:lang": "en" , "value": "moving/exercise 01" } ,
+        "correlation": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#decimal" , "value": "0.163" } ,
+        "behaviourB": { "type": "literal" , "xml:lang": "en" , "value": "smoking marijuana 01" }
+      }
+    ]
+  }
+}
+
+
+
+ "y" 	 "correlation" 	 "x" 
+"moving/exercise 02"	"0.11"	"using alcohol 02"
+"moving/exercise 01"	"0.163"	"smoking marijuana 01"

@@ -1,0 +1,9 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<https://purl.org/turbbo/2022-12-13/turbbo.owl> a prov:Entity;
+	 dc:title "Tools for Understanding Relationships Between Behaviours using Ontology (TURBBO)";
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <https://purl.org/turbbo/turbbo.owl>;
+.

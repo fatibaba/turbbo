@@ -8,7 +8,7 @@ Prefix(turbbo:=<https://purl.org/turbbo/>)
 
 
 Ontology(<https://purl.org/turbbo/upper.owl>
-<https://purl.org/turbbo/upper.owl/2022-12-13>
+<https://purl.org/turbbo/2022-12-13/upper.owl>
 Annotation(<http://purl.org/dc/elements/1.1/title> "TURBBO - upper ontology")
 Annotation(rdfs:comment "This is the upper ontology of the TURBBO ontologies and consists of concepts for describing how behaviours are measured and compared in behavioural science studies.")
 Annotation(owl:versionInfo "2022-12-13")

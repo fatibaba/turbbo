@@ -1,0 +1,2570 @@
+Prefix(:=<https://purl.org/turbbo/behaviours.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(turbbo:=<https://purl.org/turbbo/>)
+
+
+Ontology(<https://purl.org/turbbo/behaviours.owl>
+<https://purl.org/turbbo/behaviours.owl/2022-12-13>
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000232> "We could not find URIs for the classes in the IC-Behavior taxonomy therefore we created them for this project. In this ontology, we have two formats of URI which is to differentiate between the classes from the taxonomy and the extended classes for TURBBO. The classes for TURBBO follow the OBO format for the URIs which is https://purl.org/turbbo/behaviour_0000001 while the classes from IC-Behavior have the URI format https://purl.org/turbbo/behaviour_R9HlY0i7brkkaamN0VMCVmw")
+Annotation(<http://purl.org/dc/elements/1.1/title> "TURBBO - Behahaviours ontology")
+Annotation(rdfs:comment "The is the Behahaviours ontology in TURBBO which gives a classification of different kinds of behaviours. This ontology has reused and extended the behaviour taxonomy from IC-Behavior, which is currently, the broadest of behavioural taxonomies. Larsen et al.classified 250 behaviours into nine domains: learning and applying knowledge; communicating; moving/exercising; self-care behaviour; domestic life activities; interpersonal interactions and relationships; behaviour related to major life areas; behaviour related to community, social, and civic life; and mood/state changing activities and behaviour. Behaviors considered important enough to serve as the dependent variable in articles accepted for publication in top journals were extracted from a large sample of journals in nine different behavioral and social disciplines.")
+Annotation(owl:versionInfo "2022-12-13")
+
+Declaration(Class(turbbo:behaviour_0000001))
+Declaration(Class(turbbo:behaviour_0000002))
+Declaration(Class(turbbo:behaviour_0000003))
+Declaration(Class(turbbo:behaviour_0000004))
+Declaration(Class(turbbo:behaviour_0000005))
+Declaration(Class(turbbo:behaviour_0000006))
+Declaration(Class(turbbo:behaviour_0000007))
+Declaration(Class(turbbo:behaviour_0000008))
+Declaration(Class(turbbo:behaviour_0000009))
+Declaration(Class(turbbo:behaviour_0000010))
+Declaration(Class(turbbo:behaviour_0000011))
+Declaration(Class(turbbo:behaviour_0000012))
+Declaration(Class(turbbo:behaviour_0000013))
+Declaration(Class(turbbo:behaviour_0000014))
+Declaration(Class(turbbo:behaviour_0000015))
+Declaration(Class(turbbo:behaviour_0000016))
+Declaration(Class(turbbo:behaviour_0000017))
+Declaration(Class(turbbo:behaviour_0000018))
+Declaration(Class(turbbo:behaviour_0000019))
+Declaration(Class(turbbo:behaviour_0000020))
+Declaration(Class(turbbo:behaviour_0000021))
+Declaration(Class(turbbo:behaviour_0000022))
+Declaration(Class(turbbo:behaviour_0000023))
+Declaration(Class(turbbo:behaviour_0000024))
+Declaration(Class(turbbo:behaviour_0000025))
+Declaration(Class(turbbo:behaviour_0000026))
+Declaration(Class(turbbo:behaviour_0000027))
+Declaration(Class(turbbo:behaviour_0000028))
+Declaration(Class(turbbo:behaviour_0000029))
+Declaration(Class(turbbo:behaviour_0000030))
+Declaration(Class(turbbo:behaviour_0000031))
+Declaration(Class(turbbo:behaviour_0000032))
+Declaration(Class(turbbo:behaviour_0000033))
+Declaration(Class(turbbo:behaviour_0000034))
+Declaration(Class(turbbo:behaviour_0000035))
+Declaration(Class(turbbo:behaviour_0000036))
+Declaration(Class(turbbo:behaviour_0000037))
+Declaration(Class(turbbo:behaviour_0000038))
+Declaration(Class(turbbo:behaviour_0000039))
+Declaration(Class(turbbo:behaviour_0000040))
+Declaration(Class(turbbo:behaviour_0000041))
+Declaration(Class(turbbo:behaviour_0000042))
+Declaration(Class(turbbo:behaviour_0000043))
+Declaration(Class(turbbo:behaviour_0000044))
+Declaration(Class(turbbo:behaviour_0000045))
+Declaration(Class(turbbo:behaviour_0000046))
+Declaration(Class(turbbo:behaviour_0000047))
+Declaration(Class(turbbo:behaviour_0000048))
+Declaration(Class(turbbo:behaviour_0000049))
+Declaration(Class(turbbo:behaviour_0000050))
+Declaration(Class(turbbo:behaviour_0000051))
+Declaration(Class(turbbo:behaviour_0000052))
+Declaration(Class(turbbo:behaviour_0000053))
+Declaration(Class(turbbo:behaviour_0000054))
+Declaration(Class(turbbo:behaviour_0000055))
+Declaration(Class(turbbo:behaviour_0000056))
+Declaration(Class(turbbo:behaviour_0000057))
+Declaration(Class(turbbo:behaviour_0000058))
+Declaration(Class(turbbo:behaviour_0000059))
+Declaration(Class(turbbo:behaviour_0000060))
+Declaration(Class(turbbo:behaviour_0000061))
+Declaration(Class(turbbo:behaviour_0000062))
+Declaration(Class(turbbo:behaviour_0000063))
+Declaration(Class(turbbo:behaviour_0000064))
+Declaration(Class(turbbo:behaviour_0000065))
+Declaration(Class(turbbo:behaviour_0000066))
+Declaration(Class(turbbo:behaviour_0000067))
+Declaration(Class(turbbo:behaviour_0000068))
+Declaration(Class(turbbo:behaviour_0000069))
+Declaration(Class(turbbo:behaviour_0000070))
+Declaration(Class(turbbo:behaviour_0000071))
+Declaration(Class(turbbo:behaviour_0000072))
+Declaration(Class(turbbo:behaviour_0000073))
+Declaration(Class(turbbo:behaviour_0000074))
+Declaration(Class(turbbo:behaviour_0000075))
+Declaration(Class(turbbo:behaviour_0000076))
+Declaration(Class(turbbo:behaviour_0000077))
+Declaration(Class(turbbo:behaviour_0000078))
+Declaration(Class(turbbo:behaviour_0000079))
+Declaration(Class(turbbo:behaviour_0000080))
+Declaration(Class(turbbo:behaviour_0000081))
+Declaration(Class(turbbo:behaviour_0000082))
+Declaration(Class(turbbo:behaviour_0000083))
+Declaration(Class(turbbo:behaviour_0000084))
+Declaration(Class(turbbo:behaviour_0000085))
+Declaration(Class(turbbo:behaviour_0000086))
+Declaration(Class(turbbo:behaviour_0000087))
+Declaration(Class(turbbo:behaviour_0000088))
+Declaration(Class(turbbo:behaviour_0000089))
+Declaration(Class(turbbo:behaviour_0000090))
+Declaration(Class(turbbo:behaviour_0000091))
+Declaration(Class(turbbo:behaviour_0000092))
+Declaration(Class(turbbo:behaviour_R2u7u2nNFoKuQMcA3z3YG7))
+Declaration(Class(turbbo:behaviour_R3GTM1WIfB3LofIOVpVVKU))
+Declaration(Class(turbbo:behaviour_R3HIEV4Q60XlmRBVPFyaEZ))
+Declaration(Class(turbbo:behaviour_R3NO3LpXB5rQZlwHyBqraH))
+Declaration(Class(turbbo:behaviour_R43WF6rp1q7dXrSPS9Ds7q))
+Declaration(Class(turbbo:behaviour_R539h7zNDyqiNOlv41H9Pu))
+Declaration(Class(turbbo:behaviour_R6I0RnK1viksUAXzK4gU5G))
+Declaration(Class(turbbo:behaviour_R6hKctZFZcjKJBLZwC7y9T))
+Declaration(Class(turbbo:behaviour_R71V3Og38WQ7O96qyXLbX1m))
+Declaration(Class(turbbo:behaviour_R72ZXu52sC4SgJQPCbndepq))
+Declaration(Class(turbbo:behaviour_R73ScJd5f9k7m9Hd2ZERZPu))
+Declaration(Class(turbbo:behaviour_R74Nph6Q96RGCllk8UMt94p))
+Declaration(Class(turbbo:behaviour_R7AM7ERYzGdFt5E71E8cIsG))
+Declaration(Class(turbbo:behaviour_R7KumE46mwzHlQIlcwwADBI))
+Declaration(Class(turbbo:behaviour_R7LFMgbt35Cfkx42ektsTEV))
+Declaration(Class(turbbo:behaviour_R7LgTiHQ8HpEgALLRG0j5ai))
+Declaration(Class(turbbo:behaviour_R7MWXGKIGLx4ykI6IfNRWHF))
+Declaration(Class(turbbo:behaviour_R7MZNxsxrHJFsQZe0BlH2P4))
+Declaration(Class(turbbo:behaviour_R7S8d4JYYCiTv7gJUzvecVp))
+Declaration(Class(turbbo:behaviour_R7SqDxfmXPDIUSZShgwaIyO))
+Declaration(Class(turbbo:behaviour_R7Tk1H3NwuI0LdQOy7iFLUD))
+Declaration(Class(turbbo:behaviour_R7XCC5zU34bLOestUwQWuuR))
+Declaration(Class(turbbo:behaviour_R7Yf7M0MxZ4q5ZlV3ns67lq))
+Declaration(Class(turbbo:behaviour_R7cCPkS4EJPnAqfRaMu79xf))
+Declaration(Class(turbbo:behaviour_R7kHdkMUTa5gaJcK3oko65F))
+Declaration(Class(turbbo:behaviour_R7ksLdc5AtNZogZjcdwMAz))
+Declaration(Class(turbbo:behaviour_R7ou7HEwYODwmkHhLtEqW2B))
+Declaration(Class(turbbo:behaviour_R7pSWXD6d3tkoGLH56hjASm))
+Declaration(Class(turbbo:behaviour_R7qzqygnfKwMVxUR9f0qbNZ))
+Declaration(Class(turbbo:behaviour_R7u1DYQZbK5g35P4fpskShU))
+Declaration(Class(turbbo:behaviour_R7uK2tMCWgORKYlpKazgtMt))
+Declaration(Class(turbbo:behaviour_R7v3PZTiUBVbqoDi5fN07Xy))
+Declaration(Class(turbbo:behaviour_R7vxYwxQyKBDRKzRKRAgsTc))
+Declaration(Class(turbbo:behaviour_R7woWtbNCi0dJrw4OZCukC6))
+Declaration(Class(turbbo:behaviour_R7x8NHLRGEcEymTXMx3THX7))
+Declaration(Class(turbbo:behaviour_R7yShojeNYC1aYv0rEc3xjO))
+Declaration(Class(turbbo:behaviour_R81UtNoTnqDkn9qWK7IrTU8))
+Declaration(Class(turbbo:behaviour_R84iVOhssiIeFAzqm1Mi9zj))
+Declaration(Class(turbbo:behaviour_R85ghQJrvubARtcN51qsWvE))
+Declaration(Class(turbbo:behaviour_R8728B2O8Nh1286K7Qks2I5))
+Declaration(Class(turbbo:behaviour_R88jWHnsn3PZlovY39SFqII))
+Declaration(Class(turbbo:behaviour_R88lPKWIB1fAon9hpD61R9))
+Declaration(Class(turbbo:behaviour_R8969KVnC9qwhEOlMBFOl0K))
+Declaration(Class(turbbo:behaviour_R8DhTyMU53x20DpGqwMj0uW))
+Declaration(Class(turbbo:behaviour_R8FZDhDYustxTQzsvyutx8Q))
+Declaration(Class(turbbo:behaviour_R8GcYRzBiq0zUKaVzCrDbDh))
+Declaration(Class(turbbo:behaviour_R8GzSPHABwljcmb4WOEdA6D))
+Declaration(Class(turbbo:behaviour_R8IYw8QdSmDOKfhF0LcZSGR))
+Declaration(Class(turbbo:behaviour_R8K4w41cfj2BD24EvxDQPM9))
+Declaration(Class(turbbo:behaviour_R8KGFREdhoCRkCDNcTG8rZL))
+Declaration(Class(turbbo:behaviour_R8KvqWb8C67t2NkL6mgWYY8))
+Declaration(Class(turbbo:behaviour_R8L0j33ISylhnbDKERZPpfI))
+Declaration(Class(turbbo:behaviour_R8PZrDPglU5HUGsnWkFpBh8))
+Declaration(Class(turbbo:behaviour_R8QKq0DUYbu1hFlkFQbcDqz))
+Declaration(Class(turbbo:behaviour_R8ReuBYJRPqCMN23dxvaHoB))
+Declaration(Class(turbbo:behaviour_R8SK0qidAhGaUAt6EOlmvfo))
+Declaration(Class(turbbo:behaviour_R8TZfuwPIav5afH2Q5m2JhO))
+Declaration(Class(turbbo:behaviour_R8Vq82H2GwQMknyntl4zDIL))
+Declaration(Class(turbbo:behaviour_R8YCY2i5DojBDHL0jf200QA))
+Declaration(Class(turbbo:behaviour_R8YXJ6zVKsyJLtpqdLeBgGe))
+Declaration(Class(turbbo:behaviour_R8ajn0bTfdCHx3nX7JiNJM2))
+Declaration(Class(turbbo:behaviour_R8cCVugnbr4KoPFPOy98Qt2))
+Declaration(Class(turbbo:behaviour_R8gB9OYdqQSqTsDpbt2xwPk))
+Declaration(Class(turbbo:behaviour_R8gZTtFMXyiMRwUm5WLrhXS))
+Declaration(Class(turbbo:behaviour_R8j2bn1hgnMSEJiolCCWbJ8))
+Declaration(Class(turbbo:behaviour_R8jttvmuprS05qQGlFDRZJE))
+Declaration(Class(turbbo:behaviour_R8kPkEyryCnXa6dbEra5Vai))
+Declaration(Class(turbbo:behaviour_R8nh8nvCVDLaYKhxeVb3IW8))
+Declaration(Class(turbbo:behaviour_R8npJYdDua4rtmotUR8gkXA))
+Declaration(Class(turbbo:behaviour_R8qMM1AUIWkGs9uIR3zf0Oe))
+Declaration(Class(turbbo:behaviour_R8qZTwXVecGIlp2WSH9wCuV))
+Declaration(Class(turbbo:behaviour_R8ukhPJPMhF45gwrCl4Jm0F))
+Declaration(Class(turbbo:behaviour_R8xQJz3jvt4sTKFSkqiASfr))
+Declaration(Class(turbbo:behaviour_R91lBSpjaJ12eZqZOf0YYtE))
+Declaration(Class(turbbo:behaviour_R932mpM1CTdcqEBiTOXDNPM))
+Declaration(Class(turbbo:behaviour_R93z8pYrtnWwimDtpP76jOC))
+Declaration(Class(turbbo:behaviour_R957y0lozcqJOI5opHzoPhe))
+Declaration(Class(turbbo:behaviour_R95U5YkbbSN3USUNqiS9yh5))
+Declaration(Class(turbbo:behaviour_R98L21up1SSyEgiLNxwvbKM))
+Declaration(Class(turbbo:behaviour_R9A9B5YB25QH3TR4iHuH9wq))
+Declaration(Class(turbbo:behaviour_R9BeiQh4oa8EbuNm1bjryZB))
+Declaration(Class(turbbo:behaviour_R9D52BADRQOlw7YY7xDYL0P))
+Declaration(Class(turbbo:behaviour_R9DODpTBGtD47Gkr98ZKGT4))
+Declaration(Class(turbbo:behaviour_R9H2ctyCGAYoASJRT1kN0ln))
+Declaration(Class(turbbo:behaviour_R9HlY0i7brkkaamN0VMCVmw))
+Declaration(Class(turbbo:behaviour_R9JyzynAe7H3xtK0rPOT841))
+Declaration(Class(turbbo:behaviour_R9Ohv3YKoJsxuaDDeL4eQXx))
+Declaration(Class(turbbo:behaviour_R9QvUdQnrx7qXQS2hP9uzrA))
+Declaration(Class(turbbo:behaviour_R9SZhlXBAdyrsI5ItrSRZDG))
+Declaration(Class(turbbo:behaviour_R9UnNO27OcDXMFjeAejMhJr))
+Declaration(Class(turbbo:behaviour_R9XzdtCeE4Ytjbjkmi81yJu))
+Declaration(Class(turbbo:behaviour_R9YKewO63jKFuCf6CxcRw42))
+Declaration(Class(turbbo:behaviour_R9Z7Ya4l3pO5GTyuD4lXXMj))
+Declaration(Class(turbbo:behaviour_R9cWGdaP36P9kM5hHEPRMHg))
+Declaration(Class(turbbo:behaviour_R9emxBTFO7jzHWHEnRezJFm))
+Declaration(Class(turbbo:behaviour_R9hKOlaTiUV2zNrdjrXHIoH))
+Declaration(Class(turbbo:behaviour_R9j8nrLtFzMmIVh4MlAP6EA))
+Declaration(Class(turbbo:behaviour_R9p5Yej3AOqhbZTK2kCgSWX))
+Declaration(Class(turbbo:behaviour_R9qiMGm7ZsvOF8PVopNjoce))
+Declaration(Class(turbbo:behaviour_R9uUdCancI6Xhj93NGDpAa0))
+Declaration(Class(turbbo:behaviour_R9vNeC1oitAazXgjCZLFreu))
+Declaration(Class(turbbo:behaviour_R9wnOxSo6VExTSy6o6aVaHH))
+Declaration(Class(turbbo:behaviour_R9x7Hkf4ZOijPKfUQeDiqSM))
+Declaration(Class(turbbo:behaviour_RB0PylLvIZAtwndoosMLliQ))
+Declaration(Class(turbbo:behaviour_RB1r62EgpOwuwELaN1GN8WR))
+Declaration(Class(turbbo:behaviour_RB259d2EF9BQAEoE02NuAv3))
+Declaration(Class(turbbo:behaviour_RB3KW9HRLxfZaM9TK6L64Dy))
+Declaration(Class(turbbo:behaviour_RB4NyZKyze11ZGYvquGrdrA))
+Declaration(Class(turbbo:behaviour_RB65zbnDKVRSjQ3mKpcHp8t))
+Declaration(Class(turbbo:behaviour_RB8MzAOq8S3Jt4O0y71cZC3))
+Declaration(Class(turbbo:behaviour_RBEmO5ddPGEUtlHSBkeLFO0))
+Declaration(Class(turbbo:behaviour_RBFL8qZUMKuFB1orHEuZVSt))
+Declaration(Class(turbbo:behaviour_RBFcrIvHBtTdBRW5pvvInk))
+Declaration(Class(turbbo:behaviour_RBHbpWceDYn4BB2W7tomnNI))
+Declaration(Class(turbbo:behaviour_RBOTVkkObNNllFP9EFEOIR2))
+Declaration(Class(turbbo:behaviour_RBTRLIR5oUwjhLmK6oAIMb4))
+Declaration(Class(turbbo:behaviour_RBTc7cx9eEMPQCOGL8vKPtV))
+Declaration(Class(turbbo:behaviour_RBYfKE4dQXzYNdQGWpLm4RK))
+Declaration(Class(turbbo:behaviour_RBYkEcGOLDMPaivRiRxA2Zx))
+Declaration(Class(turbbo:behaviour_RBZBFZG9PRFJpm31aToI1nl))
+Declaration(Class(turbbo:behaviour_RBdjzI2SqWrJ2prVOK0NHpT))
+Declaration(Class(turbbo:behaviour_RBkPOivG8JaZijqer0ZkDjQ))
+Declaration(Class(turbbo:behaviour_RBq7tZ4pj7jvFmyRWgzCAgH))
+Declaration(Class(turbbo:behaviour_RBqLqcQI5H4LBjGjeKL3Xyb))
+Declaration(Class(turbbo:behaviour_RBtjpUP2Y67IuUsEulri7ce))
+Declaration(Class(turbbo:behaviour_RBuoEsSFBhOGJtFyQKJv3yx))
+Declaration(Class(turbbo:behaviour_RBwChPeGumIcWiAkyjALSbR))
+Declaration(Class(turbbo:behaviour_RBzlXysycBR1G0UWI9dLzUg))
+Declaration(Class(turbbo:behaviour_RC0YClFPlVX751xC4ns9FVj))
+Declaration(Class(turbbo:behaviour_RC2WMf41q0tzpzdY4Q3IlE4))
+Declaration(Class(turbbo:behaviour_RC49XywX1UPXtJYddxnrb0h))
+Declaration(Class(turbbo:behaviour_RC5LiU2X5C1XaClchoLtN7h))
+Declaration(Class(turbbo:behaviour_RC5cLYrHZhVyinK9OLpz4Ax))
+Declaration(Class(turbbo:behaviour_RC5xmY90ofv5EQ1opHYU6rB))
+Declaration(Class(turbbo:behaviour_RC9LMCql8HpBhA11P4OoZgi))
+Declaration(Class(turbbo:behaviour_RC9irdFOfWCUDChsoJh1FWw))
+Declaration(Class(turbbo:behaviour_RC9p1nKgQCD9ZNR5vvX2qiZ))
+Declaration(Class(turbbo:behaviour_RCC63qDwHmigEz6huhl9dCG))
+Declaration(Class(turbbo:behaviour_RCCIgPeUjgaKYDjePlHqzlm))
+Declaration(Class(turbbo:behaviour_RCD8LHOgE9WxbIcDhGHIuVW))
+Declaration(Class(turbbo:behaviour_RCDJN2atxNwOBqbKSmxM1Fc))
+Declaration(Class(turbbo:behaviour_RCDX7XRjZ177uHg6OoUyvv0))
+Declaration(Class(turbbo:behaviour_RCE7VvM7rpyKfsBJxKqHVvk))
+Declaration(Class(turbbo:behaviour_RCKDQM6dfhit3RC352IGkgN))
+Declaration(Class(turbbo:behaviour_RCLGCfCEICjWDiyU2xYotQk))
+Declaration(Class(turbbo:behaviour_RCLUrCDjw1iSB9E2K1K47IG))
+Declaration(Class(turbbo:behaviour_RCMQ2Xe8y2ROsQ2JODi10Pt))
+Declaration(Class(turbbo:behaviour_RCNXOEb6sjTOBSIrv5Z5Bfv))
+Declaration(Class(turbbo:behaviour_RCQ0BGxWd0dw2Ax39GRhiqs))
+Declaration(Class(turbbo:behaviour_RCTpYCPfulTB3fOxPqErQ2V))
+Declaration(Class(turbbo:behaviour_RCV0qw9GIXO9nA6mEsE72Nr))
+Declaration(Class(turbbo:behaviour_RCV5kFFQ8uWjqjPCrdjngHb))
+Declaration(Class(turbbo:behaviour_RCW6LwsmwRRJDHJ5Sw3NcqF))
+Declaration(Class(turbbo:behaviour_RCX7sTnjz11ol0VKC4azwIC))
+Declaration(Class(turbbo:behaviour_RCXasK8gbuKMgaU1ZrRXQZM))
+Declaration(Class(turbbo:behaviour_RCcKEhZxYCpuN3rXXYRFoKa))
+Declaration(Class(turbbo:behaviour_RCgGDn1vqlfJSIRaFveJ3LD))
+Declaration(Class(turbbo:behaviour_RCh5z0vk5UDzC46FZI7ew7i))
+Declaration(Class(turbbo:behaviour_RChrJYRTZRmBDhl2HTuXV4S))
+Declaration(Class(turbbo:behaviour_RCij8AeR486wWQrvpxJI2KG))
+Declaration(Class(turbbo:behaviour_RCj2g7DNklxWdnq0FhKcaUK))
+Declaration(Class(turbbo:behaviour_RCkUmDEEBCZJdgoHyJUrlzm))
+Declaration(Class(turbbo:behaviour_RCoukmgJYw5wh7IXXRNL08T))
+Declaration(Class(turbbo:behaviour_RCrDL1h6RMXEqgnkTmAzyNh))
+Declaration(Class(turbbo:behaviour_RCuyyZAZJSXGT3CbFA45RAJ))
+Declaration(Class(turbbo:behaviour_RD0GMkoktmQ73gfqCl0qW1R))
+Declaration(Class(turbbo:behaviour_RDB0WPFBq8eRpd2dUYyztb4))
+Declaration(Class(turbbo:behaviour_RDCdADDJmSYz0KQPW8JeeEL))
+Declaration(Class(turbbo:behaviour_RDD3rbWNSvbnzQEYVOzVTaf))
+Declaration(Class(turbbo:behaviour_RDGyOtjqZKCX0tefKkHlCB4))
+Declaration(Class(turbbo:behaviour_RDHDhOpQRdVHIWshnX8texT))
+Declaration(Class(turbbo:behaviour_RDIIAa0apBgWd6V8u5gqFdx))
+Declaration(Class(turbbo:behaviour_RDJKU5nu0UQ99SqvzqDERuT))
+Declaration(Class(turbbo:behaviour_RDL2jv9fzH1Qut883nyV9h2))
+Declaration(Class(turbbo:behaviour_RDLYuvHGi7xCMFHwL7WJ8pF))
+Declaration(Class(turbbo:behaviour_RDNayceseHCIB2iSzFiUw1F))
+Declaration(Class(turbbo:behaviour_RDSprVXKVeqV4JtMjaGwwDX))
+Declaration(Class(turbbo:behaviour_RDTyuOxxUCulUO8Mpp6qkok))
+Declaration(Class(turbbo:behaviour_RDUJWELA0SPaErG3vHbdX4L))
+Declaration(Class(turbbo:behaviour_RDUbufE2Nf82qL40OOzDf0X))
+Declaration(Class(turbbo:behaviour_RDUvbq2izGgpt3kOUvTN7DN))
+Declaration(Class(turbbo:behaviour_RDWlGjHDqw1graeSapdOC8q))
+Declaration(Class(turbbo:behaviour_RDZT0VWQEBqvPfHRPJBiyVO))
+Declaration(Class(turbbo:behaviour_RDarCRBoiqojsnZ9V6Oj1EU))
+Declaration(Class(turbbo:behaviour_RDazgYyfZxs7cSniOP0LqUl))
+Declaration(Class(turbbo:behaviour_RDcFnYzsIyED62rWslUIgsQ))
+Declaration(Class(turbbo:behaviour_RDck4eDShRuThnEF6Ql5OxH))
+Declaration(Class(turbbo:behaviour_RDd9PVm2VkoGBq6nc5q376d))
+Declaration(Class(turbbo:behaviour_RDdB56hI5WEz1kELL2HbIdh))
+Declaration(Class(turbbo:behaviour_RDdnDizb7yQLTGidIQACx7C))
+Declaration(Class(turbbo:behaviour_RDeUwnwxfKUS5E5xlwbtwQP))
+Declaration(Class(turbbo:behaviour_RDmKjBpNIWwc0pUklW7MzjR))
+Declaration(Class(turbbo:behaviour_RDn0ZVSM2vfmu81DdUnDKoA))
+Declaration(Class(turbbo:behaviour_RDnuf6OklKW1hXGCl6f1FQ))
+Declaration(Class(turbbo:behaviour_RDqjiSX08Nc9xxSBrR5KMOM))
+Declaration(Class(turbbo:behaviour_RDqrSoVPQjxqqJkRCeAY7Fh))
+Declaration(Class(turbbo:behaviour_RDvb6aFUJwVt0s07bERv9DR))
+Declaration(Class(turbbo:behaviour_RDw1Q66ue2imTNF7lazEvKw))
+Declaration(Class(turbbo:behaviour_RDw3qFlleEQPLNjw6ZGTd8Z))
+Declaration(Class(turbbo:behaviour_RDxp8Bwy2X738H5qxan42Bw))
+Declaration(Class(turbbo:behaviour_RDyZolgzJg2qTtAOywxH2yy))
+Declaration(Class(turbbo:behaviour_RDylVUTN7gssLSu1xP0nJDa))
+Declaration(Class(turbbo:behaviour_RDyt3Gqf4k8WR1xaRJAj1Kx))
+Declaration(Class(turbbo:behaviour_RDzsFgl9xnDJkw9zXLWULAv))
+Declaration(Class(turbbo:behaviour_RELGFPbeTmyA8dwf248hdf))
+Declaration(Class(turbbo:behaviour_RELjqe9K96RTVusFCzO665))
+Declaration(Class(turbbo:behaviour_REmsFQNMuh3CGKcGBuBLfF))
+Declaration(Class(turbbo:behaviour_RFFvgJZOVt9s4BsxZOe4Ns))
+Declaration(Class(turbbo:behaviour_RFGrqCSRvAPz3uiW6oXcW7))
+Declaration(Class(turbbo:behaviour_RFrfRW4dhbwIoLOXGRCUib))
+Declaration(Class(turbbo:behaviour_RG0IfHhxAote9X1WUd2rEY))
+Declaration(Class(turbbo:behaviour_RG968kLWRO6N5z8H6WWozU))
+Declaration(Class(turbbo:behaviour_RHPyU2gwOKLNfkBzKpbdcX))
+Declaration(Class(turbbo:behaviour_RINOST75D6djkBWwq9c5bA))
+Declaration(Class(turbbo:behaviour_RJO6iC2VRzba8WErTMzjVY))
+Declaration(Class(turbbo:behaviour_RKywIOxd28NpHngBGOrhmM))
+Declaration(Class(turbbo:behaviour_RM8IEbYCf0Lh0sCY12xysa))
+Declaration(Class(turbbo:behaviour_RNHPFDfx1RIGUC2DxGVclA))
+Declaration(Class(turbbo:behaviour_RPOb1PeqNWQMEmR8PP3vzy))
+Declaration(Class(turbbo:behaviour_RPbzQu9FJJx3Wc4aXHN7J1))
+Declaration(Class(turbbo:behaviour_RR373pfhTV9IFDQ05dFELW))
+Declaration(Class(turbbo:behaviour_RRaNdhCF3dVWlKQXqMvKaa))
+Declaration(Class(turbbo:behaviour_RWXCHZrMMzfJByqIOBrpTw))
+Declaration(Class(turbbo:behaviour_RWnX1GwU1D6dWspenC31cx))
+Declaration(Class(turbbo:behaviour_RY0zoHgTUlb8DRG5uu94K8))
+Declaration(Class(turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs))
+Declaration(Class(turbbo:behaviour_Rb1xX794wVt3QQownZtSbO))
+Declaration(Class(turbbo:behaviour_RbNf7VEy1PxZ0dorTHM9JL))
+Declaration(Class(turbbo:behaviour_RbTyaBi2bOHP4ozQoWEII))
+Declaration(Class(turbbo:behaviour_Rca0mn9wW01cj6QOf4AzGS))
+Declaration(Class(turbbo:behaviour_ReGfCA6kmPSboQD5R1oatV))
+Declaration(Class(turbbo:behaviour_RegBtmSAlhPnzgmfSUeTLH))
+Declaration(Class(turbbo:behaviour_Rf9oqhtZCda9LIk7oVS9DU))
+Declaration(Class(turbbo:behaviour_RfZmso8v8XZptVF2vKaUQ3))
+Declaration(Class(turbbo:behaviour_RfwrrDcashsZzpYX32Y8lP))
+Declaration(Class(turbbo:behaviour_RhlslZKl21SGb8L452uSU8))
+Declaration(Class(turbbo:behaviour_RhzG71ht01mQ8JDhza2Wzi))
+Declaration(Class(turbbo:behaviour_Rj9feeEPPMDelLiPVmOGiu))
+Declaration(Class(turbbo:behaviour_RlI7OyT2VtC81reSeMdoLh))
+Declaration(Class(turbbo:behaviour_RlMYAo16e5oslcFDCdrGii))
+Declaration(Class(turbbo:behaviour_RlnJeTriFA2gqojpzOKehu))
+Declaration(Class(turbbo:behaviour_RmSYcVyGoF5Juc2czWvFKJ))
+Declaration(Class(turbbo:behaviour_RmsFbX68kZa0rYXa7PeIG7))
+Declaration(Class(turbbo:behaviour_Rpw8QahfkN1ulHg1owtelv))
+Declaration(Class(turbbo:behaviour_Rr9R5cDg7RRsQSbJS1vKnM))
+Declaration(Class(turbbo:behaviour_RrE6zfKvWJJOOuww3AlZlr))
+Declaration(Class(turbbo:behaviour_RsTw4zzwI41RORImDRdsGM))
+Declaration(Class(turbbo:behaviour_RsaqqjBS39mUXYl1xpaRIM))
+Declaration(Class(turbbo:behaviour_Ru3YYyTyH8kcXOiDkhHurf))
+Declaration(Class(turbbo:behaviour_Ruc1Jl3zFXAQnNutAfVIK4))
+Declaration(Class(turbbo:behaviour_RwxCVUZQX5SqouSShk7A5I))
+Declaration(Class(turbbo:behaviour_Rx25R848f1ANoSDNsmEr4q))
+Declaration(Class(turbbo:behaviour_RxoQIYkqSzILenRDzAon83))
+Declaration(Class(turbbo:behaviour_Ry90zmHK5VM4cDr1CuYXSp))
+Declaration(Class(turbbo:behaviour_RzLZVHATcpg9utyb6Wrz8n))
+Declaration(Class(turbbo:behaviour_RzlNZjf1nvIoW4m63l9QJP))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000232>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#definition>))
+Declaration(AnnotationProperty(turbbo:behaviour_0000093))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000232> (curator note)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000232> "curator note")
+
+# Annotation Property: turbbo:behaviour_0000093 (original_IRI)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000093 "Fatima Maikore")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000093 "2022-03-27T15:12:26.622064Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000093 "original_IRI")
+
+
+
+############################
+#   Classes
+############################
+
+# Class: turbbo:behaviour_0000001 (Taking contraceptive pill)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000001 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000001 "2022-01-26T13:54:32.612842Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000001 "Taking contraceptive pill")
+SubClassOf(turbbo:behaviour_0000001 turbbo:behaviour_RCgGDn1vqlfJSIRaFveJ3LD)
+
+# Class: turbbo:behaviour_0000002 (Taking 'morning after' pill)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000002 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000002 "2022-01-26T13:55:09.32696Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000002 "Taking 'morning after' pill")
+SubClassOf(turbbo:behaviour_0000002 turbbo:behaviour_RCgGDn1vqlfJSIRaFveJ3LD)
+
+# Class: turbbo:behaviour_0000003 (Cleaning/disinfecting surfaces)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000003 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000003 "2022-01-26T14:01:52.332179Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000003 "Cleaning/disinfecting surfaces")
+SubClassOf(turbbo:behaviour_0000003 turbbo:behaviour_RmsFbX68kZa0rYXa7PeIG7)
+
+# Class: turbbo:behaviour_0000004 (Vacuuming)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000004 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000004 "2022-01-26T14:02:38.36258Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000004 "Vacuuming")
+SubClassOf(turbbo:behaviour_0000004 turbbo:behaviour_RmsFbX68kZa0rYXa7PeIG7)
+
+# Class: turbbo:behaviour_0000005 (Dusting)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000005 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000005 "2022-01-26T14:02:57.303567Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000005 "Dusting")
+SubClassOf(turbbo:behaviour_0000005 turbbo:behaviour_RmsFbX68kZa0rYXa7PeIG7)
+
+# Class: turbbo:behaviour_0000006 (Cleaning windows)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000006 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000006 "2022-01-26T14:03:26.313224Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000006 "Cleaning windows")
+SubClassOf(turbbo:behaviour_0000006 turbbo:behaviour_RmsFbX68kZa0rYXa7PeIG7)
+
+# Class: turbbo:behaviour_0000007 (Working from home)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000007 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000007 "2022-01-26T14:09:59.948087Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000007 "Working from home")
+SubClassOf(turbbo:behaviour_0000007 turbbo:behaviour_R8cCVugnbr4KoPFPOy98Qt2)
+
+# Class: turbbo:behaviour_0000008 (Departing late)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000008 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000008 "2022-01-26T14:10:47.040096Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000008 "Departing late")
+SubClassOf(turbbo:behaviour_0000008 turbbo:behaviour_R8cCVugnbr4KoPFPOy98Qt2)
+
+# Class: turbbo:behaviour_0000009 (Working overtime)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000009 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000009 "2022-01-26T14:11:42.149733Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000009 "Working overtime")
+SubClassOf(turbbo:behaviour_0000009 turbbo:behaviour_R8cCVugnbr4KoPFPOy98Qt2)
+
+# Class: turbbo:behaviour_0000010 (Hand washing)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000010 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000010 "2022-01-26T14:17:54.346094Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000010 "Hand washing")
+SubClassOf(turbbo:behaviour_0000010 turbbo:behaviour_R74Nph6Q96RGCllk8UMt94p)
+
+# Class: turbbo:behaviour_0000011 (Sneeze/coughing etiquette)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000011 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000011 "2022-01-26T14:19:07.670831Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000011 "Sneeze/coughing etiquette")
+SubClassOf(turbbo:behaviour_0000011 turbbo:behaviour_R74Nph6Q96RGCllk8UMt94p)
+
+# Class: turbbo:behaviour_0000012 (Use of mouthwash)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000012 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000012 "2022-01-26T14:19:58.803199Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000012 "Use of mouthwash")
+SubClassOf(turbbo:behaviour_0000012 turbbo:behaviour_R74Nph6Q96RGCllk8UMt94p)
+
+# Class: turbbo:behaviour_0000013 (Ear waxing)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000013 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000013 "2022-01-26T14:21:29.640325Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000013 "Ear waxing")
+SubClassOf(turbbo:behaviour_0000013 turbbo:behaviour_R74Nph6Q96RGCllk8UMt94p)
+
+# Class: turbbo:behaviour_0000014 (Body hair removal/waxing)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000014 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000014 "2022-01-26T14:22:14.300615Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000014 "Body hair removal/waxing")
+SubClassOf(turbbo:behaviour_0000014 turbbo:behaviour_R74Nph6Q96RGCllk8UMt94p)
+
+# Class: turbbo:behaviour_0000015 (Sadomaschism)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000015 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000015 "2022-01-26T14:35:45.963639Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000015 "Sadomaschism")
+SubClassOf(turbbo:behaviour_0000015 turbbo:behaviour_RINOST75D6djkBWwq9c5bA)
+
+# Class: turbbo:behaviour_0000016 (Wearing face masks)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000016 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000016 "2022-01-26T14:38:59.154819Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000016 "Wearing face masks")
+SubClassOf(turbbo:behaviour_0000016 turbbo:behaviour_R9SZhlXBAdyrsI5ItrSRZDG)
+
+# Class: turbbo:behaviour_0000017 (Social distancing)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000017 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000017 "2022-01-26T14:28:59.646652Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000017 "Social distancing")
+SubClassOf(turbbo:behaviour_0000017 turbbo:behaviour_R9SZhlXBAdyrsI5ItrSRZDG)
+
+# Class: turbbo:behaviour_0000018 (Avoiding crowded places)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000018 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000018 "2022-01-26T14:29:25.50612Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000018 "Avoiding crowded places")
+SubClassOf(turbbo:behaviour_0000018 turbbo:behaviour_R9SZhlXBAdyrsI5ItrSRZDG)
+
+# Class: turbbo:behaviour_0000019 (Ventilation/opening windows)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000019 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000019 "2022-01-26T14:30:09.98683Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000019 "Ventilation/opening windows")
+SubClassOf(turbbo:behaviour_0000019 turbbo:behaviour_R9SZhlXBAdyrsI5ItrSRZDG)
+
+# Class: turbbo:behaviour_0000020 (Football)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000020 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000020 "2022-01-26T14:41:54.711375Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000020 "Football")
+SubClassOf(turbbo:behaviour_0000020 turbbo:behaviour_R9p5Yej3AOqhbZTK2kCgSWX)
+
+# Class: turbbo:behaviour_0000021 (Hockey)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000021 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000021 "2022-01-26T14:42:10.342379Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000021 "Hockey")
+SubClassOf(turbbo:behaviour_0000021 turbbo:behaviour_R9p5Yej3AOqhbZTK2kCgSWX)
+
+# Class: turbbo:behaviour_0000022 (Netball)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000022 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000022 "2022-01-26T14:42:26.657392Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000022 "Netball")
+SubClassOf(turbbo:behaviour_0000022 turbbo:behaviour_R9p5Yej3AOqhbZTK2kCgSWX)
+
+# Class: turbbo:behaviour_0000023 (Rugby)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000023 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000023 "2022-01-26T14:43:10.402244Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000023 "Rugby")
+SubClassOf(turbbo:behaviour_0000023 turbbo:behaviour_R9p5Yej3AOqhbZTK2kCgSWX)
+
+# Class: turbbo:behaviour_0000024 (Plagiarism)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000024 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000024 "2022-01-26T14:45:20.464089Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000024 "Plagiarism")
+SubClassOf(turbbo:behaviour_0000024 turbbo:behaviour_R7MWXGKIGLx4ykI6IfNRWHF)
+
+# Class: turbbo:behaviour_0000025 (Homework)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000025 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000025 "2022-01-26T14:46:21.295611Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000025 "Homework")
+SubClassOf(turbbo:behaviour_0000025 turbbo:behaviour_R7MWXGKIGLx4ykI6IfNRWHF)
+
+# Class: turbbo:behaviour_0000026 (Revision)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000026 "PaulN")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000026 "2022-01-26T14:46:40.961658Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000026 "Revision")
+SubClassOf(turbbo:behaviour_0000026 turbbo:behaviour_R7MWXGKIGLx4ykI6IfNRWHF)
+
+# Class: turbbo:behaviour_0000027 (Participating in Psychological Intervention)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000027 "VyvH")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000027 "2022-02-03T20:05:23.359606Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000027 "Participating in Psychological Intervention")
+SubClassOf(turbbo:behaviour_0000027 turbbo:behaviour_RChrJYRTZRmBDhl2HTuXV4S)
+
+# Class: turbbo:behaviour_0000028 (Participating in Physical Therapy or Physiotherapy)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000028 "VyvH")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000028 "2022-02-03T20:06:01.004184Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000028 "Participating in Physical Therapy or Physiotherapy")
+SubClassOf(turbbo:behaviour_0000028 turbbo:behaviour_RChrJYRTZRmBDhl2HTuXV4S)
+
+# Class: turbbo:behaviour_0000029 (Providing practical support)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000029 "VyvH")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000029 "2022-02-03T20:16:35.132277Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000029 "Providing practical support")
+SubClassOf(turbbo:behaviour_0000029 turbbo:behaviour_RDLYuvHGi7xCMFHwL7WJ8pF)
+
+# Class: turbbo:behaviour_0000030 (Recycling)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000030 "VyvH")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000030 "2022-02-03T20:18:24.244493Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000030 "Recycling")
+SubClassOf(turbbo:behaviour_0000030 turbbo:behaviour_RfZmso8v8XZptVF2vKaUQ3)
+
+# Class: turbbo:behaviour_0000031 (Choosing public transport or active travel)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000031 "VyvH")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000031 "2022-02-03T20:19:05.725123Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000031 "Choosing public transport or active travel")
+SubClassOf(turbbo:behaviour_0000031 turbbo:behaviour_RfZmso8v8XZptVF2vKaUQ3)
+
+# Class: turbbo:behaviour_0000032 (Participating in neighbourhood watch)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000032 "VyvH")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000032 "2022-02-03T20:22:08.410702Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000032 "Participating in neighbourhood watch")
+SubClassOf(turbbo:behaviour_0000032 turbbo:behaviour_R9JyzynAe7H3xtK0rPOT841)
+
+# Class: turbbo:behaviour_0000033 (Engaging in business enterprise)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000033 "VyvH")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000033 "2022-02-03T20:23:08.719743Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000033 "Engaging in business enterprise")
+SubClassOf(turbbo:behaviour_0000033 turbbo:behaviour_RCLGCfCEICjWDiyU2xYotQk)
+
+# Class: turbbo:behaviour_0000034 (Engaging in volunteering)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000034 "VyvH")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000034 "2022-02-03T20:23:30.609298Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000034 "Engaging in volunteering")
+SubClassOf(turbbo:behaviour_0000034 turbbo:behaviour_RCLGCfCEICjWDiyU2xYotQk)
+
+# Class: turbbo:behaviour_0000035 (Compulsive buying)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000035 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000035 "2022-02-08T09:59:51.664609Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000035 "Compulsive buying")
+SubClassOf(turbbo:behaviour_0000035 turbbo:behaviour_R7ksLdc5AtNZogZjcdwMAz)
+
+# Class: turbbo:behaviour_0000036 (Smoking vape)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000036 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000036 "2022-02-08T10:02:18.524339Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000036 "Smoking vape")
+SubClassOf(turbbo:behaviour_0000036 turbbo:behaviour_RDdB56hI5WEz1kELL2HbIdh)
+
+# Class: turbbo:behaviour_0000037 (Pro-environmental citizenship behaviour)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000037 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000037 "2022-02-08T10:38:02.831047Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000037 "Pro-environmental citizenship behaviour")
+SubClassOf(turbbo:behaviour_0000037 turbbo:behaviour_RfZmso8v8XZptVF2vKaUQ3)
+
+# Class: turbbo:behaviour_0000038 (Contributed money towards the protection of the environment)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000038 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000038 "2022-02-08T10:39:00.953646Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000038 "Contributed money towards the protection of the environment")
+SubClassOf(turbbo:behaviour_0000038 turbbo:behaviour_0000037)
+
+# Class: turbbo:behaviour_0000039 (Member of an environmental or conservation protection group)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000039 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000039 "2022-02-08T10:39:31.764712Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000039 "Member of an environmental or conservation protection group")
+SubClassOf(turbbo:behaviour_0000039 turbbo:behaviour_0000037)
+
+# Class: turbbo:behaviour_0000040 (Vote for a political party that supports the environment)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000040 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000040 "2022-02-08T10:40:27.065581Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000040 "Vote for a political party that supports the environment")
+SubClassOf(turbbo:behaviour_0000040 turbbo:behaviour_0000037)
+
+# Class: turbbo:behaviour_0000041 (Watch programmes about environmental issues)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000041 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000041 "2022-02-08T10:41:02.477275Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000041 "Watch programmes about environmental issues")
+SubClassOf(turbbo:behaviour_0000041 turbbo:behaviour_0000037)
+
+# Class: turbbo:behaviour_0000042 (Resource conservation behaviour)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000042 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000042 "2022-02-08T10:43:25.686929Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000042 "Resource conservation behaviour")
+SubClassOf(turbbo:behaviour_0000042 turbbo:behaviour_RfZmso8v8XZptVF2vKaUQ3)
+
+# Class: turbbo:behaviour_0000043 (Conserving electricty)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000043 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000043 "2022-02-08T10:43:42.994468Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000043 "Conserving electricty")
+SubClassOf(turbbo:behaviour_0000043 turbbo:behaviour_0000042)
+
+# Class: turbbo:behaviour_0000044 (Conserving water)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000044 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000044 "2022-02-08T10:44:03.334104Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000044 "Conserving water")
+SubClassOf(turbbo:behaviour_0000044 turbbo:behaviour_0000042)
+
+# Class: turbbo:behaviour_0000045 (Waste reduction behaviour)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000045 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000045 "2022-02-08T10:44:21.689618Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000045 "Waste reduction behaviour")
+SubClassOf(turbbo:behaviour_0000045 turbbo:behaviour_0000042)
+
+# Class: turbbo:behaviour_0000046 (Turn the lights off in unoccupied rooms)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000046 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000046 "2022-02-08T10:45:13.32274Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000046 "Turn the lights off in unoccupied rooms")
+SubClassOf(turbbo:behaviour_0000046 turbbo:behaviour_0000043)
+
+# Class: turbbo:behaviour_0000047 (Unplug appliances that are not being used)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000047 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000047 "2022-02-08T10:50:37.953177Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000047 "Unplug appliances that are not being used")
+SubClassOf(turbbo:behaviour_0000047 turbbo:behaviour_0000043)
+
+# Class: turbbo:behaviour_0000048 (Shut your computer down when you are done with it)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000048 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000048 "2022-02-08T10:51:01.998458Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000048 "Shut your computer down when you are done with it")
+SubClassOf(turbbo:behaviour_0000048 turbbo:behaviour_0000043)
+
+# Class: turbbo:behaviour_0000049 (Turn off the water while brushing your teeth)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000049 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000049 "2022-02-08T10:51:37.526514Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000049 "Turn off the water while brushing your teeth")
+SubClassOf(turbbo:behaviour_0000049 turbbo:behaviour_0000044)
+
+# Class: turbbo:behaviour_0000050 (Turn off the water while shaving)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000050 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000050 "2022-02-08T10:52:16.488951Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000050 "Turn off the water while shaving")
+SubClassOf(turbbo:behaviour_0000050 turbbo:behaviour_0000044)
+
+# Class: turbbo:behaviour_0000051 (Install water-saving shower heads or flow restrictors.)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000051 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000051 "2022-02-08T10:52:36.91227Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000051 "Install water-saving shower heads or flow restrictors.")
+SubClassOf(turbbo:behaviour_0000051 turbbo:behaviour_0000044)
+
+# Class: turbbo:behaviour_0000052 (Take shorter showers)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000052 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000052 "2022-02-08T10:54:44.485866Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000052 "Take shorter showers")
+SubClassOf(turbbo:behaviour_0000052 turbbo:behaviour_0000044)
+
+# Class: turbbo:behaviour_0000053 (Buy packaging-free products and produce)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000053 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000053 "2022-02-08T10:55:46.187703Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000053 "Buy packaging-free products and produce")
+SubClassOf(turbbo:behaviour_0000053 turbbo:behaviour_0000045)
+
+# Class: turbbo:behaviour_0000054 (Recycling of object or material)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000054 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000054 "2022-02-08T10:56:23.90163Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000054 "Recycling of object or material")
+SubClassOf(turbbo:behaviour_0000054 turbbo:behaviour_0000045)
+
+# Class: turbbo:behaviour_0000055 (Reuse object of material)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000055 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000055 "2022-02-08T10:56:51.09235Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000055 "Reuse object of material")
+SubClassOf(turbbo:behaviour_0000055 turbbo:behaviour_0000045)
+
+# Class: turbbo:behaviour_0000056 (Refill)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000056 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000056 "2022-02-08T10:58:32.00747Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000056 "Refill")
+SubClassOf(turbbo:behaviour_0000056 turbbo:behaviour_0000055)
+
+# Class: turbbo:behaviour_0000057 (Return)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000057 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000057 "2022-02-08T10:58:38.659298Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000057 "Return")
+SubClassOf(turbbo:behaviour_0000057 turbbo:behaviour_0000055)
+
+# Class: turbbo:behaviour_0000058 (Sustainable eating behaviour)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000058 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000058 "2022-02-08T10:59:48.748553Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000058 "Sustainable eating behaviour")
+SubClassOf(turbbo:behaviour_0000058 turbbo:behaviour_RfZmso8v8XZptVF2vKaUQ3)
+
+# Class: turbbo:behaviour_0000059 (Buying/ consuming seasonal produce)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000059 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000059 "2022-02-08T11:00:39.748047Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000059 "Buying/ consuming seasonal produce")
+SubClassOf(turbbo:behaviour_0000059 turbbo:behaviour_0000058)
+
+# Class: turbbo:behaviour_0000060 (Buying/ eating less meat)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000060 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000060 "2022-02-08T11:00:57.654103Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000060 "Buying/ eating less meat")
+SubClassOf(turbbo:behaviour_0000060 turbbo:behaviour_0000058)
+
+# Class: turbbo:behaviour_0000061 (Increasing consumption of plant-based foods)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000061 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000061 "2022-02-08T11:02:32.451414Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000061 "Increasing consumption of plant-based foods")
+SubClassOf(turbbo:behaviour_0000061 turbbo:behaviour_0000058)
+
+# Class: turbbo:behaviour_0000062 (Washing body parts)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000062 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000062 "2022-02-08T11:11:58.930086Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000062 "Washing body parts")
+SubClassOf(turbbo:behaviour_0000062 turbbo:behaviour_R9cWGdaP36P9kM5hHEPRMHg)
+
+# Class: turbbo:behaviour_0000063 (Washing whole body)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000063 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000063 "2022-02-08T11:12:25.753689Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000063 "Washing whole body")
+SubClassOf(turbbo:behaviour_0000063 turbbo:behaviour_R9cWGdaP36P9kM5hHEPRMHg)
+
+# Class: turbbo:behaviour_0000064 (Drying oneself)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000064 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000064 "2022-02-08T11:12:47.009781Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000064 "Drying oneself")
+SubClassOf(turbbo:behaviour_0000064 turbbo:behaviour_R9cWGdaP36P9kM5hHEPRMHg)
+
+# Class: turbbo:behaviour_0000065 (Washing and drying clothes and garments)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000065 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000065 "2022-02-08T11:20:54.183513Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000065 "Washing and drying clothes and garments")
+SubClassOf(turbbo:behaviour_0000065 turbbo:behaviour_R3NO3LpXB5rQZlwHyBqraH)
+
+# Class: turbbo:behaviour_0000066 (Disposing of rubbish/ garbage)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000066 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000066 "2022-02-08T11:21:25.441626Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000066 "Disposing of rubbish/ garbage")
+SubClassOf(turbbo:behaviour_0000066 turbbo:behaviour_R3NO3LpXB5rQZlwHyBqraH)
+
+# Class: turbbo:behaviour_0000067 (Acquisition of necessities)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000067 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000067 "2022-02-08T11:24:58.576958Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000067 "Acquisition of necessities")
+SubClassOf(turbbo:behaviour_0000067 turbbo:behaviour_RCV0qw9GIXO9nA6mEsE72Nr)
+
+# Class: turbbo:behaviour_0000068 (Acquiring a place to live)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000068 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000068 "2022-02-08T11:26:00.362232Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000068 "Acquiring a place to live")
+SubClassOf(turbbo:behaviour_0000068 turbbo:behaviour_0000067)
+
+# Class: turbbo:behaviour_0000069 (Buying a place to live)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000069 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000069 "2022-02-08T11:26:25.404973Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000069 "Buying a place to live")
+SubClassOf(turbbo:behaviour_0000069 turbbo:behaviour_0000068)
+
+# Class: turbbo:behaviour_0000070 (Renting a place to live)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000070 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000070 "2022-02-08T11:26:36.992686Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000070 "Renting a place to live")
+SubClassOf(turbbo:behaviour_0000070 turbbo:behaviour_0000068)
+
+# Class: turbbo:behaviour_0000071 (Furnishing a place to live)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000071 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000071 "2022-02-08T11:27:01.399847Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000071 "Furnishing a place to live")
+SubClassOf(turbbo:behaviour_0000071 turbbo:behaviour_0000068)
+
+# Class: turbbo:behaviour_0000072 (Shopping)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000072 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000072 "2022-02-08T11:27:52.364594Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000072 "Shopping")
+SubClassOf(turbbo:behaviour_0000072 turbbo:behaviour_0000076)
+
+# Class: turbbo:behaviour_0000073 (Shopping for groceries)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000073 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000073 "2022-02-08T11:29:03.73736Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000073 "Shopping for groceries")
+SubClassOf(turbbo:behaviour_0000073 turbbo:behaviour_0000072)
+
+# Class: turbbo:behaviour_0000074 (Using household appliances)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000074 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000074 "2022-02-08T11:29:42.499573Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000074 "Using household appliances")
+SubClassOf(turbbo:behaviour_0000074 turbbo:behaviour_R3NO3LpXB5rQZlwHyBqraH)
+
+# Class: turbbo:behaviour_0000075 (Storing daily necessities)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000075 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000075 "2022-02-08T11:30:14.793475Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000075 "Storing daily necessities")
+SubClassOf(turbbo:behaviour_0000075 turbbo:behaviour_R3NO3LpXB5rQZlwHyBqraH)
+
+# Class: turbbo:behaviour_0000076 (Acquisition of goods and services)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000076 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000076 "2022-02-08T11:35:39.114809Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000076 "Acquisition of goods and services")
+SubClassOf(turbbo:behaviour_0000076 turbbo:behaviour_0000067)
+
+# Class: turbbo:behaviour_0000077 (Gathering daily necessities)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000077 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000077 "2022-02-08T11:36:36.263811Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000077 "Gathering daily necessities")
+SubClassOf(turbbo:behaviour_0000077 turbbo:behaviour_0000076)
+
+# Class: turbbo:behaviour_0000078 (Use of contraceptive coil (IUD))
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000078 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000078 "2022-02-08T11:41:09.878041Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000078 "Use of contraceptive coil (IUD)")
+SubClassOf(turbbo:behaviour_0000078 turbbo:behaviour_RCgGDn1vqlfJSIRaFveJ3LD)
+
+# Class: turbbo:behaviour_0000079 (Speaking to adult)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000079 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000079 "2022-02-08T11:42:14.65479Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000079 "Speaking to adult")
+SubClassOf(turbbo:behaviour_0000079 turbbo:behaviour_RCE7VvM7rpyKfsBJxKqHVvk)
+
+# Class: turbbo:behaviour_0000080 (Meditation)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000080 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000080 "2022-02-08T11:45:03.091158Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000080 "Meditation")
+SubClassOf(turbbo:behaviour_0000080 turbbo:behaviour_R8qMM1AUIWkGs9uIR3zf0Oe)
+
+# Class: turbbo:behaviour_0000081 (Problematic internet use)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000081 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000081 "2022-02-08T12:15:42.483576Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000081 "Problematic internet use")
+SubClassOf(turbbo:behaviour_0000081 turbbo:behaviour_RC49XywX1UPXtJYddxnrb0h)
+
+# Class: turbbo:behaviour_0000082 (Using smartphones)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000082 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000082 "2022-02-08T12:18:34.004071Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000082 "Using smartphones")
+SubClassOf(turbbo:behaviour_0000082 turbbo:behaviour_RDzsFgl9xnDJkw9zXLWULAv)
+
+# Class: turbbo:behaviour_0000083 (Attending a job interview)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000083 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000083 "2022-02-08T12:19:45.6605Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000083 "Attending a job interview")
+SubClassOf(turbbo:behaviour_0000083 turbbo:behaviour_R9BeiQh4oa8EbuNm1bjryZB)
+
+# Class: turbbo:behaviour_0000084 (Using head protection (e.g., helmet))
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000084 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000084 "2022-02-08T12:36:42.676528Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000084 "Using head protection (e.g., helmet)")
+SubClassOf(turbbo:behaviour_0000084 turbbo:behaviour_R9SZhlXBAdyrsI5ItrSRZDG)
+
+# Class: turbbo:behaviour_0000085 (Wearing a seatbelt)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000085 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000085 "2022-02-08T12:37:23.529202Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000085 "Wearing a seatbelt")
+SubClassOf(turbbo:behaviour_0000085 turbbo:behaviour_RCrDL1h6RMXEqgnkTmAzyNh)
+
+# Class: turbbo:behaviour_0000086 (Participation in clinical screening)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000086 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000086 "2022-02-08T12:41:02.147857Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000086 "Participation in clinical screening")
+SubClassOf(turbbo:behaviour_0000086 turbbo:behaviour_R7SqDxfmXPDIUSZShgwaIyO)
+
+# Class: turbbo:behaviour_0000087 (Participation in mammography screening)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000087 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000087 "2022-02-08T12:41:40.409636Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000087 "Participation in mammography screening")
+SubClassOf(turbbo:behaviour_0000087 turbbo:behaviour_0000090)
+
+# Class: turbbo:behaviour_0000088 (Participation in cervical screening (a smear test))
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000088 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000088 "2022-02-08T12:42:34.21415Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000088 "Participation in cervical screening (a smear test)")
+SubClassOf(turbbo:behaviour_0000088 turbbo:behaviour_0000090)
+
+# Class: turbbo:behaviour_0000089 (Participation in colorectal (bowel) cancer screening)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000089 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000089 "2022-02-08T12:43:48.834471Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000089 "Participation in colorectal (bowel) cancer screening")
+SubClassOf(turbbo:behaviour_0000089 turbbo:behaviour_0000090)
+
+# Class: turbbo:behaviour_0000090 (Participation in cancer screening)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000090 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000090 "2022-02-08T12:44:11.824668Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000090 "Participation in cancer screening")
+SubClassOf(turbbo:behaviour_0000090 turbbo:behaviour_0000086)
+
+# Class: turbbo:behaviour_0000091 (Participation in diabetes screening)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000091 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000091 "2022-02-08T12:45:07.775383Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000091 "Participation in diabetes screening")
+SubClassOf(turbbo:behaviour_0000091 turbbo:behaviour_0000086)
+
+# Class: turbbo:behaviour_0000092 (Participation in hypertension screening)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> turbbo:behaviour_0000092 "Harriet Baird")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> turbbo:behaviour_0000092 "2022-02-08T12:45:43.719426Z")
+AnnotationAssertion(rdfs:label turbbo:behaviour_0000092 "Participation in hypertension screening")
+SubClassOf(turbbo:behaviour_0000092 turbbo:behaviour_0000086)
+
+# Class: turbbo:behaviour_R2u7u2nNFoKuQMcA3z3YG7 (Resting)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R2u7u2nNFoKuQMcA3z3YG7 "Resting")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R2u7u2nNFoKuQMcA3z3YG7 "The act of ceasing work or movement in order to relax, refresh oneself, or recover strength.")
+SubClassOf(turbbo:behaviour_R2u7u2nNFoKuQMcA3z3YG7 turbbo:behaviour_RDarCRBoiqojsnZ9V6Oj1EU)
+
+# Class: turbbo:behaviour_R3GTM1WIfB3LofIOVpVVKU (Sustenance ingesting)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R3GTM1WIfB3LofIOVpVVKU "Sustenance ingesting")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R3GTM1WIfB3LofIOVpVVKU "Nourishment")
+SubClassOf(turbbo:behaviour_R3GTM1WIfB3LofIOVpVVKU turbbo:behaviour_RBuoEsSFBhOGJtFyQKJv3yx)
+
+# Class: turbbo:behaviour_R3HIEV4Q60XlmRBVPFyaEZ (Gardening)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R3HIEV4Q60XlmRBVPFyaEZ "Gardening")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R3HIEV4Q60XlmRBVPFyaEZ "The activity of tending and cultivating a garden.")
+SubClassOf(turbbo:behaviour_R3HIEV4Q60XlmRBVPFyaEZ turbbo:behaviour_RCMQ2Xe8y2ROsQ2JODi10Pt)
+
+# Class: turbbo:behaviour_R3NO3LpXB5rQZlwHyBqraH (Doing housework)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R3NO3LpXB5rQZlwHyBqraH "Doing housework")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R3NO3LpXB5rQZlwHyBqraH "The act of engaging in housekeeping")
+SubClassOf(turbbo:behaviour_R3NO3LpXB5rQZlwHyBqraH turbbo:behaviour_RCV0qw9GIXO9nA6mEsE72Nr)
+
+# Class: turbbo:behaviour_R43WF6rp1q7dXrSPS9Ds7q (Attending Sports event)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R43WF6rp1q7dXrSPS9Ds7q "Attending Sports event")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R43WF6rp1q7dXrSPS9Ds7q "Attending a planned occasion or activity focused on a sport.")
+SubClassOf(turbbo:behaviour_R43WF6rp1q7dXrSPS9Ds7q turbbo:behaviour_Rb1xX794wVt3QQownZtSbO)
+
+# Class: turbbo:behaviour_R539h7zNDyqiNOlv41H9Pu (Using Anabolic steroids)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R539h7zNDyqiNOlv41H9Pu "Using Anabolic steroids")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R539h7zNDyqiNOlv41H9Pu "The use of synthetic steroid hormones that resemble testosterone in promoting the growth of muscle")
+SubClassOf(turbbo:behaviour_R539h7zNDyqiNOlv41H9Pu turbbo:behaviour_RCKDQM6dfhit3RC352IGkgN)
+
+# Class: turbbo:behaviour_R6I0RnK1viksUAXzK4gU5G (Toothbrushing)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R6I0RnK1viksUAXzK4gU5G "Toothbrushing")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R6I0RnK1viksUAXzK4gU5G "The action of using a toothbrush to clean the teeth.")
+SubClassOf(turbbo:behaviour_R6I0RnK1viksUAXzK4gU5G turbbo:behaviour_R74Nph6Q96RGCllk8UMt94p)
+
+# Class: turbbo:behaviour_R6hKctZFZcjKJBLZwC7y9T (Communicating)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R6hKctZFZcjKJBLZwC7y9T "Communicating")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R6hKctZFZcjKJBLZwC7y9T "The act or process of using words, sounds, signs, or behaviors to express or exchange information or to express your ideas, thoughts, feelings, etc., to someone else.")
+SubClassOf(turbbo:behaviour_R6hKctZFZcjKJBLZwC7y9T turbbo:behaviour_R9HlY0i7brkkaamN0VMCVmw)
+
+# Class: turbbo:behaviour_R71V3Og38WQ7O96qyXLbX1m (Having anal intercourse)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R71V3Og38WQ7O96qyXLbX1m "Having anal intercourse")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R71V3Og38WQ7O96qyXLbX1m "Sexual activity in which a person puts a natural or artificial penis into the anus of another.")
+SubClassOf(turbbo:behaviour_R71V3Og38WQ7O96qyXLbX1m turbbo:behaviour_RBZBFZG9PRFJpm31aToI1nl)
+
+# Class: turbbo:behaviour_R72ZXu52sC4SgJQPCbndepq (Writing)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R72ZXu52sC4SgJQPCbndepq "Writing")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R72ZXu52sC4SgJQPCbndepq "The activity of composing text")
+SubClassOf(turbbo:behaviour_R72ZXu52sC4SgJQPCbndepq turbbo:behaviour_RDqjiSX08Nc9xxSBrR5KMOM)
+
+# Class: turbbo:behaviour_R73ScJd5f9k7m9Hd2ZERZPu (Using condom)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R73ScJd5f9k7m9Hd2ZERZPu "Using condom")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R73ScJd5f9k7m9Hd2ZERZPu "Use of a sheath commonly of rubber worn over the penis (as to prevent conception or venereal infection during coitus) or a
+device that is designed to be inserted into the vagina before coitus and that resembles in form and function the condom used by males.")
+SubClassOf(turbbo:behaviour_R73ScJd5f9k7m9Hd2ZERZPu turbbo:behaviour_RCgGDn1vqlfJSIRaFveJ3LD)
+
+# Class: turbbo:behaviour_R74Nph6Q96RGCllk8UMt94p (Caring for body parts/Personal hygiene)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R74Nph6Q96RGCllk8UMt94p "Caring for body parts/Personal hygiene")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R74Nph6Q96RGCllk8UMt94p "The act of caring for body parts in order to ensure what is needed for their health or protection.")
+SubClassOf(turbbo:behaviour_R74Nph6Q96RGCllk8UMt94p turbbo:behaviour_RBuoEsSFBhOGJtFyQKJv3yx)
+
+# Class: turbbo:behaviour_R7AM7ERYzGdFt5E71E8cIsG (Praying)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7AM7ERYzGdFt5E71E8cIsG "Praying")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7AM7ERYzGdFt5E71E8cIsG "The act of speaking to God especially in order to give thanks or to ask for something.")
+SubClassOf(turbbo:behaviour_R7AM7ERYzGdFt5E71E8cIsG turbbo:behaviour_R8qMM1AUIWkGs9uIR3zf0Oe)
+
+# Class: turbbo:behaviour_R7KumE46mwzHlQIlcwwADBI (Ingesting Vitamins)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7KumE46mwzHlQIlcwwADBI "Ingesting Vitamins")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7KumE46mwzHlQIlcwwADBI "Ingesting a group of organic food substances found in animals and plants in small quantities. They must be supplied in diet or dietary supplement and are essential for normal metabolism.")
+SubClassOf(turbbo:behaviour_R7KumE46mwzHlQIlcwwADBI turbbo:behaviour_R3GTM1WIfB3LofIOVpVVKU)
+
+# Class: turbbo:behaviour_R7LFMgbt35Cfkx42ektsTEV (Engaging in antisocial behavior)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7LFMgbt35Cfkx42ektsTEV "Engaging in antisocial behavior")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7LFMgbt35Cfkx42ektsTEV "Behaviors that harm or lack consideration for the well-being of others and/or break laws.")
+SubClassOf(turbbo:behaviour_R7LFMgbt35Cfkx42ektsTEV turbbo:behaviour_RC5cLYrHZhVyinK9OLpz4Ax)
+
+# Class: turbbo:behaviour_R7LgTiHQ8HpEgALLRG0j5ai (Quitting school)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7LgTiHQ8HpEgALLRG0j5ai "Quitting school")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7LgTiHQ8HpEgALLRG0j5ai "Leave school, usually permanently")
+SubClassOf(turbbo:behaviour_R7LgTiHQ8HpEgALLRG0j5ai turbbo:behaviour_R7MWXGKIGLx4ykI6IfNRWHF)
+
+# Class: turbbo:behaviour_R7MWXGKIGLx4ykI6IfNRWHF (Engaging in formal education)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7MWXGKIGLx4ykI6IfNRWHF "Engaging in formal education")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7MWXGKIGLx4ykI6IfNRWHF "Giving systematic instruction, at a school or university.")
+SubClassOf(turbbo:behaviour_R7MWXGKIGLx4ykI6IfNRWHF turbbo:behaviour_RCLGCfCEICjWDiyU2xYotQk)
+
+# Class: turbbo:behaviour_R7MZNxsxrHJFsQZe0BlH2P4 (Engaging in behavior related to political life and citizenship)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7MZNxsxrHJFsQZe0BlH2P4 "Engaging in behavior related to political life and citizenship")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7MZNxsxrHJFsQZe0BlH2P4 "Engaging in activities related to be a responsible member of a community and/ or to politcal parties (Public Service Employment Act, adapted)")
+SubClassOf(turbbo:behaviour_R7MZNxsxrHJFsQZe0BlH2P4 turbbo:behaviour_RC5cLYrHZhVyinK9OLpz4Ax)
+
+# Class: turbbo:behaviour_R7S8d4JYYCiTv7gJUzvecVp (Using a weapon on a person)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7S8d4JYYCiTv7gJUzvecVp "Using a weapon on a person")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7S8d4JYYCiTv7gJUzvecVp "The act of using something to injure, defeat, or destroy on another.")
+SubClassOf(turbbo:behaviour_R7S8d4JYYCiTv7gJUzvecVp turbbo:behaviour_RDw1Q66ue2imTNF7lazEvKw)
+
+# Class: turbbo:behaviour_R7SqDxfmXPDIUSZShgwaIyO (Doing a clinical screening or test)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7SqDxfmXPDIUSZShgwaIyO "Doing a clinical screening or test")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7SqDxfmXPDIUSZShgwaIyO "The act of participating in a systematic clinical examination or assessment.")
+SubClassOf(turbbo:behaviour_R7SqDxfmXPDIUSZShgwaIyO turbbo:behaviour_R7x8NHLRGEcEymTXMx3THX7)
+
+# Class: turbbo:behaviour_R7Tk1H3NwuI0LdQOy7iFLUD (Eating Fast food)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7Tk1H3NwuI0LdQOy7iFLUD "Eating Fast food")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7Tk1H3NwuI0LdQOy7iFLUD "The consumption of easily prepared food served in restaurants and snack bars as a quick meal or to be taken out.")
+SubClassOf(turbbo:behaviour_R7Tk1H3NwuI0LdQOy7iFLUD turbbo:behaviour_R7uK2tMCWgORKYlpKazgtMt)
+
+# Class: turbbo:behaviour_R7XCC5zU34bLOestUwQWuuR (Drinking Milk)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7XCC5zU34bLOestUwQWuuR "Drinking Milk")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7XCC5zU34bLOestUwQWuuR "Consumption of an opaque white fluid rich in fat and protein, secreted by female mammals for the nourishment of their young.")
+SubClassOf(turbbo:behaviour_R7XCC5zU34bLOestUwQWuuR turbbo:behaviour_R7qzqygnfKwMVxUR9f0qbNZ)
+
+# Class: turbbo:behaviour_R7Yf7M0MxZ4q5ZlV3ns67lq (Having vaginal intercourse)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7Yf7M0MxZ4q5ZlV3ns67lq "Having vaginal intercourse")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7Yf7M0MxZ4q5ZlV3ns67lq "Sexual activity in which a person puts a natural or artificial penis into the vagina of a woman.")
+SubClassOf(turbbo:behaviour_R7Yf7M0MxZ4q5ZlV3ns67lq turbbo:behaviour_RBZBFZG9PRFJpm31aToI1nl)
+
+# Class: turbbo:behaviour_R7cCPkS4EJPnAqfRaMu79xf (Engaging in political activism)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7cCPkS4EJPnAqfRaMu79xf "Engaging in political activism")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7cCPkS4EJPnAqfRaMu79xf "The use of vigorous campaigning to bring about political change.")
+SubClassOf(turbbo:behaviour_R7cCPkS4EJPnAqfRaMu79xf turbbo:behaviour_R7MZNxsxrHJFsQZe0BlH2P4)
+
+# Class: turbbo:behaviour_R7kHdkMUTa5gaJcK3oko65F (Preparing meals)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7kHdkMUTa5gaJcK3oko65F "Preparing meals")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7kHdkMUTa5gaJcK3oko65F "The practice or skill of preparing food by combining, mixing, and heating ingredients.")
+SubClassOf(turbbo:behaviour_R7kHdkMUTa5gaJcK3oko65F turbbo:behaviour_RCV0qw9GIXO9nA6mEsE72Nr)
+
+# Class: turbbo:behaviour_R7ksLdc5AtNZogZjcdwMAz (Spending)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7ksLdc5AtNZogZjcdwMAz "Spending")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7ksLdc5AtNZogZjcdwMAz "The act of using an accepted method of payment to pay for something else.")
+SubClassOf(turbbo:behaviour_R7ksLdc5AtNZogZjcdwMAz turbbo:behaviour_RhlslZKl21SGb8L452uSU8)
+
+# Class: turbbo:behaviour_R7ou7HEwYODwmkHhLtEqW2B (Moving/ Exercising)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7ou7HEwYODwmkHhLtEqW2B "Moving/ Exercising")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7ou7HEwYODwmkHhLtEqW2B "To change position or make one´s body change position in a way that can be seen, heard or felt; physical activity that someone does to stay healthy or become stronger.")
+SubClassOf(turbbo:behaviour_R7ou7HEwYODwmkHhLtEqW2B turbbo:behaviour_R9HlY0i7brkkaamN0VMCVmw)
+
+# Class: turbbo:behaviour_R7pSWXD6d3tkoGLH56hjASm (Engaging in protest)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7pSWXD6d3tkoGLH56hjASm "Engaging in protest")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7pSWXD6d3tkoGLH56hjASm "Engaging in \"a compaint, objection, or display of unwillingess usually to an idea or a course of action.")
+SubClassOf(turbbo:behaviour_R7pSWXD6d3tkoGLH56hjASm turbbo:behaviour_R7cCPkS4EJPnAqfRaMu79xf)
+
+# Class: turbbo:behaviour_R7qzqygnfKwMVxUR9f0qbNZ (Drinking)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7qzqygnfKwMVxUR9f0qbNZ "Drinking")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7qzqygnfKwMVxUR9f0qbNZ "To take a liquid into your mouth and swallow it.")
+SubClassOf(turbbo:behaviour_R7qzqygnfKwMVxUR9f0qbNZ turbbo:behaviour_R3GTM1WIfB3LofIOVpVVKU)
+
+# Class: turbbo:behaviour_R7u1DYQZbK5g35P4fpskShU (Sabotaging)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7u1DYQZbK5g35P4fpskShU "Sabotaging")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7u1DYQZbK5g35P4fpskShU "Engaging in an act of deliberate subversion.")
+SubClassOf(turbbo:behaviour_R7u1DYQZbK5g35P4fpskShU turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs)
+
+# Class: turbbo:behaviour_R7uK2tMCWgORKYlpKazgtMt (Eating)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7uK2tMCWgORKYlpKazgtMt "Eating")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7uK2tMCWgORKYlpKazgtMt "Put (food) into the mouth and chew and swallow it.")
+SubClassOf(turbbo:behaviour_R7uK2tMCWgORKYlpKazgtMt turbbo:behaviour_R3GTM1WIfB3LofIOVpVVKU)
+
+# Class: turbbo:behaviour_R7v3PZTiUBVbqoDi5fN07Xy (Ingesting Fiber)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7v3PZTiUBVbqoDi5fN07Xy "Ingesting Fiber")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7v3PZTiUBVbqoDi5fN07Xy "Ingesting mostly indigestible material in food that stimulates the intestine to peristalsis — called also bulk, roughage.")
+SubClassOf(turbbo:behaviour_R7v3PZTiUBVbqoDi5fN07Xy turbbo:behaviour_R3GTM1WIfB3LofIOVpVVKU)
+
+# Class: turbbo:behaviour_R7vxYwxQyKBDRKzRKRAgsTc (Abstaining)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7vxYwxQyKBDRKzRKRAgsTc "Abstaining")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7vxYwxQyKBDRKzRKRAgsTc "Restraining oneself completely from mood or state changing substance or activity. (NOTE: lapse / relapse should be coded here)")
+SubClassOf(turbbo:behaviour_R7vxYwxQyKBDRKzRKRAgsTc turbbo:behaviour_RCKDQM6dfhit3RC352IGkgN)
+
+# Class: turbbo:behaviour_R7woWtbNCi0dJrw4OZCukC6 (Using computer devices)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7woWtbNCi0dJrw4OZCukC6 "Using computer devices")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7woWtbNCi0dJrw4OZCukC6 "The act of using a computer device (electronic machines such as laptop, smartphone, tablet, etc.).")
+SubClassOf(turbbo:behaviour_R7woWtbNCi0dJrw4OZCukC6 turbbo:behaviour_RDzsFgl9xnDJkw9zXLWULAv)
+
+# Class: turbbo:behaviour_R7x8NHLRGEcEymTXMx3THX7 (Engaging in behavior related to maintaining one's health)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7x8NHLRGEcEymTXMx3THX7 "Engaging in behavior related to maintaining one's health")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7x8NHLRGEcEymTXMx3THX7 "Activities undertaken for the purpose of preventing or detecting disease or for improving health and well being.")
+SubClassOf(turbbo:behaviour_R7x8NHLRGEcEymTXMx3THX7 turbbo:behaviour_RBuoEsSFBhOGJtFyQKJv3yx)
+
+# Class: turbbo:behaviour_R7yShojeNYC1aYv0rEc3xjO (Attending Performing arts)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R7yShojeNYC1aYv0rEc3xjO "Attending Performing arts")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R7yShojeNYC1aYv0rEc3xjO "Attending a creative activity that is performed in front of an audience, such as drama, music, and dance.")
+SubClassOf(turbbo:behaviour_R7yShojeNYC1aYv0rEc3xjO turbbo:behaviour_Rb1xX794wVt3QQownZtSbO)
+
+# Class: turbbo:behaviour_R81UtNoTnqDkn9qWK7IrTU8 (Looking at erotic material)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R81UtNoTnqDkn9qWK7IrTU8 "Looking at erotic material")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R81UtNoTnqDkn9qWK7IrTU8 "Direct one’s gaze at erotic material.")
+SubClassOf(turbbo:behaviour_R81UtNoTnqDkn9qWK7IrTU8 turbbo:behaviour_R8IYw8QdSmDOKfhF0LcZSGR)
+
+# Class: turbbo:behaviour_R84iVOhssiIeFAzqm1Mi9zj (Eating Vegetables)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R84iVOhssiIeFAzqm1Mi9zj "Eating Vegetables")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R84iVOhssiIeFAzqm1Mi9zj "The consumption of the edible part of a usually herbaceous plant (such as the cabbage, bean, or potato).")
+SubClassOf(turbbo:behaviour_R84iVOhssiIeFAzqm1Mi9zj turbbo:behaviour_R7uK2tMCWgORKYlpKazgtMt)
+
+# Class: turbbo:behaviour_R85ghQJrvubARtcN51qsWvE (Taking vaccinations)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R85ghQJrvubARtcN51qsWvE "Taking vaccinations")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R85ghQJrvubARtcN51qsWvE "Receiving administration of vaccines to stimulate the host's immune response. This includes any preparation intended for active immunological prophylaxis or treatment.")
+SubClassOf(turbbo:behaviour_R85ghQJrvubARtcN51qsWvE turbbo:behaviour_R9SZhlXBAdyrsI5ItrSRZDG)
+
+# Class: turbbo:behaviour_R8728B2O8Nh1286K7Qks2I5 (Renting movies)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8728B2O8Nh1286K7Qks2I5 "Renting movies")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8728B2O8Nh1286K7Qks2I5 "To pay money in return for being able to view movies (that belong to someone else).")
+SubClassOf(turbbo:behaviour_R8728B2O8Nh1286K7Qks2I5 turbbo:behaviour_R7ksLdc5AtNZogZjcdwMAz)
+
+# Class: turbbo:behaviour_R88jWHnsn3PZlovY39SFqII (Aerobics)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R88jWHnsn3PZlovY39SFqII "Aerobics")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R88jWHnsn3PZlovY39SFqII "A system of exercises often done by a group of people while music is playing")
+SubClassOf(turbbo:behaviour_R88jWHnsn3PZlovY39SFqII turbbo:behaviour_R7ou7HEwYODwmkHhLtEqW2B)
+
+# Class: turbbo:behaviour_R88lPKWIB1fAon9hpD61R9 (Using Ecstasy)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R88lPKWIB1fAon9hpD61R9 "Using Ecstasy")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R88lPKWIB1fAon9hpD61R9 "The use of a synthetic amphetamine analog C11H15NO2 used illicitly for its mood-enhancing and hallucinogenic properties — called also MDMA")
+SubClassOf(turbbo:behaviour_R88lPKWIB1fAon9hpD61R9 turbbo:behaviour_RCKDQM6dfhit3RC352IGkgN)
+
+# Class: turbbo:behaviour_R8969KVnC9qwhEOlMBFOl0K (Attending Parent Teacher Organization meeting)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8969KVnC9qwhEOlMBFOl0K "Attending Parent Teacher Organization meeting")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8969KVnC9qwhEOlMBFOl0K "To go and be present at a Parent Teacher Organization meeting.")
+SubClassOf(turbbo:behaviour_R8969KVnC9qwhEOlMBFOl0K turbbo:behaviour_RELjqe9K96RTVusFCzO665)
+
+# Class: turbbo:behaviour_R8DhTyMU53x20DpGqwMj0uW (Participating in Dental Care)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8DhTyMU53x20DpGqwMj0uW "Participating in Dental Care")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8DhTyMU53x20DpGqwMj0uW "The act of seeking care for the functional and aesthetic aspects of the hard and soft tissues of the oral and maxillofacial regions.")
+SubClassOf(turbbo:behaviour_R8DhTyMU53x20DpGqwMj0uW turbbo:behaviour_RChrJYRTZRmBDhl2HTuXV4S)
+
+# Class: turbbo:behaviour_R8FZDhDYustxTQzsvyutx8Q (Hiring a prostitute)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8FZDhDYustxTQzsvyutx8Q "Hiring a prostitute")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8FZDhDYustxTQzsvyutx8Q "The act of employing a person to engage in sexual activity for payment.")
+SubClassOf(turbbo:behaviour_R8FZDhDYustxTQzsvyutx8Q turbbo:behaviour_RCj2g7DNklxWdnq0FhKcaUK)
+
+# Class: turbbo:behaviour_R8GcYRzBiq0zUKaVzCrDbDh (Engaging in domestic violence)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8GcYRzBiq0zUKaVzCrDbDh "Engaging in domestic violence")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8GcYRzBiq0zUKaVzCrDbDh "The act of an escalating set of violent behaviors in the context of a marital or other intimate relationship.")
+SubClassOf(turbbo:behaviour_R8GcYRzBiq0zUKaVzCrDbDh turbbo:behaviour_RDw1Q66ue2imTNF7lazEvKw)
+
+# Class: turbbo:behaviour_R8GzSPHABwljcmb4WOEdA6D (Threatening)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8GzSPHABwljcmb4WOEdA6D "Threatening")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8GzSPHABwljcmb4WOEdA6D "The act of saying that you will harm someone or do something unpleasant or unwanted especially in order to make someone do what you want.")
+SubClassOf(turbbo:behaviour_R8GzSPHABwljcmb4WOEdA6D turbbo:behaviour_RDw1Q66ue2imTNF7lazEvKw)
+
+# Class: turbbo:behaviour_R8IYw8QdSmDOKfhF0LcZSGR (Looking)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8IYw8QdSmDOKfhF0LcZSGR "Looking")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8IYw8QdSmDOKfhF0LcZSGR "Direct one’s gaze in a specified direction.")
+SubClassOf(turbbo:behaviour_R8IYw8QdSmDOKfhF0LcZSGR turbbo:behaviour_RD0GMkoktmQ73gfqCl0qW1R)
+
+# Class: turbbo:behaviour_R8K4w41cfj2BD24EvxDQPM9 (Participating in performing arts)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8K4w41cfj2BD24EvxDQPM9 "Participating in performing arts")
+SubClassOf(turbbo:behaviour_R8K4w41cfj2BD24EvxDQPM9 turbbo:behaviour_RFGrqCSRvAPz3uiW6oXcW7)
+
+# Class: turbbo:behaviour_R8KGFREdhoCRkCDNcTG8rZL (Smoking Cigar(ette))
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8KGFREdhoCRkCDNcTG8rZL "Smoking Cigar(ette)")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8KGFREdhoCRkCDNcTG8rZL "The use of a small roll of paper filled with cut tobacco in order to smoke.")
+SubClassOf(turbbo:behaviour_R8KGFREdhoCRkCDNcTG8rZL turbbo:behaviour_RDdB56hI5WEz1kELL2HbIdh)
+
+# Class: turbbo:behaviour_R8KvqWb8C67t2NkL6mgWYY8 (Using Methamphetamines and amphetamines)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8KvqWb8C67t2NkL6mgWYY8 "Using Methamphetamines and amphetamines")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8KvqWb8C67t2NkL6mgWYY8 "The use of a synthetic drug of the phenethylamine family that causes the nervous system to become more active resulting in increased energy and excitement.")
+SubClassOf(turbbo:behaviour_R8KvqWb8C67t2NkL6mgWYY8 turbbo:behaviour_RCKDQM6dfhit3RC352IGkgN)
+
+# Class: turbbo:behaviour_R8L0j33ISylhnbDKERZPpfI (Attending services)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8L0j33ISylhnbDKERZPpfI "Attending services")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8L0j33ISylhnbDKERZPpfI "To go and be present at a meeting for worship.")
+SubClassOf(turbbo:behaviour_R8L0j33ISylhnbDKERZPpfI turbbo:behaviour_R8qMM1AUIWkGs9uIR3zf0Oe)
+
+# Class: turbbo:behaviour_R8PZrDPglU5HUGsnWkFpBh8 (Swimming)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8PZrDPglU5HUGsnWkFpBh8 "Swimming")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8PZrDPglU5HUGsnWkFpBh8 "The sport or activity of moving through water by moving your arms and legs.")
+SubClassOf(turbbo:behaviour_R8PZrDPglU5HUGsnWkFpBh8 turbbo:behaviour_R7ou7HEwYODwmkHhLtEqW2B)
+
+# Class: turbbo:behaviour_R8QKq0DUYbu1hFlkFQbcDqz (Engaging in behaviors related to acquiring, keeping and terminating a job)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8QKq0DUYbu1hFlkFQbcDqz "Engaging in behaviors related to acquiring, keeping and terminating a job")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8QKq0DUYbu1hFlkFQbcDqz "Engage in activities to search for, secure, maintain, or terminate work that a person does regularly in order to earn money.")
+SubClassOf(turbbo:behaviour_R8QKq0DUYbu1hFlkFQbcDqz turbbo:behaviour_RCLGCfCEICjWDiyU2xYotQk)
+
+# Class: turbbo:behaviour_R8ReuBYJRPqCMN23dxvaHoB (Engaging in unstructured play)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8ReuBYJRPqCMN23dxvaHoB "Engaging in unstructured play")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8ReuBYJRPqCMN23dxvaHoB "Engaging in a game that is not happening according to a plan.")
+SubClassOf(turbbo:behaviour_R8ReuBYJRPqCMN23dxvaHoB turbbo:behaviour_RFGrqCSRvAPz3uiW6oXcW7)
+
+# Class: turbbo:behaviour_R8SK0qidAhGaUAt6EOlmvfo (Biking)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8SK0qidAhGaUAt6EOlmvfo "Biking")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8SK0qidAhGaUAt6EOlmvfo "The act of riding a bicycle.")
+SubClassOf(turbbo:behaviour_R8SK0qidAhGaUAt6EOlmvfo turbbo:behaviour_R7ou7HEwYODwmkHhLtEqW2B)
+
+# Class: turbbo:behaviour_R8TZfuwPIav5afH2Q5m2JhO (Volunteering)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8TZfuwPIav5afH2Q5m2JhO "Volunteering")
+SubClassOf(turbbo:behaviour_R8TZfuwPIav5afH2Q5m2JhO turbbo:behaviour_RDd9PVm2VkoGBq6nc5q376d)
+
+# Class: turbbo:behaviour_R8Vq82H2GwQMknyntl4zDIL (Ingesting Sweetener)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8Vq82H2GwQMknyntl4zDIL "Ingesting Sweetener")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8Vq82H2GwQMknyntl4zDIL "Ingesting a food additive which duplicates the effect of sugar on the taste, but with fewer calories. They are also called sugar substitutes.")
+SubClassOf(turbbo:behaviour_R8Vq82H2GwQMknyntl4zDIL turbbo:behaviour_R3GTM1WIfB3LofIOVpVVKU)
+
+# Class: turbbo:behaviour_R8YCY2i5DojBDHL0jf200QA (Using sun protection)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8YCY2i5DojBDHL0jf200QA "Using sun protection")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8YCY2i5DojBDHL0jf200QA "To cover or shield from sun exposure, injury, or damage, for purposes of maintaining one's health.")
+SubClassOf(turbbo:behaviour_R8YCY2i5DojBDHL0jf200QA turbbo:behaviour_R9SZhlXBAdyrsI5ItrSRZDG)
+
+# Class: turbbo:behaviour_R8YXJ6zVKsyJLtpqdLeBgGe (Ingesting Sodium)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8YXJ6zVKsyJLtpqdLeBgGe "Ingesting Sodium")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8YXJ6zVKsyJLtpqdLeBgGe "Ingesting a soft silver-white element that is found in salt, baking soda, and other compounds.")
+SubClassOf(turbbo:behaviour_R8YXJ6zVKsyJLtpqdLeBgGe turbbo:behaviour_R3GTM1WIfB3LofIOVpVVKU)
+
+# Class: turbbo:behaviour_R8ajn0bTfdCHx3nX7JiNJM2 (Writing messages)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8ajn0bTfdCHx3nX7JiNJM2 "Writing messages")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8ajn0bTfdCHx3nX7JiNJM2 "The action of communication through a sequence of letters, words, or symbols marked on a surface")
+SubClassOf(turbbo:behaviour_R8ajn0bTfdCHx3nX7JiNJM2 turbbo:behaviour_RC9p1nKgQCD9ZNR5vvX2qiZ)
+
+# Class: turbbo:behaviour_R8cCVugnbr4KoPFPOy98Qt2 (Maintaining a job)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8cCVugnbr4KoPFPOy98Qt2 "Maintaining a job")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8cCVugnbr4KoPFPOy98Qt2 "Retaining a paid position of regular employment.")
+SubClassOf(turbbo:behaviour_R8cCVugnbr4KoPFPOy98Qt2 turbbo:behaviour_R8QKq0DUYbu1hFlkFQbcDqz)
+
+# Class: turbbo:behaviour_R8gB9OYdqQSqTsDpbt2xwPk (Running)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8gB9OYdqQSqTsDpbt2xwPk "Running")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8gB9OYdqQSqTsDpbt2xwPk "To move using the legs, going faster than when walking.")
+SubClassOf(turbbo:behaviour_R8gB9OYdqQSqTsDpbt2xwPk turbbo:behaviour_R7ou7HEwYODwmkHhLtEqW2B)
+
+# Class: turbbo:behaviour_R8gZTtFMXyiMRwUm5WLrhXS (Engaging in interactive communication (both receiving and producing))
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8gZTtFMXyiMRwUm5WLrhXS "Engaging in interactive communication (both receiving and producing)")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8gZTtFMXyiMRwUm5WLrhXS "Exchange of information by the use of words, sounds or signs between two or more people.")
+SubClassOf(turbbo:behaviour_R8gZTtFMXyiMRwUm5WLrhXS turbbo:behaviour_R6hKctZFZcjKJBLZwC7y9T)
+
+# Class: turbbo:behaviour_R8j2bn1hgnMSEJiolCCWbJ8 (Eating Cereal)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8j2bn1hgnMSEJiolCCWbJ8 "Eating Cereal")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8j2bn1hgnMSEJiolCCWbJ8 "The consumption of a plant (as a grass) yielding starchy grain suitable for food.")
+SubClassOf(turbbo:behaviour_R8j2bn1hgnMSEJiolCCWbJ8 turbbo:behaviour_R7uK2tMCWgORKYlpKazgtMt)
+
+# Class: turbbo:behaviour_R8jttvmuprS05qQGlFDRZJE (Engaging in play education)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8jttvmuprS05qQGlFDRZJE "Engaging in play education")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8jttvmuprS05qQGlFDRZJE "The act of educating someone (especially children) on activities for enjoyment and recreation rather than a serious or practical purpose.")
+SubClassOf(turbbo:behaviour_R8jttvmuprS05qQGlFDRZJE turbbo:behaviour_Rj9feeEPPMDelLiPVmOGiu)
+
+# Class: turbbo:behaviour_R8kPkEyryCnXa6dbEra5Vai (Studying)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8kPkEyryCnXa6dbEra5Vai "Studying")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8kPkEyryCnXa6dbEra5Vai "Application of the mental faculties to the acquisition of knowledge.")
+SubClassOf(turbbo:behaviour_R8kPkEyryCnXa6dbEra5Vai turbbo:behaviour_R7MWXGKIGLx4ykI6IfNRWHF)
+SubClassOf(turbbo:behaviour_R8kPkEyryCnXa6dbEra5Vai turbbo:behaviour_Rj9feeEPPMDelLiPVmOGiu)
+
+# Class: turbbo:behaviour_R8nh8nvCVDLaYKhxeVb3IW8 (Laughing)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8nh8nvCVDLaYKhxeVb3IW8 "Laughing")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8nh8nvCVDLaYKhxeVb3IW8 "Make the spontaneous sounds and movements of the face and body that are the instinctive expressions of lively amusement and sometimes also of derision.")
+SubClassOf(turbbo:behaviour_R8nh8nvCVDLaYKhxeVb3IW8 turbbo:behaviour_RDck4eDShRuThnEF6Ql5OxH)
+
+# Class: turbbo:behaviour_R8npJYdDua4rtmotUR8gkXA (Illegal downloading of media)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8npJYdDua4rtmotUR8gkXA "Illegal downloading of media")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8npJYdDua4rtmotUR8gkXA "The act of downloading media (e.g., books, music, or movies) without the sanction of the copyright holder.")
+SubClassOf(turbbo:behaviour_R8npJYdDua4rtmotUR8gkXA turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs)
+
+# Class: turbbo:behaviour_R8qMM1AUIWkGs9uIR3zf0Oe (Engaging in behavior related to spirituality)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8qMM1AUIWkGs9uIR3zf0Oe "Engaging in behavior related to spirituality")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8qMM1AUIWkGs9uIR3zf0Oe "Engaging in behaviors concerned with spirituality, religion or religious matters")
+SubClassOf(turbbo:behaviour_R8qMM1AUIWkGs9uIR3zf0Oe turbbo:behaviour_R9JyzynAe7H3xtK0rPOT841)
+
+# Class: turbbo:behaviour_R8qZTwXVecGIlp2WSH9wCuV (Eating Potato chips)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8qZTwXVecGIlp2WSH9wCuV "Eating Potato chips")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8qZTwXVecGIlp2WSH9wCuV "The consumption of a wafer-thin slice of potato fried or baked until crisp.")
+SubClassOf(turbbo:behaviour_R8qZTwXVecGIlp2WSH9wCuV turbbo:behaviour_RBOTVkkObNNllFP9EFEOIR2)
+
+# Class: turbbo:behaviour_R8ukhPJPMhF45gwrCl4Jm0F (Disturbing the peace)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8ukhPJPMhF45gwrCl4Jm0F "Disturbing the peace")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8ukhPJPMhF45gwrCl4Jm0F "The act of being loud or roudy in public places.")
+SubClassOf(turbbo:behaviour_R8ukhPJPMhF45gwrCl4Jm0F turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs)
+
+# Class: turbbo:behaviour_R8xQJz3jvt4sTKFSkqiASfr (Encouraging others to fight)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R8xQJz3jvt4sTKFSkqiASfr "Encouraging others to fight")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R8xQJz3jvt4sTKFSkqiASfr "Prompting others to take part in a violent struggle involving the exchange of physical blows or the use of weapons.")
+SubClassOf(turbbo:behaviour_R8xQJz3jvt4sTKFSkqiASfr turbbo:behaviour_RDw1Q66ue2imTNF7lazEvKw)
+
+# Class: turbbo:behaviour_R91lBSpjaJ12eZqZOf0YYtE (Ingesting Energy)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R91lBSpjaJ12eZqZOf0YYtE "Ingesting Energy")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R91lBSpjaJ12eZqZOf0YYtE "The Strength and vitality provided by food or drink consumed for sustaining physical or mental activity")
+SubClassOf(turbbo:behaviour_R91lBSpjaJ12eZqZOf0YYtE turbbo:behaviour_R3GTM1WIfB3LofIOVpVVKU)
+
+# Class: turbbo:behaviour_R932mpM1CTdcqEBiTOXDNPM (Working as a prostitute)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R932mpM1CTdcqEBiTOXDNPM "Working as a prostitute")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R932mpM1CTdcqEBiTOXDNPM "The practice or occupation of engaging in sexual activity with someone for payment.")
+SubClassOf(turbbo:behaviour_R932mpM1CTdcqEBiTOXDNPM turbbo:behaviour_RCj2g7DNklxWdnq0FhKcaUK)
+
+# Class: turbbo:behaviour_R93z8pYrtnWwimDtpP76jOC (Structuring)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R93z8pYrtnWwimDtpP76jOC "Structuring")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R93z8pYrtnWwimDtpP76jOC "The act of arranging transactions according to a plan.")
+SubClassOf(turbbo:behaviour_R93z8pYrtnWwimDtpP76jOC turbbo:behaviour_RhlslZKl21SGb8L452uSU8)
+
+# Class: turbbo:behaviour_R957y0lozcqJOI5opHzoPhe (Exaggerating)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R957y0lozcqJOI5opHzoPhe "Exaggerating")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R957y0lozcqJOI5opHzoPhe "To enlarge beyond bounds or the truth.")
+SubClassOf(turbbo:behaviour_R957y0lozcqJOI5opHzoPhe turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs)
+
+# Class: turbbo:behaviour_R95U5YkbbSN3USUNqiS9yh5 (Lying)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R95U5YkbbSN3USUNqiS9yh5 "Lying")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R95U5YkbbSN3USUNqiS9yh5 "Making an untrue statement with intent to deceive or to create a false or misleading impression")
+SubClassOf(turbbo:behaviour_R95U5YkbbSN3USUNqiS9yh5 turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs)
+
+# Class: turbbo:behaviour_R98L21up1SSyEgiLNxwvbKM (Watching)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R98L21up1SSyEgiLNxwvbKM "Watching")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R98L21up1SSyEgiLNxwvbKM "The action of observing attentively, typically for a period of time.")
+SubClassOf(turbbo:behaviour_R98L21up1SSyEgiLNxwvbKM turbbo:behaviour_RDqjiSX08Nc9xxSBrR5KMOM)
+
+# Class: turbbo:behaviour_R9A9B5YB25QH3TR4iHuH9wq (Using Sedatives)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9A9B5YB25QH3TR4iHuH9wq "Using Sedatives")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9A9B5YB25QH3TR4iHuH9wq "The use of an agent that depresses the central nervous system (CNS) and is used to induce calm and sleep.")
+SubClassOf(turbbo:behaviour_R9A9B5YB25QH3TR4iHuH9wq turbbo:behaviour_RCKDQM6dfhit3RC352IGkgN)
+
+# Class: turbbo:behaviour_R9BeiQh4oa8EbuNm1bjryZB (Seeking a job)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9BeiQh4oa8EbuNm1bjryZB "Seeking a job")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9BeiQh4oa8EbuNm1bjryZB "To search for work that a person does regularly in order to earn money.")
+SubClassOf(turbbo:behaviour_R9BeiQh4oa8EbuNm1bjryZB turbbo:behaviour_R8QKq0DUYbu1hFlkFQbcDqz)
+
+# Class: turbbo:behaviour_R9D52BADRQOlw7YY7xDYL0P (Reading aloud)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9D52BADRQOlw7YY7xDYL0P "Reading aloud")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9D52BADRQOlw7YY7xDYL0P "The action of looking at and comprehending the meaning of (written or printed matter) by mentally interpreting the characters or symbols of which it is composed and simultaneously verbalizing the read content")
+SubClassOf(turbbo:behaviour_R9D52BADRQOlw7YY7xDYL0P turbbo:behaviour_RDGyOtjqZKCX0tefKkHlCB4)
+
+# Class: turbbo:behaviour_R9DODpTBGtD47Gkr98ZKGT4 (Producing body gestures/postures)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9DODpTBGtD47Gkr98ZKGT4 "Producing body gestures/postures")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9DODpTBGtD47Gkr98ZKGT4 "Producing a movement of your body that shows or emphasizes an idea or a feeling.")
+SubClassOf(turbbo:behaviour_R9DODpTBGtD47Gkr98ZKGT4 turbbo:behaviour_RDck4eDShRuThnEF6Ql5OxH)
+
+# Class: turbbo:behaviour_R9H2ctyCGAYoASJRT1kN0ln (Discussing class selection)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9H2ctyCGAYoASJRT1kN0ln "Discussing class selection")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9H2ctyCGAYoASJRT1kN0ln "To talk about academic class selection with another person or group.")
+SubClassOf(turbbo:behaviour_R9H2ctyCGAYoASJRT1kN0ln turbbo:behaviour_RDqrSoVPQjxqqJkRCeAY7Fh)
+
+# Class: turbbo:behaviour_R9HlY0i7brkkaamN0VMCVmw (Engaging in activities/ participating)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9HlY0i7brkkaamN0VMCVmw "Engaging in activities/ participating")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9HlY0i7brkkaamN0VMCVmw "The condition in which things are happening or being done and/or the action of taking part in something.")
+
+# Class: turbbo:behaviour_R9JyzynAe7H3xtK0rPOT841 (Engaging in community life)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9JyzynAe7H3xtK0rPOT841 "Engaging in community life")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9JyzynAe7H3xtK0rPOT841 "Engaging in activities with or related to a group of people who live in the same area (such as a city, town, or neighbourhood).")
+SubClassOf(turbbo:behaviour_R9JyzynAe7H3xtK0rPOT841 turbbo:behaviour_RC5cLYrHZhVyinK9OLpz4Ax)
+
+# Class: turbbo:behaviour_R9Ohv3YKoJsxuaDDeL4eQXx (Listening to spoken messages)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9Ohv3YKoJsxuaDDeL4eQXx "Listening to spoken messages")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9Ohv3YKoJsxuaDDeL4eQXx "The action of receiving information or another one´s feelings in speech.")
+SubClassOf(turbbo:behaviour_R9Ohv3YKoJsxuaDDeL4eQXx turbbo:behaviour_RD0GMkoktmQ73gfqCl0qW1R)
+
+# Class: turbbo:behaviour_R9QvUdQnrx7qXQS2hP9uzrA (Donating blood)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9QvUdQnrx7qXQS2hP9uzrA "Donating blood")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9QvUdQnrx7qXQS2hP9uzrA "Volunteering to have blood removed for transplantation or other purpose.")
+SubClassOf(turbbo:behaviour_R9QvUdQnrx7qXQS2hP9uzrA turbbo:behaviour_RDd9PVm2VkoGBq6nc5q376d)
+
+# Class: turbbo:behaviour_R9SZhlXBAdyrsI5ItrSRZDG (Taking protective actions)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9SZhlXBAdyrsI5ItrSRZDG "Taking protective actions")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9SZhlXBAdyrsI5ItrSRZDG "To cover or shield from exposure, injury, damage, or destruction for purposes of maintaining one's health.")
+SubClassOf(turbbo:behaviour_R9SZhlXBAdyrsI5ItrSRZDG turbbo:behaviour_R7x8NHLRGEcEymTXMx3THX7)
+
+# Class: turbbo:behaviour_R9UnNO27OcDXMFjeAejMhJr (Speeding)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9UnNO27OcDXMFjeAejMhJr "Speeding")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9UnNO27OcDXMFjeAejMhJr "Operating a motorized vehicle at speeds in excess of the posted limit.")
+SubClassOf(turbbo:behaviour_R9UnNO27OcDXMFjeAejMhJr turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs)
+
+# Class: turbbo:behaviour_R9XzdtCeE4Ytjbjkmi81yJu (Engaging in interpersonal interactions and relationships)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9XzdtCeE4Ytjbjkmi81yJu "Engaging in interpersonal interactions and relationships")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9XzdtCeE4Ytjbjkmi81yJu "The act of engaging in short or long-term association between two or more people, including kinship relations, romantic, business, and social interactions.")
+SubClassOf(turbbo:behaviour_R9XzdtCeE4Ytjbjkmi81yJu turbbo:behaviour_R9HlY0i7brkkaamN0VMCVmw)
+
+# Class: turbbo:behaviour_R9YKewO63jKFuCf6CxcRw42 (Cheating)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9YKewO63jKFuCf6CxcRw42 "Cheating")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9YKewO63jKFuCf6CxcRw42 "To practice fraud or trickery.")
+SubClassOf(turbbo:behaviour_R9YKewO63jKFuCf6CxcRw42 turbbo:behaviour_R7MWXGKIGLx4ykI6IfNRWHF)
+SubClassOf(turbbo:behaviour_R9YKewO63jKFuCf6CxcRw42 turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs)
+
+# Class: turbbo:behaviour_R9Z7Ya4l3pO5GTyuD4lXXMj (Touching)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9Z7Ya4l3pO5GTyuD4lXXMj "Touching")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9Z7Ya4l3pO5GTyuD4lXXMj "Bring one’s hand or another part of one’s body into contact with another person or object")
+SubClassOf(turbbo:behaviour_R9Z7Ya4l3pO5GTyuD4lXXMj turbbo:behaviour_RDck4eDShRuThnEF6Ql5OxH)
+
+# Class: turbbo:behaviour_R9cWGdaP36P9kM5hHEPRMHg (Washing oneself)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9cWGdaP36P9kM5hHEPRMHg "Washing oneself")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9cWGdaP36P9kM5hHEPRMHg "Clean oneself, commonly with soap and water.")
+SubClassOf(turbbo:behaviour_R9cWGdaP36P9kM5hHEPRMHg turbbo:behaviour_RBuoEsSFBhOGJtFyQKJv3yx)
+
+# Class: turbbo:behaviour_R9emxBTFO7jzHWHEnRezJFm (Engaging in cultural education)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9emxBTFO7jzHWHEnRezJFm "Engaging in cultural education")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9emxBTFO7jzHWHEnRezJFm "The act of or relating to the ideas, customs, and social behavior of a society.")
+SubClassOf(turbbo:behaviour_R9emxBTFO7jzHWHEnRezJFm turbbo:behaviour_Rj9feeEPPMDelLiPVmOGiu)
+
+# Class: turbbo:behaviour_R9hKOlaTiUV2zNrdjrXHIoH (Building models)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9hKOlaTiUV2zNrdjrXHIoH "Building models")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9hKOlaTiUV2zNrdjrXHIoH "The act or process of making a usually small copy of something by putting together materials.")
+SubClassOf(turbbo:behaviour_R9hKOlaTiUV2zNrdjrXHIoH turbbo:behaviour_RFGrqCSRvAPz3uiW6oXcW7)
+
+# Class: turbbo:behaviour_R9j8nrLtFzMmIVh4MlAP6EA (Saving)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9j8nrLtFzMmIVh4MlAP6EA "Saving")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9j8nrLtFzMmIVh4MlAP6EA "The process of setting aside a portion of current income for future use, or the flow of resources accumulated in this way over a given period of time.")
+SubClassOf(turbbo:behaviour_R9j8nrLtFzMmIVh4MlAP6EA turbbo:behaviour_RhlslZKl21SGb8L452uSU8)
+
+# Class: turbbo:behaviour_R9p5Yej3AOqhbZTK2kCgSWX (Playing sports)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9p5Yej3AOqhbZTK2kCgSWX "Playing sports")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9p5Yej3AOqhbZTK2kCgSWX "The act of engaging in a contest or game in which people do certain physical activities according to a specific set of rules and compete against each other.")
+SubClassOf(turbbo:behaviour_R9p5Yej3AOqhbZTK2kCgSWX turbbo:behaviour_RFGrqCSRvAPz3uiW6oXcW7)
+
+# Class: turbbo:behaviour_R9qiMGm7ZsvOF8PVopNjoce (Participating in testing)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9qiMGm7ZsvOF8PVopNjoce "Participating in testing")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9qiMGm7ZsvOF8PVopNjoce "The act of participating in a diagnostic procedure for critical evaluation of the presence or absence of a condition, disease or change in function.")
+SubClassOf(turbbo:behaviour_R9qiMGm7ZsvOF8PVopNjoce turbbo:behaviour_R7SqDxfmXPDIUSZShgwaIyO)
+
+# Class: turbbo:behaviour_R9uUdCancI6Xhj93NGDpAa0 (Donating organs)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9uUdCancI6Xhj93NGDpAa0 "Donating organs")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9uUdCancI6Xhj93NGDpAa0 "The act of volunteering to give up and transfer an organ, organ part, or tissue from one body to another, for the purpose of replacing the recipient's damaged or failing organ with a working one from the donor.")
+SubClassOf(turbbo:behaviour_R9uUdCancI6Xhj93NGDpAa0 turbbo:behaviour_RDd9PVm2VkoGBq6nc5q376d)
+
+# Class: turbbo:behaviour_R9vNeC1oitAazXgjCZLFreu (Using Hallucinogens)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9vNeC1oitAazXgjCZLFreu "Using Hallucinogens")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9vNeC1oitAazXgjCZLFreu "The use of drugs that cause profound distortions in a person's perceptions of reality, including delusions and false notions.")
+SubClassOf(turbbo:behaviour_R9vNeC1oitAazXgjCZLFreu turbbo:behaviour_RCKDQM6dfhit3RC352IGkgN)
+
+# Class: turbbo:behaviour_R9wnOxSo6VExTSy6o6aVaHH (Driving motorized vehicles)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9wnOxSo6VExTSy6o6aVaHH "Driving motorized vehicles")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_R9wnOxSo6VExTSy6o6aVaHH "The act of control and operation of a motorized vehicle.")
+SubClassOf(turbbo:behaviour_R9wnOxSo6VExTSy6o6aVaHH turbbo:behaviour_R7ou7HEwYODwmkHhLtEqW2B)
+
+# Class: turbbo:behaviour_R9x7Hkf4ZOijPKfUQeDiqSM (Robbing)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_R9x7Hkf4ZOijPKfUQeDiqSM "Robbing")
+SubClassOf(turbbo:behaviour_R9x7Hkf4ZOijPKfUQeDiqSM turbbo:behaviour_RDw1Q66ue2imTNF7lazEvKw)
+
+# Class: turbbo:behaviour_RB0PylLvIZAtwndoosMLliQ (Producing drawings or photographs)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RB0PylLvIZAtwndoosMLliQ "Producing drawings or photographs")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RB0PylLvIZAtwndoosMLliQ "Making picture(s) or diagram(s) with a pencil, pen, or crayon rather than paint; taking photographs.")
+SubClassOf(turbbo:behaviour_RB0PylLvIZAtwndoosMLliQ turbbo:behaviour_RDck4eDShRuThnEF6Ql5OxH)
+
+# Class: turbbo:behaviour_RB1r62EgpOwuwELaN1GN8WR (Engaging in suicidal behavior/ suicide)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RB1r62EgpOwuwELaN1GN8WR "Engaging in suicidal behavior/ suicide")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RB1r62EgpOwuwELaN1GN8WR "Suicide is the act of taking one's own life on purpose. Suicidal behavior is any action that could cause a person to die, such as taking a drug overdose or crashing a car on purpose.")
+SubClassOf(turbbo:behaviour_RB1r62EgpOwuwELaN1GN8WR turbbo:behaviour_RCKDQM6dfhit3RC352IGkgN)
+
+# Class: turbbo:behaviour_RB259d2EF9BQAEoE02NuAv3 (Having non-intercourse sexual contact)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RB259d2EF9BQAEoE02NuAv3 "Having non-intercourse sexual contact")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RB259d2EF9BQAEoE02NuAv3 "The act of physical sexual contact such as petting, engaging in amorous embracing, caressing, and kissing between individuals, but without intercourse.")
+SubClassOf(turbbo:behaviour_RB259d2EF9BQAEoE02NuAv3 turbbo:behaviour_RINOST75D6djkBWwq9c5bA)
+
+# Class: turbbo:behaviour_RB3KW9HRLxfZaM9TK6L64Dy (Ingesting Fat)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RB3KW9HRLxfZaM9TK6L64Dy "Ingesting Fat")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RB3KW9HRLxfZaM9TK6L64Dy "Ingesting a class of food constituents, also known as fats and oils, that serve as a source of energy and essential fatty acids in animals.")
+SubClassOf(turbbo:behaviour_RB3KW9HRLxfZaM9TK6L64Dy turbbo:behaviour_R3GTM1WIfB3LofIOVpVVKU)
+
+# Class: turbbo:behaviour_RB4NyZKyze11ZGYvquGrdrA (Joining or maintaining association or group membership)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RB4NyZKyze11ZGYvquGrdrA "Joining or maintaining association or group membership")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RB4NyZKyze11ZGYvquGrdrA "The act of joining or maintaining membership in an organized groups of people who have the same interest, job, etc.")
+SubClassOf(turbbo:behaviour_RB4NyZKyze11ZGYvquGrdrA turbbo:behaviour_R9JyzynAe7H3xtK0rPOT841)
+
+# Class: turbbo:behaviour_RB65zbnDKVRSjQ3mKpcHp8t (Drinking Smoothie)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RB65zbnDKVRSjQ3mKpcHp8t "Drinking Smoothie")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RB65zbnDKVRSjQ3mKpcHp8t "Consumption of a thick, smooth drink of fresh fruit pureed with milk, yogurt, or ice cream.")
+SubClassOf(turbbo:behaviour_RB65zbnDKVRSjQ3mKpcHp8t turbbo:behaviour_R7qzqygnfKwMVxUR9f0qbNZ)
+
+# Class: turbbo:behaviour_RB8MzAOq8S3Jt4O0y71cZC3 (Joining or maintaining membership in criminal enterprise)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RB8MzAOq8S3Jt4O0y71cZC3 "Joining or maintaining membership in criminal enterprise")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RB8MzAOq8S3Jt4O0y71cZC3 "The act of joining or maintaining membership in an organized enterprise carrying out illegal activity.")
+SubClassOf(turbbo:behaviour_RB8MzAOq8S3Jt4O0y71cZC3 turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs)
+
+# Class: turbbo:behaviour_RBEmO5ddPGEUtlHSBkeLFO0 (Doing crafts)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RBEmO5ddPGEUtlHSBkeLFO0 "Doing crafts")
+SubClassOf(turbbo:behaviour_RBEmO5ddPGEUtlHSBkeLFO0 turbbo:behaviour_RFGrqCSRvAPz3uiW6oXcW7)
+
+# Class: turbbo:behaviour_RBFL8qZUMKuFB1orHEuZVSt (Reading aloud to child)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RBFL8qZUMKuFB1orHEuZVSt "Reading aloud to child")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RBFL8qZUMKuFB1orHEuZVSt "The action of looking at and comprehending the meaning of (written or printed matter) by mentally interpreting the characters or symbols of which it is composed and simultaneously verbalizing the read content to a child.")
+SubClassOf(turbbo:behaviour_RBFL8qZUMKuFB1orHEuZVSt turbbo:behaviour_R9D52BADRQOlw7YY7xDYL0P)
+
+# Class: turbbo:behaviour_RBFcrIvHBtTdBRW5pvvInk (Voting)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RBFcrIvHBtTdBRW5pvvInk "Voting")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RBFcrIvHBtTdBRW5pvvInk "The official choice that someone makes in an election, meeting, etc., by casting a ballot, rasing the hand, speaking their choice aloud, etc.")
+SubClassOf(turbbo:behaviour_RBFcrIvHBtTdBRW5pvvInk turbbo:behaviour_RDB0WPFBq8eRpd2dUYyztb4)
+
+# Class: turbbo:behaviour_RBHbpWceDYn4BB2W7tomnNI (Producing facial expressions)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RBHbpWceDYn4BB2W7tomnNI "Producing facial expressions")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RBHbpWceDYn4BB2W7tomnNI "The look on someone's face (such as smiling, frowning, etc).")
+SubClassOf(turbbo:behaviour_RBHbpWceDYn4BB2W7tomnNI turbbo:behaviour_RDck4eDShRuThnEF6Ql5OxH)
+
+# Class: turbbo:behaviour_RBOTVkkObNNllFP9EFEOIR2 (Eating Snack)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RBOTVkkObNNllFP9EFEOIR2 "Eating Snack")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RBOTVkkObNNllFP9EFEOIR2 "The consumption of a small amount of food between meals.")
+SubClassOf(turbbo:behaviour_RBOTVkkObNNllFP9EFEOIR2 turbbo:behaviour_R7uK2tMCWgORKYlpKazgtMt)
+
+# Class: turbbo:behaviour_RBTRLIR5oUwjhLmK6oAIMb4 (Participating in Group support/ treatment)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RBTRLIR5oUwjhLmK6oAIMb4 "Participating in Group support/ treatment")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RBTRLIR5oUwjhLmK6oAIMb4 "The act of attending group support sessions led by a trained professional in order to attain healing or recovery.")
+SubClassOf(turbbo:behaviour_RBTRLIR5oUwjhLmK6oAIMb4 turbbo:behaviour_RChrJYRTZRmBDhl2HTuXV4S)
+
+# Class: turbbo:behaviour_RBTc7cx9eEMPQCOGL8vKPtV (Ingesting Sugar)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RBTc7cx9eEMPQCOGL8vKPtV "Ingesting Sugar")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RBTc7cx9eEMPQCOGL8vKPtV "Ingesting a white crystalline carbohydrate, typically sucrose, used as a sweetener and preservative.")
+SubClassOf(turbbo:behaviour_RBTc7cx9eEMPQCOGL8vKPtV turbbo:behaviour_R3GTM1WIfB3LofIOVpVVKU)
+
+# Class: turbbo:behaviour_RBYfKE4dQXzYNdQGWpLm4RK (Stealing)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RBYfKE4dQXzYNdQGWpLm4RK "Stealing")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RBYfKE4dQXzYNdQGWpLm4RK "To take the property of another wrongfully and especially as a habitual or regular practice.")
+SubClassOf(turbbo:behaviour_RBYfKE4dQXzYNdQGWpLm4RK turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs)
+
+# Class: turbbo:behaviour_RBYkEcGOLDMPaivRiRxA2Zx (Playing video game)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RBYkEcGOLDMPaivRiRxA2Zx "Playing video game")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RBYkEcGOLDMPaivRiRxA2Zx "The act of playing an electronic game played by means of images on a video screen and often emphasizing fast action.")
+SubClassOf(turbbo:behaviour_RBYkEcGOLDMPaivRiRxA2Zx turbbo:behaviour_RFGrqCSRvAPz3uiW6oXcW7)
+
+# Class: turbbo:behaviour_RBZBFZG9PRFJpm31aToI1nl (Having intercourse)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RBZBFZG9PRFJpm31aToI1nl "Having intercourse")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RBZBFZG9PRFJpm31aToI1nl "The act of physical sexual contact between individuals that involves the genitalia of at least one person.")
+SubClassOf(turbbo:behaviour_RBZBFZG9PRFJpm31aToI1nl turbbo:behaviour_RINOST75D6djkBWwq9c5bA)
+
+# Class: turbbo:behaviour_RBdjzI2SqWrJ2prVOK0NHpT (Breaking curfew)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RBdjzI2SqWrJ2prVOK0NHpT "Breaking curfew")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RBdjzI2SqWrJ2prVOK0NHpT "The act of being on streets or public areas during hours designated as off-limit by an authority (state or parents).")
+SubClassOf(turbbo:behaviour_RBdjzI2SqWrJ2prVOK0NHpT turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs)
+
+# Class: turbbo:behaviour_RBkPOivG8JaZijqer0ZkDjQ (Providing tangible/pragmatic support)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RBkPOivG8JaZijqer0ZkDjQ "Providing tangible/pragmatic support")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RBkPOivG8JaZijqer0ZkDjQ "To give help or assistance through providing something practical that can be touched or felt.")
+SubClassOf(turbbo:behaviour_RBkPOivG8JaZijqer0ZkDjQ turbbo:behaviour_RDLYuvHGi7xCMFHwL7WJ8pF)
+
+# Class: turbbo:behaviour_RBq7tZ4pj7jvFmyRWgzCAgH (Donating money)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RBq7tZ4pj7jvFmyRWgzCAgH "Donating money")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RBq7tZ4pj7jvFmyRWgzCAgH "To give money in order to help a cause.")
+SubClassOf(turbbo:behaviour_RBq7tZ4pj7jvFmyRWgzCAgH turbbo:behaviour_RDd9PVm2VkoGBq6nc5q376d)
+
+# Class: turbbo:behaviour_RBqLqcQI5H4LBjGjeKL3Xyb (Self-testing)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RBqLqcQI5H4LBjGjeKL3Xyb "Self-testing")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RBqLqcQI5H4LBjGjeKL3Xyb "The act of checking own body for symptoms of illness.")
+SubClassOf(turbbo:behaviour_RBqLqcQI5H4LBjGjeKL3Xyb turbbo:behaviour_R7SqDxfmXPDIUSZShgwaIyO)
+
+# Class: turbbo:behaviour_RBtjpUP2Y67IuUsEulri7ce (Using Opiates)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RBtjpUP2Y67IuUsEulri7ce "Using Opiates")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RBtjpUP2Y67IuUsEulri7ce "The use of the coagulated juice of the opium poppy.")
+SubClassOf(turbbo:behaviour_RBtjpUP2Y67IuUsEulri7ce turbbo:behaviour_RCKDQM6dfhit3RC352IGkgN)
+
+# Class: turbbo:behaviour_RBuoEsSFBhOGJtFyQKJv3yx (Engaging in self-care behavior)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RBuoEsSFBhOGJtFyQKJv3yx "Engaging in self-care behavior")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RBuoEsSFBhOGJtFyQKJv3yx "The provision of what is necessary for one´s health, welfare, maintenance, and protection.")
+SubClassOf(turbbo:behaviour_RBuoEsSFBhOGJtFyQKJv3yx turbbo:behaviour_R9HlY0i7brkkaamN0VMCVmw)
+
+# Class: turbbo:behaviour_RBwChPeGumIcWiAkyjALSbR (Managing diet and fitness)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RBwChPeGumIcWiAkyjALSbR "Managing diet and fitness")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RBwChPeGumIcWiAkyjALSbR "To eat and drink sparingly or according to prescribed rules and to exercise for the purpose of improving or maintaining health.")
+SubClassOf(turbbo:behaviour_RBwChPeGumIcWiAkyjALSbR turbbo:behaviour_R7x8NHLRGEcEymTXMx3THX7)
+
+# Class: turbbo:behaviour_RBzlXysycBR1G0UWI9dLzUg (Damaging property)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RBzlXysycBR1G0UWI9dLzUg "Damaging property")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RBzlXysycBR1G0UWI9dLzUg "The act of causing damage to or the destruction of public or private property, caused by a person who is not its owner.")
+SubClassOf(turbbo:behaviour_RBzlXysycBR1G0UWI9dLzUg turbbo:behaviour_RDw1Q66ue2imTNF7lazEvKw)
+
+# Class: turbbo:behaviour_RC0YClFPlVX751xC4ns9FVj (Providing financial support)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RC0YClFPlVX751xC4ns9FVj "Providing financial support")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RC0YClFPlVX751xC4ns9FVj "To give help or assistance in the form of money.")
+SubClassOf(turbbo:behaviour_RC0YClFPlVX751xC4ns9FVj turbbo:behaviour_RBkPOivG8JaZijqer0ZkDjQ)
+
+# Class: turbbo:behaviour_RC2WMf41q0tzpzdY4Q3IlE4 (Participate in baseline exercise test)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RC2WMf41q0tzpzdY4Q3IlE4 "Participate in baseline exercise test")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RC2WMf41q0tzpzdY4Q3IlE4 "The act of establishing an exercise function starting point to which change may be compared.")
+SubClassOf(turbbo:behaviour_RC2WMf41q0tzpzdY4Q3IlE4 turbbo:behaviour_R9qiMGm7ZsvOF8PVopNjoce)
+
+# Class: turbbo:behaviour_RC49XywX1UPXtJYddxnrb0h (Using the internet)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RC49XywX1UPXtJYddxnrb0h "Using the internet")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RC49XywX1UPXtJYddxnrb0h "Use of global computer network providing a variety of information and communication facilities.")
+SubClassOf(turbbo:behaviour_RC49XywX1UPXtJYddxnrb0h turbbo:behaviour_R7woWtbNCi0dJrw4OZCukC6)
+
+# Class: turbbo:behaviour_RC5LiU2X5C1XaClchoLtN7h (Doing relaxation exercises)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RC5LiU2X5C1XaClchoLtN7h "Doing relaxation exercises")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RC5LiU2X5C1XaClchoLtN7h "The act of performing exercises to reduce stress, muscle tension, and anxiety in the body.")
+SubClassOf(turbbo:behaviour_RC5LiU2X5C1XaClchoLtN7h turbbo:behaviour_RDarCRBoiqojsnZ9V6Oj1EU)
+
+# Class: turbbo:behaviour_RC5cLYrHZhVyinK9OLpz4Ax (Engaging in behavior related to community, social, and civic life)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RC5cLYrHZhVyinK9OLpz4Ax "Engaging in behavior related to community, social, and civic life")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RC5cLYrHZhVyinK9OLpz4Ax "Engaging in activities related to a unified body of individuals, including recreation, community affairs, and pro/antisocial behavior.")
+SubClassOf(turbbo:behaviour_RC5cLYrHZhVyinK9OLpz4Ax turbbo:behaviour_R9HlY0i7brkkaamN0VMCVmw)
+
+# Class: turbbo:behaviour_RC5xmY90ofv5EQ1opHYU6rB (Investing)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RC5xmY90ofv5EQ1opHYU6rB "Investing")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RC5xmY90ofv5EQ1opHYU6rB "The act of expending money with the expectation of achieving a profit or material result by putting it into financial schemes, shares, or property, or by using it to develop a commercial venture.")
+SubClassOf(turbbo:behaviour_RC5xmY90ofv5EQ1opHYU6rB turbbo:behaviour_RhlslZKl21SGb8L452uSU8)
+
+# Class: turbbo:behaviour_RC9LMCql8HpBhA11P4OoZgi (Closing account)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RC9LMCql8HpBhA11P4OoZgi "Closing account")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RC9LMCql8HpBhA11P4OoZgi "The occurance of any account that has been closed out or otherwise terminated.")
+SubClassOf(turbbo:behaviour_RC9LMCql8HpBhA11P4OoZgi turbbo:behaviour_R93z8pYrtnWwimDtpP76jOC)
+
+# Class: turbbo:behaviour_RC9irdFOfWCUDChsoJh1FWw (Stalking)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RC9irdFOfWCUDChsoJh1FWw "Stalking")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RC9irdFOfWCUDChsoJh1FWw "The act of criminal activity consisting of the repeated following and harassing of another person.")
+SubClassOf(turbbo:behaviour_RC9irdFOfWCUDChsoJh1FWw turbbo:behaviour_RDw1Q66ue2imTNF7lazEvKw)
+
+# Class: turbbo:behaviour_RC9p1nKgQCD9ZNR5vvX2qiZ (Producing verbal communications)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RC9p1nKgQCD9ZNR5vvX2qiZ "Producing verbal communications")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RC9p1nKgQCD9ZNR5vvX2qiZ "The act or process of generating words to express information or to express your ideas, thoughts, feelings, etc., to someone else.")
+SubClassOf(turbbo:behaviour_RC9p1nKgQCD9ZNR5vvX2qiZ turbbo:behaviour_RCV5kFFQ8uWjqjPCrdjngHb)
+
+# Class: turbbo:behaviour_RCC63qDwHmigEz6huhl9dCG (Flossing)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCC63qDwHmigEz6huhl9dCG "Flossing")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCC63qDwHmigEz6huhl9dCG "The use of waxed or unwaxed synthetic thread to dislodge plaque, foods and microbes from the lateral borders of teeth.")
+SubClassOf(turbbo:behaviour_RCC63qDwHmigEz6huhl9dCG turbbo:behaviour_R74Nph6Q96RGCllk8UMt94p)
+
+# Class: turbbo:behaviour_RCCIgPeUjgaKYDjePlHqzlm (Artificial feeding)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCCIgPeUjgaKYDjePlHqzlm "Artificial feeding")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCCIgPeUjgaKYDjePlHqzlm "The act of feeding a baby with food other than mother's milk.")
+SubClassOf(turbbo:behaviour_RCCIgPeUjgaKYDjePlHqzlm turbbo:behaviour_RDSprVXKVeqV4JtMjaGwwDX)
+
+# Class: turbbo:behaviour_RCD8LHOgE9WxbIcDhGHIuVW (Eating Candy)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCD8LHOgE9WxbIcDhGHIuVW "Eating Candy")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCD8LHOgE9WxbIcDhGHIuVW "The consumption of a sweet food made with sugar or syrup combined with fruit, chocolate, or nuts.")
+SubClassOf(turbbo:behaviour_RCD8LHOgE9WxbIcDhGHIuVW turbbo:behaviour_RBOTVkkObNNllFP9EFEOIR2)
+
+# Class: turbbo:behaviour_RCDJN2atxNwOBqbKSmxM1Fc (Adhering to medication/ treatment regime)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCDJN2atxNwOBqbKSmxM1Fc "Adhering to medication/ treatment regime")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCDJN2atxNwOBqbKSmxM1Fc "The act of abiding by a stated treatment plan or protocol.")
+SubClassOf(turbbo:behaviour_RCDJN2atxNwOBqbKSmxM1Fc turbbo:behaviour_R7x8NHLRGEcEymTXMx3THX7)
+
+# Class: turbbo:behaviour_RCDX7XRjZ177uHg6OoUyvv0 (Selling stolen property)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCDX7XRjZ177uHg6OoUyvv0 "Selling stolen property")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCDX7XRjZ177uHg6OoUyvv0 "The act of giving or handing over property that does not belong to the possessor in exchange for money.")
+SubClassOf(turbbo:behaviour_RCDX7XRjZ177uHg6OoUyvv0 turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs)
+
+# Class: turbbo:behaviour_RCE7VvM7rpyKfsBJxKqHVvk (Speaking)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCE7VvM7rpyKfsBJxKqHVvk "Speaking")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCE7VvM7rpyKfsBJxKqHVvk "The action of expressing one's thoughts and feelings in spoken language (includes for e.g. whining)")
+SubClassOf(turbbo:behaviour_RCE7VvM7rpyKfsBJxKqHVvk turbbo:behaviour_RC9p1nKgQCD9ZNR5vvX2qiZ)
+
+# Class: turbbo:behaviour_RCKDQM6dfhit3RC352IGkgN (Engaging in mood / state changing activities and behavior)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCKDQM6dfhit3RC352IGkgN "Engaging in mood / state changing activities and behavior")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCKDQM6dfhit3RC352IGkgN "Engaging in behaviors causing changes in the conscious state of mind or predominant emotion.")
+SubClassOf(turbbo:behaviour_RCKDQM6dfhit3RC352IGkgN turbbo:behaviour_R9HlY0i7brkkaamN0VMCVmw)
+
+# Class: turbbo:behaviour_RCLGCfCEICjWDiyU2xYotQk (Engaging in behavior related to major life areas)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCLGCfCEICjWDiyU2xYotQk "Engaging in behavior related to major life areas")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCLGCfCEICjWDiyU2xYotQk "Carrying out actions required to engage in education, work and employment and to conduct economic transactions, including the use of technologies.")
+SubClassOf(turbbo:behaviour_RCLGCfCEICjWDiyU2xYotQk turbbo:behaviour_R9HlY0i7brkkaamN0VMCVmw)
+
+# Class: turbbo:behaviour_RCLUrCDjw1iSB9E2K1K47IG (Conserving energy)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCLUrCDjw1iSB9E2K1K47IG "Conserving energy")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCLUrCDjw1iSB9E2K1K47IG "To avoid wasteful use of power.")
+SubClassOf(turbbo:behaviour_RCLUrCDjw1iSB9E2K1K47IG turbbo:behaviour_RfZmso8v8XZptVF2vKaUQ3)
+
+# Class: turbbo:behaviour_RCMQ2Xe8y2ROsQ2JODi10Pt (Caring for household objects and non-human members)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCMQ2Xe8y2ROsQ2JODi10Pt "Caring for household objects and non-human members")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCMQ2Xe8y2ROsQ2JODi10Pt "To keep something in the household safe and provided for.")
+SubClassOf(turbbo:behaviour_RCMQ2Xe8y2ROsQ2JODi10Pt turbbo:behaviour_RCV0qw9GIXO9nA6mEsE72Nr)
+
+# Class: turbbo:behaviour_RCNXOEb6sjTOBSIrv5Z5Bfv (Breaking and entering)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCNXOEb6sjTOBSIrv5Z5Bfv "Breaking and entering")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCNXOEb6sjTOBSIrv5Z5Bfv "The act of entering a residence or other enclosed property through the slightest amount of force, without authorization.")
+SubClassOf(turbbo:behaviour_RCNXOEb6sjTOBSIrv5Z5Bfv turbbo:behaviour_RDw1Q66ue2imTNF7lazEvKw)
+
+# Class: turbbo:behaviour_RCQ0BGxWd0dw2Ax39GRhiqs (Not disclosing)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCQ0BGxWd0dw2Ax39GRhiqs "Not disclosing")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCQ0BGxWd0dw2Ax39GRhiqs "Not making requested information known.")
+SubClassOf(turbbo:behaviour_RCQ0BGxWd0dw2Ax39GRhiqs turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs)
+
+# Class: turbbo:behaviour_RCTpYCPfulTB3fOxPqErQ2V (Drug dealing)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCTpYCPfulTB3fOxPqErQ2V "Drug dealing")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCTpYCPfulTB3fOxPqErQ2V "The act of giving or handing over drugs in exchange for money without a license from the state.")
+SubClassOf(turbbo:behaviour_RCTpYCPfulTB3fOxPqErQ2V turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs)
+
+# Class: turbbo:behaviour_RCV0qw9GIXO9nA6mEsE72Nr (Engaging in domestic life activities)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCV0qw9GIXO9nA6mEsE72Nr "Engaging in domestic life activities")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCV0qw9GIXO9nA6mEsE72Nr "Carrying out domestic and everyday actions and tasks.")
+SubClassOf(turbbo:behaviour_RCV0qw9GIXO9nA6mEsE72Nr turbbo:behaviour_R9HlY0i7brkkaamN0VMCVmw)
+
+# Class: turbbo:behaviour_RCV5kFFQ8uWjqjPCrdjngHb (Producing communications)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCV5kFFQ8uWjqjPCrdjngHb "Producing communications")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCV5kFFQ8uWjqjPCrdjngHb "The act or process of generating words, sounds, signs, or behaviors to express information or to express your ideas, thoughts, feelings, etc., to someone else.")
+SubClassOf(turbbo:behaviour_RCV5kFFQ8uWjqjPCrdjngHb turbbo:behaviour_R6hKctZFZcjKJBLZwC7y9T)
+
+# Class: turbbo:behaviour_RCW6LwsmwRRJDHJ5Sw3NcqF (Using Marijuana)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCW6LwsmwRRJDHJ5Sw3NcqF "Using Marijuana")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCW6LwsmwRRJDHJ5Sw3NcqF "The act of smoking the dried leaves and flowering tops of the pistillate hemp plant that yield THC.")
+SubClassOf(turbbo:behaviour_RCW6LwsmwRRJDHJ5Sw3NcqF turbbo:behaviour_RCKDQM6dfhit3RC352IGkgN)
+
+# Class: turbbo:behaviour_RCX7sTnjz11ol0VKC4azwIC (Crawling)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCX7sTnjz11ol0VKC4azwIC "Crawling")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCX7sTnjz11ol0VKC4azwIC "Move forward on the hands and knees or by dragging the body close to the ground.")
+SubClassOf(turbbo:behaviour_RCX7sTnjz11ol0VKC4azwIC turbbo:behaviour_R7ou7HEwYODwmkHhLtEqW2B)
+
+# Class: turbbo:behaviour_RCXasK8gbuKMgaU1ZrRXQZM (Using Cocaine)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCXasK8gbuKMgaU1ZrRXQZM "Using Cocaine")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCXasK8gbuKMgaU1ZrRXQZM "The use of a tropane alkaloid that is obtained from the leaves of the coca plant.")
+SubClassOf(turbbo:behaviour_RCXasK8gbuKMgaU1ZrRXQZM turbbo:behaviour_RCKDQM6dfhit3RC352IGkgN)
+
+# Class: turbbo:behaviour_RCcKEhZxYCpuN3rXXYRFoKa (Listening)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCcKEhZxYCpuN3rXXYRFoKa "Listening")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCcKEhZxYCpuN3rXXYRFoKa "To pay attention to someone or something in order to hear what is being said, sung, played, etc.")
+SubClassOf(turbbo:behaviour_RCcKEhZxYCpuN3rXXYRFoKa turbbo:behaviour_RDqjiSX08Nc9xxSBrR5KMOM)
+
+# Class: turbbo:behaviour_RCgGDn1vqlfJSIRaFveJ3LD (Using contraceptive devices)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCgGDn1vqlfJSIRaFveJ3LD "Using contraceptive devices")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCgGDn1vqlfJSIRaFveJ3LD "Use of a device or drug that serves to prevent a woman from becoming pregnant.")
+SubClassOf(turbbo:behaviour_RCgGDn1vqlfJSIRaFveJ3LD turbbo:behaviour_R9SZhlXBAdyrsI5ItrSRZDG)
+
+# Class: turbbo:behaviour_RCh5z0vk5UDzC46FZI7ew7i (Using Alcohol)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCh5z0vk5UDzC46FZI7ew7i "Using Alcohol")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCh5z0vk5UDzC46FZI7ew7i "The use of ethanol, a type of alcohol found in beverages, that acts as a central nervous system depressant.")
+SubClassOf(turbbo:behaviour_RCh5z0vk5UDzC46FZI7ew7i turbbo:behaviour_RCKDQM6dfhit3RC352IGkgN)
+
+# Class: turbbo:behaviour_RChrJYRTZRmBDhl2HTuXV4S (Using health care/ participating in treatment)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RChrJYRTZRmBDhl2HTuXV4S "Using health care/ participating in treatment")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RChrJYRTZRmBDhl2HTuXV4S "The actions of prevention, treatment, and management of illness and the preservation of mental and physical wellbeing through the services offered by the medical and allied health professions.")
+SubClassOf(turbbo:behaviour_RChrJYRTZRmBDhl2HTuXV4S turbbo:behaviour_R7x8NHLRGEcEymTXMx3THX7)
+
+# Class: turbbo:behaviour_RCij8AeR486wWQrvpxJI2KG (Sleeping)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCij8AeR486wWQrvpxJI2KG "Sleeping")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCij8AeR486wWQrvpxJI2KG "Putting oneself into a condition of body and mind in which the nervous system is relatively inactive, the eyes closed, the postural muscles relaxed, and consciousness practically suspended.")
+SubClassOf(turbbo:behaviour_RCij8AeR486wWQrvpxJI2KG turbbo:behaviour_RDarCRBoiqojsnZ9V6Oj1EU)
+
+# Class: turbbo:behaviour_RCj2g7DNklxWdnq0FhKcaUK (Engaging in behavior related to prostitution)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCj2g7DNklxWdnq0FhKcaUK "Engaging in behavior related to prostitution")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCj2g7DNklxWdnq0FhKcaUK "Engaging in sexual activity with someone in return for payment or as a customer.")
+SubClassOf(turbbo:behaviour_RCj2g7DNklxWdnq0FhKcaUK turbbo:behaviour_RCkUmDEEBCZJdgoHyJUrlzm)
+
+# Class: turbbo:behaviour_RCkUmDEEBCZJdgoHyJUrlzm (Engaging in behaviors related to intimate relationships)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCkUmDEEBCZJdgoHyJUrlzm "Engaging in behaviors related to intimate relationships")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCkUmDEEBCZJdgoHyJUrlzm "Engaging in behaviors related to private and personal relationships; this may be in a sexual way.")
+SubClassOf(turbbo:behaviour_RCkUmDEEBCZJdgoHyJUrlzm turbbo:behaviour_R9XzdtCeE4Ytjbjkmi81yJu)
+
+# Class: turbbo:behaviour_RCoukmgJYw5wh7IXXRNL08T (Watching TV)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCoukmgJYw5wh7IXXRNL08T "Watching TV")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCoukmgJYw5wh7IXXRNL08T "The act of watching television.")
+SubClassOf(turbbo:behaviour_RCoukmgJYw5wh7IXXRNL08T turbbo:behaviour_R98L21up1SSyEgiLNxwvbKM)
+
+# Class: turbbo:behaviour_RCrDL1h6RMXEqgnkTmAzyNh (Using safety restraints)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCrDL1h6RMXEqgnkTmAzyNh "Using safety restraints")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RCrDL1h6RMXEqgnkTmAzyNh "The use of devices (seat belt, car seat, booster seat, life belt, safety harness, etc.) in order to prevent getting hurt")
+SubClassOf(turbbo:behaviour_RCrDL1h6RMXEqgnkTmAzyNh turbbo:behaviour_R9SZhlXBAdyrsI5ItrSRZDG)
+
+# Class: turbbo:behaviour_RCuyyZAZJSXGT3CbFA45RAJ (Working with photography equipment)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RCuyyZAZJSXGT3CbFA45RAJ "Working with photography equipment")
+SubClassOf(turbbo:behaviour_RCuyyZAZJSXGT3CbFA45RAJ turbbo:behaviour_RFGrqCSRvAPz3uiW6oXcW7)
+
+# Class: turbbo:behaviour_RD0GMkoktmQ73gfqCl0qW1R (Receiving communications)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RD0GMkoktmQ73gfqCl0qW1R "Receiving communications")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RD0GMkoktmQ73gfqCl0qW1R "The act or process of receiving words, sounds, signs, or behaviors that express information.")
+SubClassOf(turbbo:behaviour_RD0GMkoktmQ73gfqCl0qW1R turbbo:behaviour_R6hKctZFZcjKJBLZwC7y9T)
+
+# Class: turbbo:behaviour_RDB0WPFBq8eRpd2dUYyztb4 (Engaging in civic involvement)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDB0WPFBq8eRpd2dUYyztb4 "Engaging in civic involvement")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDB0WPFBq8eRpd2dUYyztb4 "An action designed to identify and address issues of public concer.")
+SubClassOf(turbbo:behaviour_RDB0WPFBq8eRpd2dUYyztb4 turbbo:behaviour_R7MZNxsxrHJFsQZe0BlH2P4)
+
+# Class: turbbo:behaviour_RDCdADDJmSYz0KQPW8JeeEL (Carrying a weapon)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDCdADDJmSYz0KQPW8JeeEL "Carrying a weapon")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDCdADDJmSYz0KQPW8JeeEL "Holding a weapon, a device which primary purpose is to attack or defend against others.")
+SubClassOf(turbbo:behaviour_RDCdADDJmSYz0KQPW8JeeEL turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs)
+
+# Class: turbbo:behaviour_RDD3rbWNSvbnzQEYVOzVTaf (Go to and be present at a planned occasion or activity (such as a social gathering or sports program).)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDD3rbWNSvbnzQEYVOzVTaf "Go to and be present at a planned occasion or activity (such as a social gathering or sports program).")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDD3rbWNSvbnzQEYVOzVTaf "Attending to a story or event recorded by a camera as a set of moving images and shown in a theater or on television.")
+SubClassOf(turbbo:behaviour_RDD3rbWNSvbnzQEYVOzVTaf turbbo:behaviour_Rb1xX794wVt3QQownZtSbO)
+
+# Class: turbbo:behaviour_RDGyOtjqZKCX0tefKkHlCB4 (Reading)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDGyOtjqZKCX0tefKkHlCB4 "Reading")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDGyOtjqZKCX0tefKkHlCB4 "The action of looking at and comprehending the meaning of (written or printed matter) by mentally interpreting the characters or symbols of which it is composed.")
+SubClassOf(turbbo:behaviour_RDGyOtjqZKCX0tefKkHlCB4 turbbo:behaviour_RDqjiSX08Nc9xxSBrR5KMOM)
+
+# Class: turbbo:behaviour_RDHDhOpQRdVHIWshnX8texT (Accounting)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDHDhOpQRdVHIWshnX8texT "Accounting")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDHDhOpQRdVHIWshnX8texT "The act of keeping the financial records of a business or person.")
+SubClassOf(turbbo:behaviour_RDHDhOpQRdVHIWshnX8texT turbbo:behaviour_RhlslZKl21SGb8L452uSU8)
+
+# Class: turbbo:behaviour_RDIIAa0apBgWd6V8u5gqFdx (Crying)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDIIAa0apBgWd6V8u5gqFdx "Crying")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDIIAa0apBgWd6V8u5gqFdx "Producing tears often while making loud sounds because of pain, sorrow, or other strong emotions.")
+SubClassOf(turbbo:behaviour_RDIIAa0apBgWd6V8u5gqFdx turbbo:behaviour_RDck4eDShRuThnEF6Ql5OxH)
+
+# Class: turbbo:behaviour_RDJKU5nu0UQ99SqvzqDERuT (Being absent)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDJKU5nu0UQ99SqvzqDERuT "Being absent")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDJKU5nu0UQ99SqvzqDERuT "The practice of regularly staying away from work or school without valid reason")
+SubClassOf(turbbo:behaviour_RDJKU5nu0UQ99SqvzqDERuT turbbo:behaviour_R8cCVugnbr4KoPFPOy98Qt2)
+
+# Class: turbbo:behaviour_RDL2jv9fzH1Qut883nyV9h2 (Joining or maintaining membership in political organizations)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDL2jv9fzH1Qut883nyV9h2 "Joining or maintaining membership in political organizations")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDL2jv9fzH1Qut883nyV9h2 "Participation in an organization that, on the basis of one or more shared concerns, attempts to influence public policy in its favour.")
+SubClassOf(turbbo:behaviour_RDL2jv9fzH1Qut883nyV9h2 turbbo:behaviour_RDB0WPFBq8eRpd2dUYyztb4)
+
+# Class: turbbo:behaviour_RDLYuvHGi7xCMFHwL7WJ8pF (Engaging in prosocial behavior)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDLYuvHGi7xCMFHwL7WJ8pF "Engaging in prosocial behavior")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDLYuvHGi7xCMFHwL7WJ8pF "Engaging in behavior which is positive, helpful, and intended to promote social acceptance and friendship.")
+SubClassOf(turbbo:behaviour_RDLYuvHGi7xCMFHwL7WJ8pF turbbo:behaviour_RC5cLYrHZhVyinK9OLpz4Ax)
+
+# Class: turbbo:behaviour_RDNayceseHCIB2iSzFiUw1F (Engaging in strikes)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDNayceseHCIB2iSzFiUw1F "Engaging in strikes")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDNayceseHCIB2iSzFiUw1F "The act of stopping work in order to force an employer to comply with demands.")
+SubClassOf(turbbo:behaviour_RDNayceseHCIB2iSzFiUw1F turbbo:behaviour_R7pSWXD6d3tkoGLH56hjASm)
+
+# Class: turbbo:behaviour_RDSprVXKVeqV4JtMjaGwwDX (Feeding)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDSprVXKVeqV4JtMjaGwwDX "Feeding")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDSprVXKVeqV4JtMjaGwwDX "The act of giving food to someone else, often a child.")
+SubClassOf(turbbo:behaviour_RDSprVXKVeqV4JtMjaGwwDX turbbo:behaviour_RBkPOivG8JaZijqer0ZkDjQ)
+
+# Class: turbbo:behaviour_RDTyuOxxUCulUO8Mpp6qkok (Smoking Water pipe)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDTyuOxxUCulUO8Mpp6qkok "Smoking Water pipe")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDTyuOxxUCulUO8Mpp6qkok "The use of a device for smoking in which the tobacco smoke passes through water before it is inhaled.")
+SubClassOf(turbbo:behaviour_RDTyuOxxUCulUO8Mpp6qkok turbbo:behaviour_RDdB56hI5WEz1kELL2HbIdh)
+
+# Class: turbbo:behaviour_RDUJWELA0SPaErG3vHbdX4L (Stretching)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDUJWELA0SPaErG3vHbdX4L "Stretching")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDUJWELA0SPaErG3vHbdX4L "Straighten or extend one’s body or a part of one’s body to its full length, typically so as to tighten one’s muscles.")
+SubClassOf(turbbo:behaviour_RDUJWELA0SPaErG3vHbdX4L turbbo:behaviour_R7ou7HEwYODwmkHhLtEqW2B)
+
+# Class: turbbo:behaviour_RDUbufE2Nf82qL40OOzDf0X (Participating in lesson)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDUbufE2Nf82qL40OOzDf0X "Participating in lesson")
+SubClassOf(turbbo:behaviour_RDUbufE2Nf82qL40OOzDf0X turbbo:behaviour_RFGrqCSRvAPz3uiW6oXcW7)
+
+# Class: turbbo:behaviour_RDUvbq2izGgpt3kOUvTN7DN (Participating in Physician treatment)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDUvbq2izGgpt3kOUvTN7DN "Participating in Physician treatment")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDUvbq2izGgpt3kOUvTN7DN "The actions of treatment of illness through the services offered by the medical professions.")
+SubClassOf(turbbo:behaviour_RDUvbq2izGgpt3kOUvTN7DN turbbo:behaviour_RChrJYRTZRmBDhl2HTuXV4S)
+
+# Class: turbbo:behaviour_RDWlGjHDqw1graeSapdOC8q (Terminating a job)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDWlGjHDqw1graeSapdOC8q "Terminating a job")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDWlGjHDqw1graeSapdOC8q "To cause a job to end.")
+SubClassOf(turbbo:behaviour_RDWlGjHDqw1graeSapdOC8q turbbo:behaviour_R8QKq0DUYbu1hFlkFQbcDqz)
+
+# Class: turbbo:behaviour_RDZT0VWQEBqvPfHRPJBiyVO (Providing informational support)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDZT0VWQEBqvPfHRPJBiyVO "Providing informational support")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDZT0VWQEBqvPfHRPJBiyVO "To give help or assistance through providing information.")
+SubClassOf(turbbo:behaviour_RDZT0VWQEBqvPfHRPJBiyVO turbbo:behaviour_RDLYuvHGi7xCMFHwL7WJ8pF)
+
+# Class: turbbo:behaviour_RDarCRBoiqojsnZ9V6Oj1EU (Recuperating)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDarCRBoiqojsnZ9V6Oj1EU "Recuperating")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDarCRBoiqojsnZ9V6Oj1EU "Actions taken to recover from sickness or exhaustion and to regain health or strength.")
+SubClassOf(turbbo:behaviour_RDarCRBoiqojsnZ9V6Oj1EU turbbo:behaviour_R7x8NHLRGEcEymTXMx3THX7)
+
+# Class: turbbo:behaviour_RDazgYyfZxs7cSniOP0LqUl (Using Oral tobacco)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDazgYyfZxs7cSniOP0LqUl "Using Oral tobacco")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDazgYyfZxs7cSniOP0LqUl "The use of tobacco that is placed in the mouth between the cheek and the gum.")
+SubClassOf(turbbo:behaviour_RDazgYyfZxs7cSniOP0LqUl turbbo:behaviour_RDdB56hI5WEz1kELL2HbIdh)
+
+# Class: turbbo:behaviour_RDcFnYzsIyED62rWslUIgsQ (Quitting or resigning from a job)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDcFnYzsIyED62rWslUIgsQ "Quitting or resigning from a job")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDcFnYzsIyED62rWslUIgsQ "The act of giving up (a job or position) in a formal or official way.")
+SubClassOf(turbbo:behaviour_RDcFnYzsIyED62rWslUIgsQ turbbo:behaviour_RCKDQM6dfhit3RC352IGkgN)
+SubClassOf(turbbo:behaviour_RDcFnYzsIyED62rWslUIgsQ turbbo:behaviour_RDWlGjHDqw1graeSapdOC8q)
+
+# Class: turbbo:behaviour_RDck4eDShRuThnEF6Ql5OxH (Producing non-verbal communications)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDck4eDShRuThnEF6Ql5OxH "Producing non-verbal communications")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDck4eDShRuThnEF6Ql5OxH "The act of communication not involving or using words.")
+SubClassOf(turbbo:behaviour_RDck4eDShRuThnEF6Ql5OxH turbbo:behaviour_RCV5kFFQ8uWjqjPCrdjngHb)
+
+# Class: turbbo:behaviour_RDd9PVm2VkoGBq6nc5q376d (Donating)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDd9PVm2VkoGBq6nc5q376d "Donating")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDd9PVm2VkoGBq6nc5q376d "The act of freely offering time, goods, money or expertise for a civic involvement.")
+SubClassOf(turbbo:behaviour_RDd9PVm2VkoGBq6nc5q376d turbbo:behaviour_RDB0WPFBq8eRpd2dUYyztb4)
+
+# Class: turbbo:behaviour_RDdB56hI5WEz1kELL2HbIdh (Using Tobacco)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDdB56hI5WEz1kELL2HbIdh "Using Tobacco")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDdB56hI5WEz1kELL2HbIdh "The use of the tobacco plant leaf and its product.")
+SubClassOf(turbbo:behaviour_RDdB56hI5WEz1kELL2HbIdh turbbo:behaviour_RCKDQM6dfhit3RC352IGkgN)
+
+# Class: turbbo:behaviour_RDdnDizb7yQLTGidIQACx7C (Drinking Soda)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDdnDizb7yQLTGidIQACx7C "Drinking Soda")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDdnDizb7yQLTGidIQACx7C "The consumption of a sweet, carbonate, nonalcoholic beverage.")
+SubClassOf(turbbo:behaviour_RDdnDizb7yQLTGidIQACx7C turbbo:behaviour_R7qzqygnfKwMVxUR9f0qbNZ)
+
+# Class: turbbo:behaviour_RDeUwnwxfKUS5E5xlwbtwQP (Using property of others without consent)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDeUwnwxfKUS5E5xlwbtwQP "Using property of others without consent")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDeUwnwxfKUS5E5xlwbtwQP "The act of using someone else´s property without owners permission.")
+SubClassOf(turbbo:behaviour_RDeUwnwxfKUS5E5xlwbtwQP turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs)
+
+# Class: turbbo:behaviour_RDmKjBpNIWwc0pUklW7MzjR (Using hearing protection)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDmKjBpNIWwc0pUklW7MzjR "Using hearing protection")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDmKjBpNIWwc0pUklW7MzjR "The use of hearing protection devices when exposed to high noise.")
+SubClassOf(turbbo:behaviour_RDmKjBpNIWwc0pUklW7MzjR turbbo:behaviour_R9SZhlXBAdyrsI5ItrSRZDG)
+
+# Class: turbbo:behaviour_RDn0ZVSM2vfmu81DdUnDKoA (Applying to a job)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDn0ZVSM2vfmu81DdUnDKoA "Applying to a job")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDn0ZVSM2vfmu81DdUnDKoA "To ask formally for work that a person does regularly in order to earn money.")
+SubClassOf(turbbo:behaviour_RDn0ZVSM2vfmu81DdUnDKoA turbbo:behaviour_R9BeiQh4oa8EbuNm1bjryZB)
+
+# Class: turbbo:behaviour_RDnuf6OklKW1hXGCl6f1FQ (Gathering information)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDnuf6OklKW1hXGCl6f1FQ "Gathering information")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDnuf6OklKW1hXGCl6f1FQ "The act of collecting information.")
+SubClassOf(turbbo:behaviour_RDnuf6OklKW1hXGCl6f1FQ turbbo:behaviour_RD0GMkoktmQ73gfqCl0qW1R)
+
+# Class: turbbo:behaviour_RDqjiSX08Nc9xxSBrR5KMOM (Engaging in learning and applying knowledge)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDqjiSX08Nc9xxSBrR5KMOM "Engaging in learning and applying knowledge")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDqjiSX08Nc9xxSBrR5KMOM "The acquisition or application of knowledge or skills through study, experience, or being taught.")
+SubClassOf(turbbo:behaviour_RDqjiSX08Nc9xxSBrR5KMOM turbbo:behaviour_R9HlY0i7brkkaamN0VMCVmw)
+
+# Class: turbbo:behaviour_RDqrSoVPQjxqqJkRCeAY7Fh (Engaging in educational parenting)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDqrSoVPQjxqqJkRCeAY7Fh "Engaging in educational parenting")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDqrSoVPQjxqqJkRCeAY7Fh "The process of taking care of children's educational well being until they are old enough to take care of this themselves.")
+SubClassOf(turbbo:behaviour_RDqrSoVPQjxqqJkRCeAY7Fh turbbo:behaviour_R7MWXGKIGLx4ykI6IfNRWHF)
+
+# Class: turbbo:behaviour_RDvb6aFUJwVt0s07bERv9DR (Engaging in Political contact)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDvb6aFUJwVt0s07bERv9DR "Engaging in Political contact")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDvb6aFUJwVt0s07bERv9DR "Communication with a political actor.")
+SubClassOf(turbbo:behaviour_RDvb6aFUJwVt0s07bERv9DR turbbo:behaviour_R7pSWXD6d3tkoGLH56hjASm)
+
+# Class: turbbo:behaviour_RDw1Q66ue2imTNF7lazEvKw (Engaging in aggressive behavior)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDw1Q66ue2imTNF7lazEvKw "Engaging in aggressive behavior")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDw1Q66ue2imTNF7lazEvKw "Behavior that causes or threatens harm to other people.")
+SubClassOf(turbbo:behaviour_RDw1Q66ue2imTNF7lazEvKw turbbo:behaviour_R7LFMgbt35Cfkx42ektsTEV)
+
+# Class: turbbo:behaviour_RDw3qFlleEQPLNjw6ZGTd8Z (Attending school)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDw3qFlleEQPLNjw6ZGTd8Z "Attending school")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDw3qFlleEQPLNjw6ZGTd8Z "The action or process of teaching a child.")
+SubClassOf(turbbo:behaviour_RDw3qFlleEQPLNjw6ZGTd8Z turbbo:behaviour_R7MWXGKIGLx4ykI6IfNRWHF)
+
+# Class: turbbo:behaviour_RDxp8Bwy2X738H5qxan42Bw (Retiring from a job)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDxp8Bwy2X738H5qxan42Bw "Retiring from a job")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDxp8Bwy2X738H5qxan42Bw "The withdrawal from one's position or occupation or from active working life.")
+SubClassOf(turbbo:behaviour_RDxp8Bwy2X738H5qxan42Bw turbbo:behaviour_RDWlGjHDqw1graeSapdOC8q)
+
+# Class: turbbo:behaviour_RDyZolgzJg2qTtAOywxH2yy (Acquiring goods and services)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDyZolgzJg2qTtAOywxH2yy "Acquiring goods and services")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDyZolgzJg2qTtAOywxH2yy "The act of acquiring (something) permanently or temporarily.")
+SubClassOf(turbbo:behaviour_RDyZolgzJg2qTtAOywxH2yy turbbo:behaviour_RhlslZKl21SGb8L452uSU8)
+
+# Class: turbbo:behaviour_RDylVUTN7gssLSu1xP0nJDa (Blocking traffic)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDylVUTN7gssLSu1xP0nJDa "Blocking traffic")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDylVUTN7gssLSu1xP0nJDa "The action or process of obstructing movement, progress, or activity within traffic.")
+SubClassOf(turbbo:behaviour_RDylVUTN7gssLSu1xP0nJDa turbbo:behaviour_R7pSWXD6d3tkoGLH56hjASm)
+
+# Class: turbbo:behaviour_RDyt3Gqf4k8WR1xaRJAj1Kx (Departing early)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDyt3Gqf4k8WR1xaRJAj1Kx "Departing early")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDyt3Gqf4k8WR1xaRJAj1Kx "To go away from work before the usual or expected time.")
+SubClassOf(turbbo:behaviour_RDyt3Gqf4k8WR1xaRJAj1Kx turbbo:behaviour_R8cCVugnbr4KoPFPOy98Qt2)
+
+# Class: turbbo:behaviour_RDzsFgl9xnDJkw9zXLWULAv (Using technology)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RDzsFgl9xnDJkw9zXLWULAv "Using technology")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RDzsFgl9xnDJkw9zXLWULAv "Engaging in a task using technical processes, methods, or knowledge.")
+SubClassOf(turbbo:behaviour_RDzsFgl9xnDJkw9zXLWULAv turbbo:behaviour_RCLGCfCEICjWDiyU2xYotQk)
+
+# Class: turbbo:behaviour_RELGFPbeTmyA8dwf248hdf (Accepting stolen property)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RELGFPbeTmyA8dwf248hdf "Accepting stolen property")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RELGFPbeTmyA8dwf248hdf "The act of receiving/taking possession of property that does not belong to the possesor.")
+SubClassOf(turbbo:behaviour_RELGFPbeTmyA8dwf248hdf turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs)
+
+# Class: turbbo:behaviour_RELjqe9K96RTVusFCzO665 (Attending school event)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RELjqe9K96RTVusFCzO665 "Attending school event")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RELjqe9K96RTVusFCzO665 "To go and be present at a school event.")
+SubClassOf(turbbo:behaviour_RELjqe9K96RTVusFCzO665 turbbo:behaviour_RDqrSoVPQjxqqJkRCeAY7Fh)
+
+# Class: turbbo:behaviour_REmsFQNMuh3CGKcGBuBLfF (Hunting)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_REmsFQNMuh3CGKcGBuBLfF "Hunting")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_REmsFQNMuh3CGKcGBuBLfF "To pursue and kill (a wild animal) for sport or food.")
+SubClassOf(turbbo:behaviour_REmsFQNMuh3CGKcGBuBLfF turbbo:behaviour_RFGrqCSRvAPz3uiW6oXcW7)
+
+# Class: turbbo:behaviour_RFFvgJZOVt9s4BsxZOe4Ns (Ingesting Protein)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RFFvgJZOVt9s4BsxZOe4Ns "Ingesting Protein")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RFFvgJZOVt9s4BsxZOe4Ns "Ingesting a group of complex organic macromolecules composed of one or more chains (linear polymers) of alpha-L-amino acids linked by peptide bonds and ranging in size from a few thousand to over 1 million Daltons. Proteins are fundamental genetically encoded components of living cells with specific structures and functions dictated by amino acid sequence.")
+SubClassOf(turbbo:behaviour_RFFvgJZOVt9s4BsxZOe4Ns turbbo:behaviour_R3GTM1WIfB3LofIOVpVVKU)
+
+# Class: turbbo:behaviour_RFGrqCSRvAPz3uiW6oXcW7 (Participating in hobbies/activities)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RFGrqCSRvAPz3uiW6oXcW7 "Participating in hobbies/activities")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RFGrqCSRvAPz3uiW6oXcW7 "A pursuit outside one's regular occupation engaged in especially for relaxation")
+SubClassOf(turbbo:behaviour_RFGrqCSRvAPz3uiW6oXcW7 turbbo:behaviour_RWnX1GwU1D6dWspenC31cx)
+
+# Class: turbbo:behaviour_RFrfRW4dhbwIoLOXGRCUib (Drinking Coffee)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RFrfRW4dhbwIoLOXGRCUib "Drinking Coffee")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RFrfRW4dhbwIoLOXGRCUib "The consumption of a drink made from the roasted and ground beanlike seeds of a tropical shrub.")
+SubClassOf(turbbo:behaviour_RFrfRW4dhbwIoLOXGRCUib turbbo:behaviour_R7qzqygnfKwMVxUR9f0qbNZ)
+
+# Class: turbbo:behaviour_RG0IfHhxAote9X1WUd2rEY (Eating Baked goods)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RG0IfHhxAote9X1WUd2rEY "Eating Baked goods")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RG0IfHhxAote9X1WUd2rEY "Consumption of food products that have been baked in an oven.")
+SubClassOf(turbbo:behaviour_RG0IfHhxAote9X1WUd2rEY turbbo:behaviour_R7uK2tMCWgORKYlpKazgtMt)
+
+# Class: turbbo:behaviour_RG968kLWRO6N5z8H6WWozU (Visiting class)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RG968kLWRO6N5z8H6WWozU "Visiting class")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RG968kLWRO6N5z8H6WWozU "To go and be present at a class session.")
+SubClassOf(turbbo:behaviour_RG968kLWRO6N5z8H6WWozU turbbo:behaviour_RDqrSoVPQjxqqJkRCeAY7Fh)
+
+# Class: turbbo:behaviour_RHPyU2gwOKLNfkBzKpbdcX (Teaching)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RHPyU2gwOKLNfkBzKpbdcX "Teaching")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RHPyU2gwOKLNfkBzKpbdcX "To cause or help (someone) to learn about a subject.")
+SubClassOf(turbbo:behaviour_RHPyU2gwOKLNfkBzKpbdcX turbbo:behaviour_R7MWXGKIGLx4ykI6IfNRWHF)
+SubClassOf(turbbo:behaviour_RHPyU2gwOKLNfkBzKpbdcX turbbo:behaviour_Rj9feeEPPMDelLiPVmOGiu)
+
+# Class: turbbo:behaviour_RINOST75D6djkBWwq9c5bA (Engaging in sexually intimate actions)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RINOST75D6djkBWwq9c5bA "Engaging in sexually intimate actions")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RINOST75D6djkBWwq9c5bA "The act of private and personal sexual interactions.")
+SubClassOf(turbbo:behaviour_RINOST75D6djkBWwq9c5bA turbbo:behaviour_RCkUmDEEBCZJdgoHyJUrlzm)
+
+# Class: turbbo:behaviour_RJO6iC2VRzba8WErTMzjVY (Supporting a political campaign)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RJO6iC2VRzba8WErTMzjVY "Supporting a political campaign")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RJO6iC2VRzba8WErTMzjVY "Offering support for an organized effort which seeks to influence the decision making process within a specific group. Often refers to electoral campaigns, wherein representatives are chosen or referendums are decided")
+SubClassOf(turbbo:behaviour_RJO6iC2VRzba8WErTMzjVY turbbo:behaviour_R7MZNxsxrHJFsQZe0BlH2P4)
+
+# Class: turbbo:behaviour_RKywIOxd28NpHngBGOrhmM (Speaking to a child)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RKywIOxd28NpHngBGOrhmM "Speaking to a child")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RKywIOxd28NpHngBGOrhmM "The [parent] talks to the child.")
+SubClassOf(turbbo:behaviour_RKywIOxd28NpHngBGOrhmM turbbo:behaviour_RCE7VvM7rpyKfsBJxKqHVvk)
+
+# Class: turbbo:behaviour_RM8IEbYCf0Lh0sCY12xysa (Engaging in boycotts)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RM8IEbYCf0Lh0sCY12xysa "Engaging in boycotts")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RM8IEbYCf0Lh0sCY12xysa "A punitive ban that forbids relations with certain groups, cooperation with a policy, or the handling of goods.")
+SubClassOf(turbbo:behaviour_RM8IEbYCf0Lh0sCY12xysa turbbo:behaviour_R7pSWXD6d3tkoGLH56hjASm)
+
+# Class: turbbo:behaviour_RNHPFDfx1RIGUC2DxGVclA (Taking care of animals)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RNHPFDfx1RIGUC2DxGVclA "Taking care of animals")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RNHPFDfx1RIGUC2DxGVclA "To keep an animal in the household safe and provided for.")
+SubClassOf(turbbo:behaviour_RNHPFDfx1RIGUC2DxGVclA turbbo:behaviour_RCMQ2Xe8y2ROsQ2JODi10Pt)
+
+# Class: turbbo:behaviour_RPOb1PeqNWQMEmR8PP3vzy (Engaging in sexual assault)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RPOb1PeqNWQMEmR8PP3vzy "Engaging in sexual assault")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RPOb1PeqNWQMEmR8PP3vzy "The act of illegal sexual contact that usually involves force upon a person without consent or is inflicted upon a person who is incapable of giving consent.")
+SubClassOf(turbbo:behaviour_RPOb1PeqNWQMEmR8PP3vzy turbbo:behaviour_RDw1Q66ue2imTNF7lazEvKw)
+
+# Class: turbbo:behaviour_RPbzQu9FJJx3Wc4aXHN7J1 (Fighting physically)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RPbzQu9FJJx3Wc4aXHN7J1 "Fighting physically")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RPbzQu9FJJx3Wc4aXHN7J1 "The act of using physical force to try to hurt someone, to defeat an enemy.")
+SubClassOf(turbbo:behaviour_RPbzQu9FJJx3Wc4aXHN7J1 turbbo:behaviour_RDw1Q66ue2imTNF7lazEvKw)
+
+# Class: turbbo:behaviour_RR373pfhTV9IFDQ05dFELW (Using Inhalants)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RR373pfhTV9IFDQ05dFELW "Using Inhalants")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RR373pfhTV9IFDQ05dFELW "The use of substances that produce chemical vapors that can be inhaled to induce a psychoactive, or mind-altering, effect.")
+SubClassOf(turbbo:behaviour_RR373pfhTV9IFDQ05dFELW turbbo:behaviour_RCKDQM6dfhit3RC352IGkgN)
+
+# Class: turbbo:behaviour_RRaNdhCF3dVWlKQXqMvKaa (Research participation)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RRaNdhCF3dVWlKQXqMvKaa "Research participation")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RRaNdhCF3dVWlKQXqMvKaa "The act of participating as an individual that is observed, analyzed, examined, investigated, experimented upon, or/and treated in the course of a particular study.")
+SubClassOf(turbbo:behaviour_RRaNdhCF3dVWlKQXqMvKaa turbbo:behaviour_RDd9PVm2VkoGBq6nc5q376d)
+
+# Class: turbbo:behaviour_RWXCHZrMMzfJByqIOBrpTw (Breastfeeding)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RWXCHZrMMzfJByqIOBrpTw "Breastfeeding")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RWXCHZrMMzfJByqIOBrpTw "The act of nursing (a baby) at the breast; suckling")
+SubClassOf(turbbo:behaviour_RWXCHZrMMzfJByqIOBrpTw turbbo:behaviour_RDSprVXKVeqV4JtMjaGwwDX)
+
+# Class: turbbo:behaviour_RWnX1GwU1D6dWspenC31cx (Engaging in recreation and leisure activities)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RWnX1GwU1D6dWspenC31cx "Engaging in recreation and leisure activities")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RWnX1GwU1D6dWspenC31cx "Engaging in activities that provide refreshment of one's mind or body after work, through amusement or play.")
+SubClassOf(turbbo:behaviour_RWnX1GwU1D6dWspenC31cx turbbo:behaviour_RC5cLYrHZhVyinK9OLpz4Ax)
+
+# Class: turbbo:behaviour_RY0zoHgTUlb8DRG5uu94K8 (Providing emotional support)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RY0zoHgTUlb8DRG5uu94K8 "Providing emotional support")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RY0zoHgTUlb8DRG5uu94K8 "Engaging in behavior which provides sympathy and encouragement.")
+SubClassOf(turbbo:behaviour_RY0zoHgTUlb8DRG5uu94K8 turbbo:behaviour_RDLYuvHGi7xCMFHwL7WJ8pF)
+
+# Class: turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs (Engaging in non-aggressive antisocial behavior)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs "Engaging in non-aggressive antisocial behavior")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs "Non-violent behaviors that harm or lack consideration for the well-being of others.")
+SubClassOf(turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs turbbo:behaviour_R7LFMgbt35Cfkx42ektsTEV)
+
+# Class: turbbo:behaviour_Rb1xX794wVt3QQownZtSbO (Attending Events)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_Rb1xX794wVt3QQownZtSbO "Attending Events")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_Rb1xX794wVt3QQownZtSbO "Go to and be present at a planned occasion or activity (such as a social gathering or sports program).")
+SubClassOf(turbbo:behaviour_Rb1xX794wVt3QQownZtSbO turbbo:behaviour_RWnX1GwU1D6dWspenC31cx)
+
+# Class: turbbo:behaviour_RbNf7VEy1PxZ0dorTHM9JL (Intimidating with weapon)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RbNf7VEy1PxZ0dorTHM9JL "Intimidating with weapon")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RbNf7VEy1PxZ0dorTHM9JL "The act of using an instrument of combat, designed to injure or kill, in an attempt to persuade anothers actions.")
+SubClassOf(turbbo:behaviour_RbNf7VEy1PxZ0dorTHM9JL turbbo:behaviour_RDw1Q66ue2imTNF7lazEvKw)
+
+# Class: turbbo:behaviour_RbTyaBi2bOHP4ozQoWEII (Reading spiritual text)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RbTyaBi2bOHP4ozQoWEII "Reading spiritual text")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RbTyaBi2bOHP4ozQoWEII "Engaging in activities that provide refreshment of one's mind or body after work, through amusement or play.")
+SubClassOf(turbbo:behaviour_RbTyaBi2bOHP4ozQoWEII turbbo:behaviour_R8qMM1AUIWkGs9uIR3zf0Oe)
+
+# Class: turbbo:behaviour_Rca0mn9wW01cj6QOf4AzGS (Selling)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_Rca0mn9wW01cj6QOf4AzGS "Selling")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_Rca0mn9wW01cj6QOf4AzGS "To exchange (something) for money.")
+SubClassOf(turbbo:behaviour_Rca0mn9wW01cj6QOf4AzGS turbbo:behaviour_RhlslZKl21SGb8L452uSU8)
+
+# Class: turbbo:behaviour_ReGfCA6kmPSboQD5R1oatV (Ingesting Cholesterol)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_ReGfCA6kmPSboQD5R1oatV "Ingesting Cholesterol")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_ReGfCA6kmPSboQD5R1oatV "Ingesting an animal sterol found in the body tissues (and blood plasma) of vertebrates.")
+SubClassOf(turbbo:behaviour_ReGfCA6kmPSboQD5R1oatV turbbo:behaviour_R3GTM1WIfB3LofIOVpVVKU)
+
+# Class: turbbo:behaviour_RegBtmSAlhPnzgmfSUeTLH (Listening to music)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RegBtmSAlhPnzgmfSUeTLH "Listening to music")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RegBtmSAlhPnzgmfSUeTLH "To pay attention to in order to hear to music that is being sung / played.")
+SubClassOf(turbbo:behaviour_RegBtmSAlhPnzgmfSUeTLH turbbo:behaviour_RCcKEhZxYCpuN3rXXYRFoKa)
+
+# Class: turbbo:behaviour_Rf9oqhtZCda9LIk7oVS9DU (Engaging in truancy)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_Rf9oqhtZCda9LIk7oVS9DU "Engaging in truancy")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_Rf9oqhtZCda9LIk7oVS9DU "The action of staying away from school without good reason; absenteeism.")
+SubClassOf(turbbo:behaviour_Rf9oqhtZCda9LIk7oVS9DU turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs)
+
+# Class: turbbo:behaviour_RfZmso8v8XZptVF2vKaUQ3 (Protecting the environment)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RfZmso8v8XZptVF2vKaUQ3 "Protecting the environment")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RfZmso8v8XZptVF2vKaUQ3 "Keeping the environment from being harmed.")
+SubClassOf(turbbo:behaviour_RfZmso8v8XZptVF2vKaUQ3 turbbo:behaviour_R7MZNxsxrHJFsQZe0BlH2P4)
+
+# Class: turbbo:behaviour_RfwrrDcashsZzpYX32Y8lP (Drawing)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RfwrrDcashsZzpYX32Y8lP "Drawing")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RfwrrDcashsZzpYX32Y8lP "The act or art of making a picture, image, etc., with a pencil, pen, marker, chalk, etc., but usually not with paint.")
+SubClassOf(turbbo:behaviour_RfwrrDcashsZzpYX32Y8lP turbbo:behaviour_RDqjiSX08Nc9xxSBrR5KMOM)
+
+# Class: turbbo:behaviour_RhlslZKl21SGb8L452uSU8 (Engaging in basic economic transactions)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RhlslZKl21SGb8L452uSU8 "Engaging in basic economic transactions")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RhlslZKl21SGb8L452uSU8 "Engaging in actions where economic value is provided by exchange between parties.")
+SubClassOf(turbbo:behaviour_RhlslZKl21SGb8L452uSU8 turbbo:behaviour_RCLGCfCEICjWDiyU2xYotQk)
+
+# Class: turbbo:behaviour_RhzG71ht01mQ8JDhza2Wzi (Ingesting Carbohydrate)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RhzG71ht01mQ8JDhza2Wzi "Ingesting Carbohydrate")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RhzG71ht01mQ8JDhza2Wzi "Ingesting any one of various substances found in certain foods (such as bread, rice, and potatoes) that provide your body with heat and energy and are made of carbon, hydrogen, and oxygen.")
+SubClassOf(turbbo:behaviour_RhzG71ht01mQ8JDhza2Wzi turbbo:behaviour_R3GTM1WIfB3LofIOVpVVKU)
+
+# Class: turbbo:behaviour_Rj9feeEPPMDelLiPVmOGiu (Engaging in informal education)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_Rj9feeEPPMDelLiPVmOGiu "Engaging in informal education")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_Rj9feeEPPMDelLiPVmOGiu "Participating in learning activities outside the formal school setting that develop a person mentally, morally, or aesthetically.")
+SubClassOf(turbbo:behaviour_Rj9feeEPPMDelLiPVmOGiu turbbo:behaviour_RCLGCfCEICjWDiyU2xYotQk)
+
+# Class: turbbo:behaviour_RlI7OyT2VtC81reSeMdoLh (Eating Fruits)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RlI7OyT2VtC81reSeMdoLh "Eating Fruits")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RlI7OyT2VtC81reSeMdoLh "The consumption of the usually edible reproductive body of a seed plant.")
+SubClassOf(turbbo:behaviour_RlI7OyT2VtC81reSeMdoLh turbbo:behaviour_R7uK2tMCWgORKYlpKazgtMt)
+
+# Class: turbbo:behaviour_RlMYAo16e5oslcFDCdrGii (Having oral intercourse)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RlMYAo16e5oslcFDCdrGii "Having oral intercourse")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RlMYAo16e5oslcFDCdrGii "The act of sexual activity in which the genitals of one partner are stimulated by the mouth of the other; fellatio or cunnilingus.")
+SubClassOf(turbbo:behaviour_RlMYAo16e5oslcFDCdrGii turbbo:behaviour_RBZBFZG9PRFJpm31aToI1nl)
+
+# Class: turbbo:behaviour_RlnJeTriFA2gqojpzOKehu (Collecting)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RlnJeTriFA2gqojpzOKehu "Collecting")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RlnJeTriFA2gqojpzOKehu "Engaging in the process of bringing or gathering something together.")
+SubClassOf(turbbo:behaviour_RlnJeTriFA2gqojpzOKehu turbbo:behaviour_RFGrqCSRvAPz3uiW6oXcW7)
+
+# Class: turbbo:behaviour_RmSYcVyGoF5Juc2czWvFKJ (Hanging posters)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RmSYcVyGoF5Juc2czWvFKJ "Hanging posters")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RmSYcVyGoF5Juc2czWvFKJ "To suspend a large printed picture containing a political message.")
+SubClassOf(turbbo:behaviour_RmSYcVyGoF5Juc2czWvFKJ turbbo:behaviour_RJO6iC2VRzba8WErTMzjVY)
+
+# Class: turbbo:behaviour_RmsFbX68kZa0rYXa7PeIG7 (Cleaning)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RmsFbX68kZa0rYXa7PeIG7 "Cleaning")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RmsFbX68kZa0rYXa7PeIG7 "An act of making a place clean or tidy.")
+SubClassOf(turbbo:behaviour_RmsFbX68kZa0rYXa7PeIG7 turbbo:behaviour_R3NO3LpXB5rQZlwHyBqraH)
+
+# Class: turbbo:behaviour_Rpw8QahfkN1ulHg1owtelv (Eating Ice-cream)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_Rpw8QahfkN1ulHg1owtelv "Eating Ice-cream")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_Rpw8QahfkN1ulHg1owtelv "The consumption of a sweet flavored frozen food containing cream or butterfat and usually eggs")
+SubClassOf(turbbo:behaviour_Rpw8QahfkN1ulHg1owtelv turbbo:behaviour_R7uK2tMCWgORKYlpKazgtMt)
+
+# Class: turbbo:behaviour_Rr9R5cDg7RRsQSbJS1vKnM (Walking)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_Rr9R5cDg7RRsQSbJS1vKnM "Walking")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_Rr9R5cDg7RRsQSbJS1vKnM "Move at a regular pace by lifting and setting down each foot in turn, never having both feet off the ground at once.")
+SubClassOf(turbbo:behaviour_Rr9R5cDg7RRsQSbJS1vKnM turbbo:behaviour_R7ou7HEwYODwmkHhLtEqW2B)
+
+# Class: turbbo:behaviour_RrE6zfKvWJJOOuww3AlZlr (Taking medication)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RrE6zfKvWJJOOuww3AlZlr "Taking medication")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RrE6zfKvWJJOOuww3AlZlr "The act of taking a dose of medication into one's body (e.g., by swallowing, drinking, or inhaling).")
+SubClassOf(turbbo:behaviour_RrE6zfKvWJJOOuww3AlZlr turbbo:behaviour_R7x8NHLRGEcEymTXMx3THX7)
+
+# Class: turbbo:behaviour_RsTw4zzwI41RORImDRdsGM (Verbally abusing)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RsTw4zzwI41RORImDRdsGM "Verbally abusing")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RsTw4zzwI41RORImDRdsGM "The act of using words that attack or injure an individual or words that constitute psychological violence.")
+SubClassOf(turbbo:behaviour_RsTw4zzwI41RORImDRdsGM turbbo:behaviour_RDw1Q66ue2imTNF7lazEvKw)
+
+# Class: turbbo:behaviour_RsaqqjBS39mUXYl1xpaRIM (Speaking with school staff)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RsaqqjBS39mUXYl1xpaRIM "Speaking with school staff")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RsaqqjBS39mUXYl1xpaRIM "Expressing one's thoughts and feelings in spoken language to a school employee.")
+SubClassOf(turbbo:behaviour_RsaqqjBS39mUXYl1xpaRIM turbbo:behaviour_RDqrSoVPQjxqqJkRCeAY7Fh)
+
+# Class: turbbo:behaviour_Ru3YYyTyH8kcXOiDkhHurf (Swearing)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_Ru3YYyTyH8kcXOiDkhHurf "Swearing")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_Ru3YYyTyH8kcXOiDkhHurf "The use offensive words when speaking")
+SubClassOf(turbbo:behaviour_Ru3YYyTyH8kcXOiDkhHurf turbbo:behaviour_RayAVAeF9vXpz9v3jwSLzs)
+
+# Class: turbbo:behaviour_Ruc1Jl3zFXAQnNutAfVIK4 (Opening account)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_Ruc1Jl3zFXAQnNutAfVIK4 "Opening account")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_Ruc1Jl3zFXAQnNutAfVIK4 "The act of making an account open (typically on anticipation of financial transactions).")
+SubClassOf(turbbo:behaviour_Ruc1Jl3zFXAQnNutAfVIK4 turbbo:behaviour_R93z8pYrtnWwimDtpP76jOC)
+
+# Class: turbbo:behaviour_RwxCVUZQX5SqouSShk7A5I (Enrolling in school)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RwxCVUZQX5SqouSShk7A5I "Enrolling in school")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RwxCVUZQX5SqouSShk7A5I "Officially register as a student on a course.")
+SubClassOf(turbbo:behaviour_RwxCVUZQX5SqouSShk7A5I turbbo:behaviour_R7MWXGKIGLx4ykI6IfNRWHF)
+
+# Class: turbbo:behaviour_Rx25R848f1ANoSDNsmEr4q (Doing repairs)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_Rx25R848f1ANoSDNsmEr4q "Doing repairs")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_Rx25R848f1ANoSDNsmEr4q "To fix or mend something suffering from damage or a fault.")
+SubClassOf(turbbo:behaviour_Rx25R848f1ANoSDNsmEr4q turbbo:behaviour_RCMQ2Xe8y2ROsQ2JODi10Pt)
+
+# Class: turbbo:behaviour_RxoQIYkqSzILenRDzAon83 (Help-seeking)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RxoQIYkqSzILenRDzAon83 "Help-seeking")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RxoQIYkqSzILenRDzAon83 "Request assistance to make it easier for someone to do a job, to deal with a problem, etc.")
+SubClassOf(turbbo:behaviour_RxoQIYkqSzILenRDzAon83 turbbo:behaviour_RBuoEsSFBhOGJtFyQKJv3yx)
+
+# Class: turbbo:behaviour_Ry90zmHK5VM4cDr1CuYXSp (Gambling)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_Ry90zmHK5VM4cDr1CuYXSp "Gambling")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_Ry90zmHK5VM4cDr1CuYXSp "The act of playing a game in which you can win or lose money or possessions.")
+SubClassOf(turbbo:behaviour_Ry90zmHK5VM4cDr1CuYXSp turbbo:behaviour_R7ksLdc5AtNZogZjcdwMAz)
+
+# Class: turbbo:behaviour_RzLZVHATcpg9utyb6Wrz8n (Ingesting Calcium)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RzLZVHATcpg9utyb6Wrz8n "Ingesting Calcium")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RzLZVHATcpg9utyb6Wrz8n "Ingesting a silver-white divalent metallic element of the alkaline-earth group occurring only in combination.")
+SubClassOf(turbbo:behaviour_RzLZVHATcpg9utyb6Wrz8n turbbo:behaviour_R3GTM1WIfB3LofIOVpVVKU)
+
+# Class: turbbo:behaviour_RzlNZjf1nvIoW4m63l9QJP (Painting slogans)
+
+AnnotationAssertion(rdfs:label turbbo:behaviour_RzlNZjf1nvIoW4m63l9QJP "Painting slogans")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:behaviour_RzlNZjf1nvIoW4m63l9QJP "The process or art of using paint to mark a brief attention-getting phrase used in advertising or promotion.")
+SubClassOf(turbbo:behaviour_RzlNZjf1nvIoW4m63l9QJP turbbo:behaviour_RJO6iC2VRzba8WErTMzjVY)
+
+
+)

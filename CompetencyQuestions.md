@@ -97,27 +97,7 @@ Answer:
 ```
 
 Answer:
-```
-{ "head": {
-    "vars": [ "behaviourA" , "correlation" , "behaviourB" ]
-  } ,
-  "results": {
-    "bindings": [
-      { 
-        "behaviourA": { "type": "literal" , "xml:lang": "en" , "value": "moving/exercise 02" } ,
-        "correlation": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#decimal" , "value": "0.11" } ,
-        "behaviourB": { "type": "literal" , "xml:lang": "en" , "value": "using alcohol 02" }
-      } ,
-      { 
-        "behaviourA": { "type": "literal" , "xml:lang": "en" , "value": "moving/exercise 01" } ,
-        "correlation": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#decimal" , "value": "0.163" } ,
-        "behaviourB": { "type": "literal" , "xml:lang": "en" , "value": "smoking marijuana 01" }
-      }
-    ]
-  }
-}
-```
-
- "y" 	 "correlation" 	 "x" 
-"moving/exercise 02"	"0.11"	"using alcohol 02"
-"moving/exercise 01"	"0.163"	"smoking marijuana 01"
+| "y" | "correlation" | "x" |
+| --- | --- | --- |
+| "moving/exercise 02" | "0.11" |	"using alcohol 02" |
+| "moving/exercise 01" | "0.163" | "smoking marijuana 01" |

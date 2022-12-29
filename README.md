@@ -10,4 +10,4 @@ This is the latest version of the TURBBO ontologies which consists of three leve
 
 There is a merged version of the TURBBO ontologies which is turbbo.owl. 
 
-This repository also contains the SPARQL queries and answers used for evaluation of the ontology see [CompetencyQuestions](https://github.com/fatibaba/turbbo/blob/main/CompetencyQuestions.md). turbbo-dataset.ttl contains the dataset for testing the queries.
+This repository also contains the SPARQL queries and answers used for evaluation of the ontology see [CompetencyQuestions](https://github.com/fatibaba/turbbo/blob/main/CompetencyQuestions.md). [turbbo-dataset.ttl](https://raw.githubusercontent.com/fatibaba/turbbo/main/turbbo-dataset.ttl) contains the dataset for testing the queries.

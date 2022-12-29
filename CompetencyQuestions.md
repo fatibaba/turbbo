@@ -74,13 +74,14 @@ Answer:
 ```
 
 
-6. Which behaviours are correlated to a named behaviour and what are the correlation coefficients r
+6. Which behaviours are correlated to a named behaviour and what are the correlation coefficients r.
+For this query, we used Moving/Exercising as the named behaviour and tried to find all the correlated behaviours and their corresponding correlation coefficients r. The results show that our dataset contains 6 different measures of the Moving/Exercising behaviours against other behaviours. The result indicates that we have all the necessary concepts in the ontology to record behaviours and their correlations which can be used by different applications to conduct further data analysis (e.g. a meta-analysis). 
 
 ```
   PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
   PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-  SELECT ?behaviourA ?correlation ?behaviourB
+  SELECT ?behaviourA ?correlation_r ?behaviourB
   WHERE {
     ?y rdfs:label ?behaviourA.
     ?r rdfs:label "correlation coefficient r".
@@ -88,16 +89,20 @@ Answer:
     ?rValue rdfs:label  "rValue".
     ?rexample rdf:type ?r.
     ?rexample ?relates ?y.
-    ?rexample ?rValue ?correlation.
+    ?rexample ?rValue ?correlation_r.
     ?rexample ?relates ?x.
     ?x rdfs:label ?behaviourB.
-    filter regex(?behaviourA, "moving/exercise")
+    filter regex(?behaviourA, "Moving/Exercising")
     filter(?y != ?x)
   }
 ```
 
 Answer:
-| "y" | "correlation" | "x" |
+| "behaviourA" | "correlation_r" | "behaviourB" |
 | --- | --- | --- |
-| "moving/exercise 02" | "0.11" |	"using alcohol 02" |
-| "moving/exercise 01" | "0.163" | "smoking marijuana 01" |
+| "Moving/Exercising 2" | "0.192"^^xsd:decimal |	"Eating Vegetables 1" |
+| "Moving/Exercising 2" | "0.01"^^xsd:decimal | "Smoking Cigar(ette) 2" |
+| "Moving/Exercising 2" | "0.69"^^xsd:decimal | "Using Alcohol 2" |
+| "Moving/Exercising 1" | "0.11"^^xsd:decimal | "Using Alcohol 1" |
+| "Moving/Exercising 1" | "0.163"^^xsd:decimal | "Smoking Marijuana 1" |
+| "Moving/Exercising 1" | "0.125"^^xsd:decimal | "Smoking Cigar(ette) 1" |

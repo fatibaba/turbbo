@@ -75,7 +75,7 @@ Answer:
 
 
 6. Which behaviours are correlated to a named behaviour and what are the correlation coefficients r.
-For this query, we used Moving/Exercising as the named behaviour and tried to find all the correlated behaviours and their corresponding correlation coefficients r. The results show that our dataset contains 6 different measures of the Moving/Exercising behaviours against other behaviours. The result indicates that we have all the necessary concepts in the ontology to record behaviours and their correlations which can be used by different applications to conduct further data analysis (e.g. a meta-analysis). 
+For this query, we used Moving/Exercising as the named behaviour and tried to find all the correlated behaviours and their corresponding correlation coefficients r. The results show that our dataset contains 6 different measures of the Moving/Exercising behaviours against other behaviours from different studies. The result indicates that we have all the necessary concepts in the ontology to record behaviours and their correlations which can be used by different applications to conduct further data analysis (e.g. a meta-analysis). 
 
 ```
   PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>

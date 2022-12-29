@@ -29,7 +29,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/SEPIO_0000125>))
 Declaration(Class(<http://purl.obolibrary.org/obo/SEPIO_000383>))
 Declaration(Class(<http://purl.obolibrary.org/obo/STATO_0000039>))
 Declaration(Class(<http://purl.obolibrary.org/obo/STATO_0000104>))
-Declaration(Class(<http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue>))
 Declaration(Class(<http://www.ontology-of-units-of-measure.org/resource/om-2/000000111>))
 Declaration(Class(<http://www.ontology-of-units-of-measure.org/resource/om-2/000000117>))
 Declaration(Class(<http://www.w3.org/2006/time#Duration>))
@@ -83,6 +82,7 @@ Declaration(Class(turbbo:upper_0000146))
 Declaration(Class(turbbo:upper_0000147))
 Declaration(Class(turbbo:upper_0000148))
 Declaration(Class(turbbo:upper_0000149))
+Declaration(Class(turbbo:upper_0000151))
 Declaration(Class(turbbo:upper_OWLClass_00000000000000000004))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000057>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002234>))
@@ -126,6 +126,11 @@ Declaration(ObjectProperty(turbbo:upper_0000128))
 Declaration(ObjectProperty(turbbo:upper_0000129))
 Declaration(ObjectProperty(turbbo:upper_0000130))
 Declaration(ObjectProperty(turbbo:upper_0000131))
+Declaration(ObjectProperty(turbbo:upper_0000152))
+Declaration(ObjectProperty(turbbo:upper_0000153))
+Declaration(ObjectProperty(turbbo:upper_0000154))
+Declaration(ObjectProperty(turbbo:upper_0000155))
+Declaration(ObjectProperty(turbbo:upper_0000156))
 Declaration(DataProperty(<http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue>))
 Declaration(DataProperty(<http://www.w3.org/2006/time#numericDuration>))
 Declaration(DataProperty(<http://xmlns.com/foaf/0.1/surname>))
@@ -140,6 +145,7 @@ Declaration(DataProperty(turbbo:upper_0000024))
 Declaration(DataProperty(turbbo:upper_0000025))
 Declaration(DataProperty(turbbo:upper_0000093))
 Declaration(DataProperty(turbbo:upper_0000132))
+Declaration(DataProperty(turbbo:upper_0000157))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000111>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000114>))
@@ -254,7 +260,6 @@ ObjectPropertyRange(<http://www.ontology-of-units-of-measure.org/resource/om-2/h
 AnnotationAssertion(rdfs:label <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> "has value"@en)
 AnnotationAssertion(rdfs:label <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> "値を持つ"@ja)
 ObjectPropertyDomain(<http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://www.ontology-of-units-of-measure.org/resource/om-2/000000111>)
-ObjectPropertyRange(<http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue>)
 
 # Object Property: <http://www.w3.org/2006/time#hasBeginning> (has beginning)
 
@@ -380,6 +385,8 @@ ObjectPropertyRange(turbbo:upper_0000089 turbbo:upper_0000102)
 # Object Property: turbbo:upper_0000090 (converted from)
 
 AnnotationAssertion(rdfs:label turbbo:upper_0000090 "converted from")
+ObjectPropertyDomain(turbbo:upper_0000090 turbbo:upper_0000021)
+ObjectPropertyRange(turbbo:upper_0000090 <http://purl.obolibrary.org/obo/STATO_0000039>)
 
 # Object Property: turbbo:upper_0000091 (correlates with)
 
@@ -510,15 +517,52 @@ ObjectPropertyRange(turbbo:upper_0000130 turbbo:upper_0000105)
 # Object Property: turbbo:upper_0000131 (has correlation type)
 
 AnnotationAssertion(rdfs:label turbbo:upper_0000131 "has correlation type")
+ObjectPropertyDomain(turbbo:upper_0000131 turbbo:upper_0000021)
+ObjectPropertyRange(turbbo:upper_0000131 turbbo:upper_0000140)
+
+# Object Property: turbbo:upper_0000152 (measures behaviour X)
+
+AnnotationAssertion(rdfs:label turbbo:upper_0000152 "measures behaviour X"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#comment> turbbo:upper_0000152 "new term to consider replacing 'correlates behaviour'.")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:upper_0000152 "to measure a behaviour in relation to another behaviour Y")
+ObjectPropertyDomain(turbbo:upper_0000152 turbbo:upper_0000151)
+ObjectPropertyRange(turbbo:upper_0000152 turbbo:upper_0000123)
+
+# Object Property: turbbo:upper_0000153 (measures behaviour Y)
+
+AnnotationAssertion(rdfs:label turbbo:upper_0000153 "measures behaviour Y"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#comment> turbbo:upper_0000153 "new term to consider replacing 'correlates behaviour'.")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:upper_0000153 "to measure a behaviour in relation to another behaviour X")
+ObjectPropertyDomain(turbbo:upper_0000153 turbbo:upper_0000151)
+ObjectPropertyRange(turbbo:upper_0000153 turbbo:upper_0000123)
+
+# Object Property: turbbo:upper_0000154 (has time interval)
+
+AnnotationAssertion(rdfs:label turbbo:upper_0000154 "has time interval"@en)
+SubObjectPropertyOf(turbbo:upper_0000154 <http://www.w3.org/2006/time#hasTime>)
+ObjectPropertyDomain(turbbo:upper_0000154 turbbo:upper_0000151)
+ObjectPropertyRange(turbbo:upper_0000154 <http://www.w3.org/2006/time#Interval>)
+
+# Object Property: turbbo:upper_0000155 (contains)
+
+AnnotationAssertion(rdfs:label turbbo:upper_0000155 "contains"@en)
+ObjectPropertyDomain(turbbo:upper_0000155 <http://purl.obolibrary.org/obo/IAO_0000100>)
+ObjectPropertyDomain(turbbo:upper_0000155 <http://purl.obolibrary.org/obo/IAO_0000310>)
+ObjectPropertyRange(turbbo:upper_0000155 turbbo:upper_0000151)
+
+# Object Property: turbbo:upper_0000156 (has correlation)
+
+AnnotationAssertion(rdfs:label turbbo:upper_0000156 "has correlation"@en)
+ObjectPropertyDomain(turbbo:upper_0000156 turbbo:upper_0000151)
+ObjectPropertyRange(turbbo:upper_0000156 turbbo:upper_0000021)
 
 
 ############################
 #   Data Properties
 ############################
 
-# Data Property: <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> (has numerical value)
+# Data Property: <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> (<http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue>)
 
-AnnotationAssertion(rdfs:label <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "has numerical value"@en)
 DataPropertyDomain(<http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> <http://www.ontology-of-units-of-measure.org/resource/om-2/000000111>)
 
 # Data Property: <http://xmlns.com/foaf/0.1/surname> (Surname)
@@ -613,6 +657,12 @@ DataPropertyRange(turbbo:upper_0000093 rdfs:Literal)
 AnnotationAssertion(rdfs:label turbbo:upper_0000132 "has value")
 DataPropertyDomain(turbbo:upper_0000132 <http://purl.obolibrary.org/obo/IAO_0000027>)
 DataPropertyRange(turbbo:upper_0000132 xsd:decimal)
+
+# Data Property: turbbo:upper_0000157 (hasEthicalApproval)
+
+AnnotationAssertion(rdfs:label turbbo:upper_0000157 "hasEthicalApproval"@en)
+DataPropertyDomain(turbbo:upper_0000157 <http://purl.obolibrary.org/obo/SEPIO_0000125>)
+DataPropertyRange(turbbo:upper_0000157 xsd:boolean)
 
 
 
@@ -864,7 +914,7 @@ SubClassOf(<http://www.w3.org/2006/time#Instant> <http://www.w3.org/2006/time#Te
 
 # Class: <http://www.w3.org/2006/time#Interval> (intervalo de tiempo)
 
-AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/time#Interval> "A temporal entity with an extent or duration"@en)
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/time#Interval> "A temporal entity with an extent or duration. In the case of TURBBO, this class represents the time interval in weeks, months or years between the measure or manipulation of behaviour X and the measure of behaviour Y."@en)
 AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/time#Interval> "Una entidad temporal con una extensión o duración."@es)
 AnnotationAssertion(rdfs:label <http://www.w3.org/2006/time#Interval> "Time interval"@en)
 AnnotationAssertion(rdfs:label <http://www.w3.org/2006/time#Interval> "intervalo de tiempo"@es)
@@ -1230,11 +1280,14 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> turbbo:upper_
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> turbbo:upper_0000149 "An identifier that is used as the primary identifier to uniquely identify the primary resource that is the subject of the DataCite metadata record. Within the DataCite metadata record, a Digital Object Identifier is the only permitted primary resource identifier scheme, specified by the individual datacite:doi, that is a member of the class datacite:ResourceIdentifierScheme. (source: The DataCite Ontology)"^^xsd:string)
 AnnotationAssertion(<https://purl.org/turbbo_behaviours_0000093> turbbo:upper_0000149 <http://purl.org/spar/datacite/doi>)
 
+# Class: turbbo:upper_0000151 (Behaviour observation)
+
+AnnotationAssertion(rdfs:label turbbo:upper_0000151 "Behaviour observation"@en)
+
 # Class: turbbo:upper_OWLClass_00000000000000000004 (DEPRECATED MeasureValue)
 
 AnnotationAssertion(rdfs:comment turbbo:upper_OWLClass_00000000000000000004 "this concept is remodelled and instead of a class it is now represented as a data property that has a numerical value"^^xsd:string)
 AnnotationAssertion(rdfs:label turbbo:upper_OWLClass_00000000000000000004 "DEPRECATED MeasureValue")
-AnnotationAssertion(rdfs:seeAlso turbbo:upper_OWLClass_00000000000000000004 <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue>)
 AnnotationAssertion(owl:deprecated turbbo:upper_OWLClass_00000000000000000004 "true"^^xsd:boolean)
 
 

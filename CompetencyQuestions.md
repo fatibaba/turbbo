@@ -52,7 +52,7 @@ Answer:
 | "Tam et al. (2021)" | "https://doi.org/10.1080/08870446.2021.2007913" |  "Self-care behaviors drinking and smoking to cope with psychological distress during COVID-19 among Chinese college students: the role of resilience” |
 | "Gupta (2021)" | "https://doi.org/10.1109/ICAICST53116.2021.9497837" |  "The accuracy of supervised machine learning algorithms in predicting cardiovascular disease" |
 
-2. What is the sample size of the study that is used to measure this behaviour?
+2. What is the sample size of the study that is used to measure a named behaviour?
 We used the query below to find the sample size in all the studies that measured "Drinking Alcohol" behaviour. One particular study measured "Drinking Alcohol" behaviour, three times while comparing it to three other behaviours. 
 
 ```
@@ -84,6 +84,58 @@ Answer:
 | "Tam et al. (2021)" | "1225"^^xsd:integer |
 | "Gupta (2021)" | "68549"^^xsd:integer |
 
+3. Is a named behaviour legal?
+
+```
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?legality
+WHERE {
+  ?behaviour ?isLegal ?legality.
+  ?behaviour rdfs:label ?behaviourLabel.
+  ?isLegal rdfs:label "is legal".
+  filter regex(?behaviourLabel, "Using Alcohol")
+}
+```
+
+Answer: 
+This query did not show any results as the studies measuring "Using Alcohol" behaviour did not report the legality of this behaviour. 
+
+4. Where does the named behaviour occur (location)? 
+
+```
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?settingLabel
+WHERE {
+  ?behaviour ?occursIn ?setting.
+  ?occursIn rdfs:label "occurs in".
+  ?setting rdfs:label ?settingLabel.
+  ?behaviour rdfs:label ?behaviourLabel.
+  filter regex(?behaviourLabel, "Using Alcohol")
+}
+```
+
+Answer:
+A null value was returned because the dataset did not contain any information about the location (setting). 
+
+5. If a named behaviour requires the use of materials, what are the materials?
+
+```
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?materialLabel
+WHERE {
+  ?behaviour ?requiresMaterial ?material.
+  ?requiresMaterial rdfs:label "requires material".
+  ?material rdfs:label ?materialLabel.
+  ?behaviour rdfs:label ?behaviourLabel.
+  filter regex(?behaviourLabel, "Using Alcohol")
+}
+```
+
+Answer:
+There was no response to this query. The dataset did not indicate which materials were used for this behaviour. 
 
 6. Which behaviours are correlated to a named behaviour and what are the correlation coefficients r.
 For this query, we used Moving/Exercising as the named behaviour and tried to find all the correlated behaviours and their corresponding correlation coefficients r. The results show that our dataset contains 6 different measures of the Moving/Exercising behaviours against other behaviours from different studies. The result indicates that we have all the necessary concepts in the ontology to record behaviours and their correlations which can be used by different applications to conduct further data analysis (e.g. a meta-analysis). 

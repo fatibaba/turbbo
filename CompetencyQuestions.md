@@ -20,7 +20,7 @@ As an example dataset for this evaluation, we obtained data from 5 studies that 
 
 1. What is the name of the study that measured/observed a named behaviour?
 
-With this question, we are trying to find out all the studies that have reported on ‘Using Alcohol’. We designed the SPARQL query to find the name of the study and if there are associated publications and their DOIs. 
+With this question, we are trying to find out all the studies that have reported on ‘Using Alcohol’. We designed the SPARQL query to find the name of the study and if there are associated publications and their DOIs. The result of this query shows a list of the four studies that reported on "Using Alcohol" behaviour. 
 
 ```
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -48,6 +48,10 @@ Answer:
 | "studyPaper" | "DOI" | "paperTitle" |
 | --- | --- | --- |
 | "Witkiewitz et al. (2012)" | "https://doi.org/10.1037%2Fa0025363" |  "Concurrent drinking and smoking among college students: An event-level analysis." |
+| "Cameron et al. (2015)" | "https://doi.org/10.1186/s13063-015-1092-4" |  "A theory-based online health behaviour intervention for new university students (U@Uni:LifeGuide): results from a repeat randomized controlled trial" |
+| "Tam et al. (2021)" | "https://doi.org/10.1080/08870446.2021.2007913" |  "Self-care behaviors drinking and smoking to cope with psychological distress during COVID-19 among Chinese college students: the role of resilience” |
+| "Gupta (2021)" | "https://doi.org/10.1109/ICAICST53116.2021.9497837" |  "The accuracy of supervised machine learning algorithms in predicting cardiovascular disease" |
+
 
 
 6. Which behaviours are correlated to a named behaviour and what are the correlation coefficients r.

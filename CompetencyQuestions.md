@@ -14,64 +14,40 @@ We present the competency questions in the table below and the sort of responses
 | CQ7. What is the weighted correlation between two behaviours that are measured in more than one study? | a calculated weighted correlation (Pearson, Spearman, etc) |
 | CQ8. What is the association between two behaviours that have not been measured/compared in the same study? | the relationship represented as the list of behaviours that link the two behaviours. |
 
-As an example dataset for this evaluation, we obtained data from 6 studies that have measured a range of behaviours. We added the data elements and mapped them to their corresponding classes in TURBBO. The complete dataset is available in [turbbo-dataset.ttl](https://raw.githubusercontent.com/fatibaba/turbbo/main/turbbo-dataset.ttl). We used a local installation of Apache Jena Fuseki server to run the SPARQL queries. Instructions on how to install and use the Apache Jena Fuseki server can be found [here](https://jena.apache.org/documentation/fuseki2/). We present the SPARQL queries we designed to represent the competency questions and the results we obtained by running the queries in the section below. While executing the queries, the first couple of iterations identified concepts that we did not model in the ontologies, so we went back and added those. We also identified some concepts that were complicated so we simplified the representation. For example, we initially had two object properties, relatedsBehaviourA and relatesBehaviourB that were serving the same purpose, therefore we simplified it with one relatesBehaviour object property. We also had some object properties that we had to convert to data properties to allow us recored literal values. 
+As an example dataset for this evaluation, we obtained data from 5 studies that have measured a range of behaviours. We added the data elements and mapped them to their corresponding classes in TURBBO. The complete dataset is available in [turbbo-dataset.ttl](https://raw.githubusercontent.com/fatibaba/turbbo/main/turbbo-dataset.ttl). We used a local installation of Apache Jena Fuseki server to run the SPARQL queries. Instructions on how to install and use the Apache Jena Fuseki server can be found [here](https://jena.apache.org/documentation/fuseki2/). We present the SPARQL queries we designed to represent the competency questions and the results we obtained by running the queries in the section below. While executing the queries, the first couple of iterations identified concepts that we did not model in the ontologies, so we went back and added those. We also identified some concepts that were complicated so we simplified the representation. For example, we initially had two object properties, relatedsBehaviourA and relatesBehaviourB that were serving the same purpose, therefore we simplified it with one relatesBehaviour object property. We also had some object properties that we had to convert to data properties to allow us recored literal values. 
 
 ## SPARQL queries and answers
 
 1. What is the name of the study that measured/observed a named behaviour?
 
-With this question, we are trying to find out all the studies that have reported on ‘past recycling behaviour’. We designed the SPARQL query to find the name of the study and if there are associated publications and their DOIs. 
+With this question, we are trying to find out all the studies that have reported on ‘Using Alcohol’. We designed the SPARQL query to find the name of the study and if there are associated publications and their DOIs. 
 
 ```
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX turbbo: <https://purl.org/turbbo#>
 
-SELECT ?study ?paper ?DOI ?paperTitle
+SELECT distinct ?studyPaper ?DOI ?paperTitle
 WHERE {
-  ?s ?m ?b;
-      rdfs:label ?study.
-  ?b rdfs:label "past recycling".
-  ?m rdfs:label "measures".
+  ?study rdfs:label ?studyPaper.
   
-  ?s turbbo:produces ?p.
-  ?p rdfs:label ?paper.
-  
-  ?p ?title ?paperTitle.
+  ?study ?title ?paperTitle.
   ?title rdfs:label "docTitle".
   
-  ?p ?hasDOI ?DOI.
+  ?study ?hasDOI ?DOI.
   ?hasDOI rdfs:label "hasDOI".
+ 
+  ?study <https://purl.org/turbbo/upper_0000155> ?observation.
+  ?observation ?correlate ?correlation.
+  ?correlation ?measures ?behaviour. 
+  ?behaviour rdfs:label ?behaviourName.
+  
+  filter regex(?behaviourName, "Using Alcohol")
   }
 ```
 
 Answer:
-```
-<?xml version="1.0"?>
-<sparql xmlns="http://www.w3.org/2005/sparql-results#">
-  <head>
-    <variable name="study"/>
-    <variable name="paper"/>
-    <variable name="DOI"/>
-    <variable name="paperTitle"/>
-  </head>
-  <results>
-    <result>
-      <binding name="study">
-        <literal>Ha and Kwon Fash Text (2016)</literal>
-      </binding>
-      <binding name="paper">
-        <literal>Ha &amp; Kwon (2016)</literal>
-      </binding>
-      <binding name="DOI">
-        <literal>10.1186/s40691-016-0068-7</literal>
-      </binding>
-      <binding name="paperTitle">
-        <literal>Spillover from past recycling to green apparel shopping behavior: the role of environmental concern and anticipated guilt</literal>
-      </binding>
-    </result>
-  </results>
-</sparql>
-```
+| "studyPaper" | "DOI" | "paperTitle" |
+| --- | --- | --- |
+| "Witkiewitz et al. (2012)" | "https://doi.org/10.1037%2Fa0025363" |  "Concurrent drinking and smoking among college students: An event-level analysis." |
 
 
 6. Which behaviours are correlated to a named behaviour and what are the correlation coefficients r.

@@ -171,7 +171,7 @@ Answer:
 | "Moving/Exercising 1" | "0.125"^^xsd:decimal | "Smoking Cigar(ette) 1" |
 
 7. What is the weighted correlation between two behaviours that are measured in more than one study?
-To calculate the weighted correlation, we need to obtain the correlations in every measurement and the sample sizes. These can then be used for further analysis to calculate the weighted correlation for example using these [formulas] (https://files.eric.ed.gov/fulltext/ED585538.pdf). The previous questions have identified the sample size (CQ2) and correlations (CQ6).
+To calculate the weighted correlation, we need to obtain the correlations in every measurement and the sample sizes. These can then be used for further analysis to calculate the weighted correlation for example using these [formulas](https://files.eric.ed.gov/fulltext/ED585538.pdf). The previous questions have identified the sample size (CQ2) and correlations (CQ6).
 
 8. What is the association between two behaviours that have not been measured/compared in the same study?
 The results of CQ6 will give a list behaviours that are related to a named one. We can draw an RDF graph to show a graphical representation of the link between these behaviours. 

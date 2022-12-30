@@ -52,6 +52,37 @@ Answer:
 | "Tam et al. (2021)" | "https://doi.org/10.1080/08870446.2021.2007913" |  "Self-care behaviors drinking and smoking to cope with psychological distress during COVID-19 among Chinese college students: the role of resilience” |
 | "Gupta (2021)" | "https://doi.org/10.1109/ICAICST53116.2021.9497837" |  "The accuracy of supervised machine learning algorithms in predicting cardiovascular disease" |
 
+2. What is the sample size of the study that is used to measure this behaviour?
+We used the query below to find the sample size in all the studies that measured "Drinking Alcohol" behaviour. One particular study measured "Drinking Alcohol" behaviour, three times while comparing it to three other behaviours. 
+
+```
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT distinct ?studyPaper ?sampleSize
+WHERE {
+  ?study rdfs:label ?studyPaper.
+ 
+  ?study <https://purl.org/turbbo/upper_0000155> ?observation.
+  ?observation ?correlate ?correlation.
+  ?correlation ?measures ?behaviour. 
+  ?behaviour rdfs:label ?behaviourName.
+  
+  ?correlation ?hasSampleSize ?sampleSize. 
+  ?hasSampleSize rdfs:label "hasSampleSize".
+  
+  filter regex(?behaviourName, "Using Alcohol")
+  }
+```
+
+Answer:
+| "studyPaper" | "sampleSize" |
+| --- | --- |
+| "Witkiewitz et al. (2012)" | "86"^^xsd:integer |
+| "Cameron et al. (2015)" | "2599"^^xsd:integer |
+| "Cameron et al. (2015)" | "2592"^^xsd:integer |
+| "Cameron et al. (2015)" | "2607"^^xsd:integer |
+| "Tam et al. (2021)" | "1225"^^xsd:integer |
+| "Gupta (2021)" | "68549"^^xsd:integer |
 
 
 6. Which behaviours are correlated to a named behaviour and what are the correlation coefficients r.

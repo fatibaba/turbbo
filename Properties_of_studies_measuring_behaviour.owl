@@ -1,0 +1,1176 @@
+@prefix : <https://purl.org/turbbo/RBBO_properties_of_studies_measuring_behaviour.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix RBBO: <https://purl.org/turbbo/RBBO_> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://purl.org/turbbo/RBBO_properties_of_studies_measuring_behaviour.owl> .
+
+<https://purl.org/turbbo/RBBO_properties_of_studies_measuring_behaviour.owl> rdf:type owl:Ontology ;
+                                                                              owl:versionIRI <https://purl.org/turbbo/2023-07-21/RBBO_properties_of_studies_measuring_behaviour.owl> ;
+                                                                              rdfs:comment """RBBO - Properties of Studies Measuring Behaviours
+
+This module of the RBBO consists of concepts for describing how behaviours are measured and compared in behavioural science studies.""" ;
+                                                                              owl:versionInfo "2023-07-21" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000111
+<http://purl.obolibrary.org/obo/IAO_0000111> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "editor preferred term" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000112
+<http://purl.obolibrary.org/obo/IAO_0000112> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "example of usage" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000114
+<http://purl.obolibrary.org/obo/IAO_0000114> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "has curation status" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "definition" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000116
+<http://purl.obolibrary.org/obo/IAO_0000116> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "editor note" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000117
+<http://purl.obolibrary.org/obo/IAO_0000117> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "term editor" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000118
+<http://purl.obolibrary.org/obo/IAO_0000118> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "alternative label" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000119
+<http://purl.obolibrary.org/obo/IAO_0000119> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "definition source" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000232
+<http://purl.obolibrary.org/obo/IAO_0000232> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "curator note" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000412
+<http://purl.obolibrary.org/obo/IAO_0000412> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "imported from" .
+
+
+###  http://purl.obolibrary.org/obo/SEPIO_0000061
+<http://purl.obolibrary.org/obo/SEPIO_0000061> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://webprotege.stanford.edu/R9J4U09DUd5SPFbpThWvhlt
+<http://webprotege.stanford.edu/R9J4U09DUd5SPFbpThWvhlt> rdf:type owl:AnnotationProperty ;
+                                                         rdfs:label "skos" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#created_by
+<http://www.geneontology.org/formats/oboInOwl#created_by> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#creation_date
+<http://www.geneontology.org/formats/oboInOwl#creation_date> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasDbXref
+<http://www.geneontology.org/formats/oboInOwl#hasDbXref> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/alternativeLabel
+<http://www.ontology-of-units-of-measure.org/resource/om-2/alternativeLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#changeNote
+<http://www.w3.org/2004/02/skos/core#changeNote> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#comment
+<http://www.w3.org/2004/02/skos/core#comment> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#editorialNote
+<http://www.w3.org/2004/02/skos/core#editorialNote> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/turbbo_behaviours_0000093
+<https://purl.org/turbbo_behaviours_0000093> rdf:type owl:AnnotationProperty ;
+                                             <http://www.geneontology.org/formats/oboInOwl#created_by> "Fatima Maikore" ;
+                                             <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-03-27T15:12:26.622064Z" ;
+                                             rdfs:label "original_IRI" .
+
+
+###  https://purl.org/turbbo/RBBO_0000150
+<https://purl.org/turbbo/RBBO_0000150> rdf:type owl:AnnotationProperty ;
+                                       rdfs:label "synonym" .
+
+
+###  https://purl.org/turbbo/RBBO_title
+RBBO:title rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/RO_0000057
+<http://purl.obolibrary.org/obo/RO_0000057> rdf:type owl:ObjectProperty ;
+                                            rdfs:label "has participant" .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002234
+<http://purl.obolibrary.org/obo/RO_0002234> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/SEPIO_0000125> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/IAO_0000100> ,
+                                                       <http://purl.obolibrary.org/obo/IAO_0000310> ;
+                                            rdfs:label "produces" .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:domain <http://www.ontology-of-units-of-measure.org/resource/om-2/000000111> ;
+                                                                    rdfs:range <http://www.ontology-of-units-of-measure.org/resource/om-2/000000117> ;
+                                                                    rdfs:label "has unit"@en ,
+                                                                               "単位を持つ"@ja .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> rdf:type owl:ObjectProperty ;
+                                                                     rdfs:domain <http://www.ontology-of-units-of-measure.org/resource/om-2/000000111> ;
+                                                                     rdfs:label "has value"@en ,
+                                                                                "値を持つ"@ja .
+
+
+###  http://www.w3.org/2006/time#hasBeginning
+<http://www.w3.org/2006/time#hasBeginning> rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf <http://www.w3.org/2006/time#hasTime> ;
+                                           rdfs:domain <http://www.w3.org/2006/time#TemporalEntity> ;
+                                           rdfs:range <http://www.w3.org/2006/time#Instant> ;
+                                           rdfs:comment "Beginning of a temporal entity"@en ,
+                                                        "Comienzo de una entidad temporal."@es ;
+                                           rdfs:label "has beginning"@en ,
+                                                      "tiene principio"@es ;
+                                           <http://www.w3.org/2004/02/skos/core#definition> "Beginning of a temporal entity."@en ,
+                                                                                            "Comienzo de una entidad temporal."@es .
+
+
+###  http://www.w3.org/2006/time#hasDuration
+<http://www.w3.org/2006/time#hasDuration> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
+                                          rdfs:range <http://www.w3.org/2006/time#Duration> ;
+                                          rdfs:comment "Duración de una entidad temporal, expresada como un valor escalado o un valor nominal."@es ,
+                                                       "Duration of a temporal entity, expressed as a scaled value or nominal value"@en ;
+                                          rdfs:label "has duration"@en ,
+                                                     "tiene duración"@es ;
+                                          <http://www.w3.org/2004/02/skos/core#definition> "Duración de una entidad temporal, evento o actividad, o cosa, expresada como un valor escalado."@es ,
+                                                                                           "Duration of a temporal entity, event or activity, or thing, expressed as a scaled value"@en .
+
+
+###  http://www.w3.org/2006/time#hasEnd
+<http://www.w3.org/2006/time#hasEnd> rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf <http://www.w3.org/2006/time#hasTime> ;
+                                     rdfs:domain <http://www.w3.org/2006/time#TemporalEntity> ;
+                                     rdfs:range <http://www.w3.org/2006/time#Instant> ;
+                                     rdfs:comment "End of a temporal entity."@en ,
+                                                  "Final de una entidad temporal."@es ;
+                                     rdfs:label "has end"@en ,
+                                                "tiene fin"@es ;
+                                     <http://www.w3.org/2004/02/skos/core#definition> "End of a temporal entity."@en ,
+                                                                                      "Final de una entidad temporal."@es .
+
+
+###  http://www.w3.org/2006/time#hasTime
+<http://www.w3.org/2006/time#hasTime> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
+                                      rdfs:range <http://www.w3.org/2006/time#TemporalEntity> ;
+                                      rdfs:comment "Proporciona soporte a la asociación de una entidad temporal (instante o intervalo) a cualquier cosa."@es ,
+                                                   "Supports the association of a temporal entity (instant or interval) to any thing"@en ;
+                                      rdfs:label "has time"@en ,
+                                                 "tiene tiempo"@es ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Proporciona soporte a la asociación de una entidad temporal (instante o intervalo) a cualquier cosa."@es ,
+                                                                                       "Supports the association of a temporal entity (instant or interval) to any thing"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#editorialNote> "Característica arriesgada -añadida en la revisión del 2017 que no ha sido todavía utilizada de forma amplia."@es ,
+                                                                                          "Feature at risk - added in 2017 revision, and not yet widely used. "@en .
+
+
+###  http://www.w3.org/2006/time#unitType
+<http://www.w3.org/2006/time#unitType> rdf:type owl:ObjectProperty ;
+                                       rdfs:label "unit type" .
+
+
+###  http://xmlns.com/foaf/0.1/000000103
+<http://xmlns.com/foaf/0.1/000000103> rdf:type owl:ObjectProperty ;
+                                      rdfs:comment "A phone,  specified using fully qualified tel: URI scheme (refs: http://www.w3.org/Addressing/schemes.html#tel)." ;
+                                      rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+                                      rdfs:label "phone" ;
+                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  http://xmlns.com/foaf/0.1/000000127
+<http://xmlns.com/foaf/0.1/000000127> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <http://xmlns.com/foaf/0.1/000000129> ;
+                                      rdfs:comment "A link to the publications of this person." ;
+                                      rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+                                      rdfs:label "publications" ;
+                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  https://purl.org/turbbo/RBBO_0000017
+<https://purl.org/turbbo/RBBO_0000017> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <http://purl.obolibrary.org/obo/SEPIO_0000125> ;
+                                       rdfs:range <https://purl.org/turbbo/RBBO_0000123> ;
+                                       rdfs:label "measures" .
+
+
+###  https://purl.org/turbbo/RBBO_0000022
+<https://purl.org/turbbo/RBBO_0000022> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000021> ;
+                                       rdfs:range <https://purl.org/turbbo/RBBO_0000123> ;
+                                       rdfs:label "correlates behaviour" .
+
+
+###  https://purl.org/turbbo/RBBO_0000083
+<https://purl.org/turbbo/RBBO_0000083> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000021> ;
+                                       rdfs:range <https://purl.org/turbbo/RBBO_0000133> ;
+                                       rdfs:label "has effect size" .
+
+
+###  https://purl.org/turbbo/RBBO_0000084
+<https://purl.org/turbbo/RBBO_0000084> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000133> ;
+                                       rdfs:range <https://purl.org/turbbo/RBBO_0000115> ;
+                                       rdfs:label "has magnitude" .
+
+
+###  https://purl.org/turbbo/RBBO_0000085
+<https://purl.org/turbbo/RBBO_0000085> rdf:type owl:ObjectProperty ;
+                                       rdfs:label "occurs before" .
+
+
+###  https://purl.org/turbbo/RBBO_0000086
+<https://purl.org/turbbo/RBBO_0000086> rdf:type owl:ObjectProperty ;
+                                       rdfs:label "occurs after" .
+
+
+###  https://purl.org/turbbo/RBBO_0000087
+<https://purl.org/turbbo/RBBO_0000087> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
+                                       rdfs:range <https://purl.org/turbbo/RBBO_0000139> ;
+                                       rdfs:label "has frequency" .
+
+
+###  https://purl.org/turbbo/RBBO_0000088
+<https://purl.org/turbbo/RBBO_0000088> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000311> ;
+                                       rdfs:range <https://purl.org/turbbo/RBBO_0000149> ;
+                                       rdfs:label "has identifier" .
+
+
+###  https://purl.org/turbbo/RBBO_0000089
+<https://purl.org/turbbo/RBBO_0000089> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
+                                       rdfs:label "composed of" .
+
+
+###  https://purl.org/turbbo/RBBO_0000090
+<https://purl.org/turbbo/RBBO_0000090> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000021> ;
+                                       rdfs:range <http://purl.obolibrary.org/obo/STATO_0000039> ;
+                                       rdfs:label "converted from" .
+
+
+###  https://purl.org/turbbo/RBBO_0000091
+<https://purl.org/turbbo/RBBO_0000091> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
+                                       rdfs:range <https://purl.org/turbbo/RBBO_0000123> ;
+                                       <http://purl.obolibrary.org/obo/IAO_0000115> "The property showing a relationship or connection between two behaviours. The sub-properties model the degree/strength and type of correlation using use Cohen’s (1992) criteria for the strength of correlations (i.e., if the correlation coefficient  r is 0.10 then it represents a small association,  if r is 0.30 then it is considered a medium correlation and  if r is 0.50 or more then the association is large)." ;
+                                       rdfs:label "correlates with" ;
+                                       owl:deprecated "true"^^xsd:boolean .
+
+
+###  https://purl.org/turbbo/RBBO_0000092
+<https://purl.org/turbbo/RBBO_0000092> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
+                                       rdfs:label "facilitated by" .
+
+
+###  https://purl.org/turbbo/RBBO_0000094
+<https://purl.org/turbbo/RBBO_0000094> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
+                                       rdfs:label "has effectiveness" .
+
+
+###  https://purl.org/turbbo/RBBO_0000095
+<https://purl.org/turbbo/RBBO_0000095> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000021> ;
+                                       rdfs:range <https://purl.org/turbbo/RBBO_0000142> ;
+                                       rdfs:label "converted with tool" .
+
+
+###  https://purl.org/turbbo/RBBO_0000096
+<https://purl.org/turbbo/RBBO_0000096> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
+                                       rdfs:label "has goal" .
+
+
+###  https://purl.org/turbbo/RBBO_0000097
+<https://purl.org/turbbo/RBBO_0000097> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
+                                       rdfs:label "has impact" .
+
+
+###  https://purl.org/turbbo/RBBO_0000098
+<https://purl.org/turbbo/RBBO_0000098> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
+                                       rdfs:label "has intention" .
+
+
+###  https://purl.org/turbbo/RBBO_0000099
+<https://purl.org/turbbo/RBBO_0000099> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
+                                       rdfs:label "has legality" .
+
+
+###  https://purl.org/turbbo/RBBO_0000100
+<https://purl.org/turbbo/RBBO_0000100> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
+                                       rdfs:range <https://purl.org/turbbo/RBBO_0000101> ;
+                                       rdfs:label "has outcome" .
+
+
+###  https://purl.org/turbbo/RBBO_0000103
+<https://purl.org/turbbo/RBBO_0000103> rdf:type owl:ObjectProperty ;
+                                       rdfs:label "has type" .
+
+
+###  https://purl.org/turbbo/RBBO_0000104
+<https://purl.org/turbbo/RBBO_0000104> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <http://xmlns.com/foaf/0.1/000000119> ;
+                                       rdfs:range <http://purl.obolibrary.org/obo/IAO_0000100> ,
+                                                  <http://purl.obolibrary.org/obo/IAO_0000310> ;
+                                       rdfs:label "is author" .
+
+
+###  https://purl.org/turbbo/RBBO_0000108
+<https://purl.org/turbbo/RBBO_0000108> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
+                                       rdfs:label "is reflective of" .
+
+
+###  https://purl.org/turbbo/RBBO_0000111
+<https://purl.org/turbbo/RBBO_0000111> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000101> ;
+                                       rdfs:range <http://www.ontology-of-units-of-measure.org/resource/om-2/000000111> ;
+                                       rdfs:label "measured by" .
+
+
+###  https://purl.org/turbbo/RBBO_0000117
+<https://purl.org/turbbo/RBBO_0000117> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
+                                       rdfs:label "motivated by" .
+
+
+###  https://purl.org/turbbo/RBBO_0000118
+<https://purl.org/turbbo/RBBO_0000118> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
+                                       rdfs:label "occurs in" .
+
+
+###  https://purl.org/turbbo/RBBO_0000119
+<https://purl.org/turbbo/RBBO_0000119> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
+                                       rdfs:label "occurs within" .
+
+
+###  https://purl.org/turbbo/RBBO_0000127
+<https://purl.org/turbbo/RBBO_0000127> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
+                                       rdfs:range <https://purl.org/turbbo/RBBO_0000109> ;
+                                       rdfs:label "requires material" .
+
+
+###  https://purl.org/turbbo/RBBO_0000128
+<https://purl.org/turbbo/RBBO_0000128> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
+                                       rdfs:label "requires skill" .
+
+
+###  https://purl.org/turbbo/RBBO_0000129
+<https://purl.org/turbbo/RBBO_0000129> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
+                                       rdfs:label "restricted by" .
+
+
+###  https://purl.org/turbbo/RBBO_0000130
+<https://purl.org/turbbo/RBBO_0000130> rdf:type owl:ObjectProperty ;
+                                       rdfs:label "to achieve" .
+
+
+###  https://purl.org/turbbo/RBBO_0000131
+<https://purl.org/turbbo/RBBO_0000131> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000021> ;
+                                       rdfs:range <https://purl.org/turbbo/RBBO_0000140> ;
+                                       rdfs:label "has correlation type" .
+
+
+###  https://purl.org/turbbo/RBBO_0000152
+<https://purl.org/turbbo/RBBO_0000152> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000151> ;
+                                       rdfs:range <https://purl.org/turbbo/RBBO_0000123> ;
+                                       rdfs:label "measures behaviour X"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#comment> "new term to consider replacing 'correlates behaviour'." ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "to measure a behaviour in relation to another behaviour Y" .
+
+
+###  https://purl.org/turbbo/RBBO_0000153
+<https://purl.org/turbbo/RBBO_0000153> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000151> ;
+                                       rdfs:range <https://purl.org/turbbo/RBBO_0000123> ;
+                                       rdfs:label "measures behaviour Y"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#comment> "new term to consider replacing 'correlates behaviour'." ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "to measure a behaviour in relation to another behaviour X" .
+
+
+###  https://purl.org/turbbo/RBBO_0000154
+<https://purl.org/turbbo/RBBO_0000154> rdf:type owl:ObjectProperty ;
+                                       rdfs:subPropertyOf <http://www.w3.org/2006/time#hasTime> ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000151> ;
+                                       rdfs:range <http://www.w3.org/2006/time#Interval> ;
+                                       rdfs:label "has time interval"@en .
+
+
+###  https://purl.org/turbbo/RBBO_0000155
+<https://purl.org/turbbo/RBBO_0000155> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000100> ,
+                                                   <http://purl.obolibrary.org/obo/IAO_0000310> ;
+                                       rdfs:range <https://purl.org/turbbo/RBBO_0000151> ;
+                                       rdfs:label "contains"@en .
+
+
+###  https://purl.org/turbbo/RBBO_0000156
+<https://purl.org/turbbo/RBBO_0000156> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000151> ;
+                                       rdfs:range <https://purl.org/turbbo/RBBO_0000021> ;
+                                       rdfs:label "has correlation"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> rdf:type owl:DatatypeProperty ;
+                                                                              rdfs:domain <http://www.ontology-of-units-of-measure.org/resource/om-2/000000111> .
+
+
+###  http://www.w3.org/2006/time#numericDuration
+<http://www.w3.org/2006/time#numericDuration> rdf:type owl:DatatypeProperty .
+
+
+###  http://xmlns.com/foaf/0.1/surname
+<http://xmlns.com/foaf/0.1/surname> rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain <http://xmlns.com/foaf/0.1/000000129> ;
+                                    rdfs:range rdfs:Literal ;
+                                    rdfs:comment "The surname of some person." ;
+                                    rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+                                    rdfs:label "Surname" ;
+                                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "archaic" .
+
+
+###  http://xmlns.com/foaf/0.1/000000104
+<http://xmlns.com/foaf/0.1/000000104> rdf:type owl:DatatypeProperty ,
+                                               owl:FunctionalProperty ;
+                                      rdfs:domain <http://xmlns.com/foaf/0.1/000000129> ;
+                                      rdfs:range rdfs:Literal ;
+                                      rdfs:comment "The age in years of some agent." ;
+                                      rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+                                      rdfs:label "age" ;
+                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+
+###  http://xmlns.com/foaf/0.1/000000114
+<http://xmlns.com/foaf/0.1/000000114> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <http://xmlns.com/foaf/0.1/000000129> ;
+                                      rdfs:range rdfs:Literal ;
+                                      rdfs:comment "Title (Mr, Mrs, Ms, Dr. etc)" ;
+                                      rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+                                      rdfs:label "title" ;
+                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  http://xmlns.com/foaf/0.1/000000128
+<http://xmlns.com/foaf/0.1/000000128> rdf:type owl:DatatypeProperty ,
+                                               owl:FunctionalProperty ;
+                                      rdfs:domain <http://xmlns.com/foaf/0.1/000000129> ;
+                                      rdfs:range rdfs:Literal ;
+                                      rdfs:comment "The birthday of this Agent, represented in mm-dd string form, eg. '12-31'." ;
+                                      rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+                                      rdfs:label "birthday" ;
+                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+
+###  http://xmlns.com/foaf/0.1/000000130
+<http://xmlns.com/foaf/0.1/000000130> rdf:type owl:DatatypeProperty ,
+                                               owl:FunctionalProperty ;
+                                      rdfs:domain <http://xmlns.com/foaf/0.1/000000129> ;
+                                      rdfs:range rdfs:Literal ;
+                                      rdfs:comment "The gender of this Agent (typically but not necessarily 'male' or 'female')." ;
+                                      rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+                                      rdfs:label "gender" ;
+                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  http://xmlns.com/foaf/0.1/000000131
+<http://xmlns.com/foaf/0.1/000000131> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <http://xmlns.com/foaf/0.1/000000129> ;
+                                      rdfs:range rdfs:Literal ;
+                                      rdfs:comment "The first name of a person." ;
+                                      rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+                                      rdfs:label "firstName" ;
+                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  https://purl.org/turbbo/RBBO_0000018
+<https://purl.org/turbbo/RBBO_0000018> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000310> ;
+                                       rdfs:range rdfs:Literal ;
+                                       rdfs:label "docTitle" .
+
+
+###  https://purl.org/turbbo/RBBO_0000019
+<https://purl.org/turbbo/RBBO_0000019> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000100> ;
+                                       rdfs:range rdfs:Literal ;
+                                       rdfs:label "datasetName" .
+
+
+###  https://purl.org/turbbo/RBBO_0000024
+<https://purl.org/turbbo/RBBO_0000024> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000021> ;
+                                       rdfs:range xsd:decimal ;
+                                       rdfs:label "rValue" .
+
+
+###  https://purl.org/turbbo/RBBO_0000025
+<https://purl.org/turbbo/RBBO_0000025> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000021> ;
+                                       rdfs:range xsd:int ;
+                                       rdfs:label "hasSampleSize" .
+
+
+###  https://purl.org/turbbo/RBBO_0000093
+<https://purl.org/turbbo/RBBO_0000093> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000311> ;
+                                       rdfs:range rdfs:Literal ;
+                                       rdfs:label "hasDOI" .
+
+
+###  https://purl.org/turbbo/RBBO_0000132
+<https://purl.org/turbbo/RBBO_0000132> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000027> ;
+                                       rdfs:range xsd:decimal ;
+                                       rdfs:label "has value" .
+
+
+###  https://purl.org/turbbo/RBBO_0000157
+<https://purl.org/turbbo/RBBO_0000157> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <http://purl.obolibrary.org/obo/SEPIO_0000125> ;
+                                       rdfs:range xsd:boolean ;
+                                       rdfs:label "hasEthicalApproval"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000013
+<http://purl.obolibrary.org/obo/IAO_0000013> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000311> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "journal article"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "Examples are articles published in the journals, Nature and Science. The content can often be cited by reference to a paper based encoding, e.g.  Authors, Title of article, Journal name, date or year of publication, volume and page number."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000120> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "person:Alan Ruttenberg"@en ,
+                                                                                          "person:Chris Stoeckert"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "OBI_0000159"@en ,
+                                                                                          "group:OBI"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ;
+                                             rdfs:label "journal article" ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "a report that is published in a journal"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000027
+<http://purl.obolibrary.org/obo/IAO_0000027> rdf:type owl:Class ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "data item"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "Data items include counts of things, analyte concentrations, and statistical summaries."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers."@en ,
+                                                                                          "2009-03-16: data item deliberatly ambiguous: we merged data set and datum to be one entity, not knowing how to define singular versus plural. So data item is more general than datum."@en ,
+                                                                                          "2009-03-16: removed datum as alternative term as datum specifically refers to singular form, and is thus not an exact synonym."@en ,
+                                                                                          "2014-03-31: See discussion at http://odontomachus.wordpress.com/2014/03/30/aboutness-objects-propositions/" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Alan Ruttenberg"@en ,
+                                                                                          "PERSON: Chris Stoeckert"@en ,
+                                                                                          "PERSON: Jonathan Rees"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000118> "data"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ;
+                                             rdfs:label "data item" ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> """a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.
+(BCIO - https://www.bciovocab.org/IAO:0000027)"""@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000088
+<http://purl.obolibrary.org/obo/IAO_0000088> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000310> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "report"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "Examples of reports are gene lists and investigation reports. These are not published (journal) articles but may be included in a journal article."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "a document assembled by an author for the purpose of providing information for the audience. A report is the output of a documenting process and has the objective to be consumed by a specific audience. Topic of the report is on something that has completed. A report is not a single figure. Examples of reports are journal article, patent application, grant progress report, case report (not patient record)"@en ,
+                                                                                          """A document assembled by an author for the purpose of providing information for the audience. A report is the output of a documenting process and has the objective to be consumed by a specific audience. Topic of the report is on something that has completed. A report is not a single figure. Examples of reports are journal article, patent application, grant progress report, case report (not patient record).
+(BCIO - https://www.bciovocab.org/IAO:0000088)""" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "2009-03-16: this was report of results with definition: A report is a narrative object that is a formal statement of the results of an investigation, or of any matter on which definite information is required, made by some person or body instructed or required to do so."@en ,
+                                                                                          "2009-03-16: work has been done on this term during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI."@en ,
+                                                                                          "2009-08-10 Alan Ruttenberg: Larry Hunter suggests that this be obsoleted and replaced by 'document'. Alan restored as there are OBI dependencies and this merits further discussion"@en ,
+                                                                                          "disagreement about where reports go. alan: only some gene lists are reports. Is a report all the content of some document? The example of usage suggests that a report may be part of  some article. Term needs clarification"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Alan Ruttenberg"@en ,
+                                                                                          "PERSON: Melanie Courtot"@en ,
+                                                                                          "PERSON:Chris Stoeckert"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "GROUP: OBI"@en ,
+                                                                                          "OBI_0000099"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ;
+                                             rdfs:label "report" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000100
+<http://purl.obolibrary.org/obo/IAO_0000100> rdf:type owl:Class ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "data set"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "Intensity values in a CEL file or from multiple CEL files comprise a data set (as opposed to the CEL files themselves)."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A data item that is an aggregate of other data items of the same type that have something in common. Averages and distributions can be determined for data sets."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "2009/10/23 Alan Ruttenberg. The intention is that this term represent collections of like data. So this isn't for, e.g. the whole contents of a cel file, which includes parameters, metadata etc. This is more like java arrays of a certain rather specific type"@en ,
+                                                                                          "2014-05-05: Data sets are aggregates and thus must include two or more data items. We have chosen not to add logical axioms to make this restriction." ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "person:Allyson Lister"@en ,
+                                                                                          "person:Chris Stoeckert"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "OBI_0000042"@en ,
+                                                                                          "group:OBI"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ;
+                                             rdfs:label "data set" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000109
+<http://purl.obolibrary.org/obo/IAO_0000109> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000027> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "measurement datum"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "Examples of measurement data are the recoding of the weight of a mouse as {40,mass,\"grams\"}, the recording of an observation of the behavior of the mouse {,process,\"agitated\"}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "2/2/2009 is_specified_output of some assay?"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "person:Chris Stoeckert"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "OBI_0000305"@en ,
+                                                                                          "group:OBI"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ;
+                                             rdfs:label "measurement datum" ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device."@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000310
+<http://purl.obolibrary.org/obo/IAO_0000310> rdf:type owl:Class ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "document"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "A journal article, patent application, laboratory notebook, or a book"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000120> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Lawrence Hunter"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ;
+                                             rdfs:label "document" ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "A collection of information content entities intended to be understood together as a whole"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000311
+<http://purl.obolibrary.org/obo/IAO_0000311> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000310> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "publication"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "A journal article or book"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000120> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Lawrence Hunter"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ;
+                                             rdfs:label "publication" ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "A document that has been accepted by a publisher"@en .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000175
+<http://purl.obolibrary.org/obo/OBI_0000175> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000039> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "p-value"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000121> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "May be outside the scope of OBI long term, is needed so is retained" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON:Chris Stoeckert"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "WEB: http://en.wikipedia.org/wiki/P-value" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ;
+                                             rdfs:label "p-value" ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "A quantitative confidence value that represents the probability of obtaining a result at least as extreme as that actually obtained, assuming that the actual value was the result of chance alone."@en .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000235
+<http://purl.obolibrary.org/obo/OBI_0000235> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000039> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "standard error"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A quantitative confidence value which is the standard deviations of the sample in a frequency distribution, obtained by dividing the standard deviation by the total number of cases in the frequency distribution."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "person:Chris Stoeckert"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "group:OBI" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000232> "see P-Value"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ;
+                                             rdfs:label "standard error" .
+
+
+###  http://purl.obolibrary.org/obo/SEPIO_0000004
+<http://purl.obolibrary.org/obo/SEPIO_0000004> rdf:type owl:Class ;
+                                               rdfs:label "Research activity" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> """A planned process executed in the performance of scientific research wherein systematic investigations are performed to establish facts and reach new conclusions about phenomena in the world.
+(BCIO - https://www.bciovocab.org/SEPIO:0000004)""" .
+
+
+###  http://purl.obolibrary.org/obo/SEPIO_0000066
+<http://purl.obolibrary.org/obo/SEPIO_0000066> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/SEPIO_0000125> ;
+                                               rdfs:label "primary research study" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "A study that involves primary research of subjects or specimens in a natural, cliniclal, or laboratory setting." .
+
+
+###  http://purl.obolibrary.org/obo/SEPIO_0000079
+<http://purl.obolibrary.org/obo/SEPIO_0000079> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/SEPIO_0000125> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "A study based only on analysis of existing data, as found in artifacts such as community/curated databases, raw datasets, or publications." ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000118> "data-driven study" ;
+                                               rdfs:label "secondary research study" .
+
+
+###  http://purl.obolibrary.org/obo/SEPIO_0000125
+<http://purl.obolibrary.org/obo/SEPIO_0000125> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/SEPIO_0000004> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "A planned process that executes some study design or protocol to generate scientific data that is interpreted to test or generate a hypothesis." ;
+                                               <http://purl.obolibrary.org/obo/SEPIO_0000061> """Explore the classification of study types here as a possibility to implement in SEPIO. 
+https://mcw.libguides.com/evidencebased/studies
+Useful because these map to the strength of the evidence each might provide.""" ;
+                                               rdfs:comment "A research study is considered broadly to be any scientific activity aimed at answering a research question. Studies can be simple or complex, depending on the scope of the question being explored and the extent of resources deployed in doing so.  They may include a full research investigation, a set of experiments, or a single experiment or assay. Regardless, that act of summarizing any results as a finding statement is considered part of the study." ,
+                                                            """A research study is considered broadly to be any scientific activity aimed at answering a research question. Studies can be simple or complex, depending on the scope of the question being explored and the extent of resources deployed in doing so.  They may include a full research investigation, a set of related experiments, or a single experiment or assay. Regardless, that act of summarizing any results as a finding statement is considered part of the study.
+
+
+'Study' here is broadly considered to include any defined activity performed to address a scientific question or generate a scientific hypothesis.  It covers scientific inquiry at different scales of complexity, from a single assay, experiment or observation, to a complex research investigation addressing a broader scientific question.   Studies can be based on a broad range of methods, including in silico algorithms, in vitro or in vivo experimentation on model systems, clinical studies on human subjects, or curation and analysis of existing knowledge, e.g. from publications, datasets, or knowledegbases, to derive novel insight.""" ;
+                                               rdfs:label "Research study" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> """A planned process that executes some study design or protocol to generate scientific data that is interpreted to test or generate a hypothesis.
+(BCIO - https://www.bciovocab.org/SEPIO:0000125)""" .
+
+
+###  http://purl.obolibrary.org/obo/SEPIO_000383
+<http://purl.obolibrary.org/obo/SEPIO_000383> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000310> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A document containing a collection of data or statements about some entity." ;
+                                              <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://semanticscience.org/resource/SIO_000088 ! 'record'" ;
+                                              rdfs:comment """'Record' here is broadly defined to include any document holding (typically) structured information about a particular entity. This can include individual records from a database or knowledgebase that hold information about the subject of the record. 
+
+Specific examples include:
+- A single row of a table in a relational database.
+- A JSON or XML document holding information describing some entity.
+- A VCF File describing varaints in a patient, or a single row in this VCF file describinng a particular variant.
+- A Uniprot knowldgebase record describing the BRCA2 protein (http://www.uniprot.org/uniprot/P51587)
+- A ClinVar knwoledgebase record describing an assertion about the pathogenicity of the NM_000059.3(BRCA2):c.10G>T variant (https://www.ncbi.nlm.nih.gov/clinvar/variation/51063/)
+- An EHR record for a hospital patient.""" ;
+                                              rdfs:label "record" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000039
+<http://purl.obolibrary.org/obo/STATO_0000039> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000027> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000117> "Alejandra Gonzalez-Beltran"@en ,
+                                                                                            "Philippe Rocca-Serra"@en ,
+                                                                                            "Orlaith Burke" ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000119> "STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Statistic)."@en ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obofoundry.org/obo/stato.owl> ;
+                                               rdfs:label "statistic" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "a statistic is a measurement datum to describe a dataset or a variable. It is generated by a calculation on set of observed data."@en .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000104
+<http://purl.obolibrary.org/obo/STATO_0000104> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000039> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000117> "Alejandra Gonzalez-Beltran"@en ,
+                                                                                            "Orlaith Burke"@en ,
+                                                                                            "Philippe Rocca-Serra"@en ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000119> "https://controls.engin.umich.edu/wiki/index.php/Basic_statistics:_mean,_median,_average,_standard_deviation,_z-scores,_and_p-value#Z-Scores"@en ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obofoundry.org/obo/stato.owl> ;
+                                               rdfs:label "z-score" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "A z-score (also known as z-value, standard score, or normal score) is a measure of the divergence of an individual experimental result from the most probable result, the mean. Z is expressed in terms of the number of standard deviations from the mean value."@en .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/000000111
+<http://www.ontology-of-units-of-measure.org/resource/om-2/000000111> rdf:type owl:Class ;
+                                                                      rdfs:label "Measure"@en ;
+                                                                      <http://www.w3.org/2004/02/skos/core#comment> "A measure entails an operational definition. \"An operational definition is a definition of a variable in terms of the actual procedures used by the researcher to measure and/or manipulate it (Kerlinger, 1962) cited by Graziano and Raulin's textbook Research Methods (2004)" ;
+                                                                      <http://www.w3.org/2004/02/skos/core#definition> "A measure combines a number to a unit of measure. For example, \"3 m\" is a measure."@en .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/000000117
+<http://www.ontology-of-units-of-measure.org/resource/om-2/000000117> rdf:type owl:Class ;
+                                                                      <http://www.ontology-of-units-of-measure.org/resource/om-2/alternativeLabel> "unit of measure"@en ,
+                                                                                                                                                   "unit of measurement"@en ,
+                                                                                                                                                   "測定の単位"@ja ,
+                                                                                                                                                   "測定単位"@ja ;
+                                                                      rdfs:comment "A unit of measure is a definite magnitude of a quantity, defined and adopted by convention or by law. It is used as a standard for measurement of the same quantity, where any other value of the quantity can be expressed as a simple multiple of the unit. For example, length is a quantity; the metre is a unit of length that represents a definite predetermined length. When we say 10 metre (or 10 m), we actually mean 10 times the definite predetermined length called \"metre\"."@en ,
+                                                                                   "測定単位とは，量の確定的な大きさであり，慣例又は法律によって定義し採用されている。同じ量の測定の標準として用いられ，他の如何なる量の値も当該単位の単純な倍数として表わせる。例えば，長さも量である; メートルは長さの単位であり，確定的な所定の長さを表している。10メートル（又は10 m）とは，「メートル」と呼ばれる確定的な所定の長さの10倍を，実際に意味している。"@ja ;
+                                                                      rdfs:label "Unit"@en ,
+                                                                                 "単位"@ja .
+
+
+###  http://www.w3.org/2006/time#Duration
+<http://www.w3.org/2006/time#Duration> rdf:type owl:Class ;
+                                       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.w3.org/2006/time#unitType> ;
+                                                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.w3.org/2006/time#numericDuration> ;
+                                                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                       ] ;
+                                       rdfs:comment "Duración de una extensión temporal expresada como un número escalado por una unidad temporal."@es ,
+                                                    "Duration of a temporal extent expressed as a number scaled by a temporal unit"@en ;
+                                       rdfs:label "Time duration" ,
+                                                  "duración de tiempo" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Duración de una extensión temporal expresada como un número escalado por una unidad temporal."@es ,
+                                                                                        "Duration of a temporal extent expressed as a number scaled by a temporal unit"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#note> "Alternativa a 'descripción de tiempo' para proporcionar descripción soporte a una duración temporal diferente a utilizar un sistema de calendario/reloj."@es ,
+                                                                                  "Alternative to time:DurationDescription to support description of a temporal duration other than using a calendar/clock system."@en .
+
+
+###  http://www.w3.org/2006/time#Instant
+<http://www.w3.org/2006/time#Instant> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity> ;
+                                      rdfs:comment "A temporal entity with zero extent or duration"@en ,
+                                                   "Una entidad temporal con una extensión o duración cero."@es ;
+                                      rdfs:label "instante de tiempo."@es ,
+                                                 "Time instant" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A temporal entity with zero extent or duration"@en ,
+                                                                                       "Una entidad temporal con una extensión o duración cero."@es .
+
+
+###  http://www.w3.org/2006/time#Interval
+<http://www.w3.org/2006/time#Interval> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity> ;
+                                       rdfs:comment "A temporal entity with an extent or duration. In the case of TURBBO, this class represents the time interval in weeks, months or years between the measure or manipulation of behaviour X and the measure of behaviour Y."@en ,
+                                                    "Una entidad temporal con una extensión o duración."@es ;
+                                       rdfs:label "Time interval"@en ,
+                                                  "intervalo de tiempo"@es ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A temporal entity with an extent or duration"@en ,
+                                                                                        "Una entidad temporal con una extensión o duración."@es .
+
+
+###  http://www.w3.org/2006/time#TemporalEntity
+<http://www.w3.org/2006/time#TemporalEntity> rdf:type owl:Class ;
+                                             rdfs:comment "A temporal interval or instant."@en ,
+                                                          "Un intervalo temporal o un instante."@es ;
+                                             rdfs:label "entidad temporal"@es ,
+                                                        "Temporal entity" ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "A temporal interval or instant."@en ,
+                                                                                              "Un intervalo temporal o un instante."@es .
+
+
+###  http://www.w3.org/2006/time#TemporalUnit
+<http://www.w3.org/2006/time#TemporalUnit> rdf:type owl:Class ;
+                                           rdfs:comment "A standard duration, which provides a scale factor for a time extent, or the granularity or precision for a time position."@en ,
+                                                        "Una duración estándar, que proporciona un factor de escala para una extensión de tiempo, o la granularidad o precisión para una posición de tiempo."@es ;
+                                           rdfs:label "unidad de tiempo"@es ,
+                                                      "Temporal unit" ;
+                                           <http://www.w3.org/2004/02/skos/core#changeNote> """Remove enumeration from definition, in order to allow other units to be used when required in other coordinate systems. 
+NOTE: existing units are still present as members of the class, but the class membership is now open. 
+
+In the original OWL-Time the following constraint appeared: 
+  owl:oneOf (
+      time:unitSecond
+      time:unitMinute
+      time:unitHour
+      time:unitDay
+      time:unitWeek
+      time:unitMonth
+      time:unitYear
+    ) ;"""@en ;
+                                           <http://www.w3.org/2004/02/skos/core#definition> "A standard duration, which provides a scale factor for a time extent, or the granularity or precision for a time position."@en ,
+                                                                                            "Una duración estándar, que proporciona un factor de escala para una extensión de tiempo, o la granularidad o precisión para una posición de tiempo."@es ;
+                                           <http://www.w3.org/2004/02/skos/core#note> "La pertenencia de la clase 'unidad de tiempo' está abierta, para permitir otras unidades de tiempo utilizadas en algunas aplicaciones técnicas (por ejemplo, millones de años o el mes Baha'i)."@es ,
+                                                                                      "Membership of the class TemporalUnit is open, to allow for other temporal units used in some technical applications (e.g. millions of years, Baha'i month)."@en .
+
+
+###  http://xmlns.com/foaf/0.1/000000108
+<http://xmlns.com/foaf/0.1/000000108> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://xmlns.com/foaf/0.1/000000119> ;
+                                      rdfs:comment "A class of Agents." ;
+                                      rdfs:label "Group" ;
+                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A number of people that are located, gathered, or classed together." .
+
+
+###  http://xmlns.com/foaf/0.1/000000113
+<http://xmlns.com/foaf/0.1/000000113> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://xmlns.com/foaf/0.1/000000119> ;
+                                      owl:disjointWith <http://xmlns.com/foaf/0.1/000000129> ;
+                                      rdfs:comment "An organization." ;
+                                      rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+                                      rdfs:label "Organization" ;
+                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A group of people with a particular purpose, such as a business or government department." ,
+                                                                                       """An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members.
+(BCIO - https://www.bciovocab.org/OBI:0000245)""" .
+
+
+###  http://xmlns.com/foaf/0.1/000000119
+<http://xmlns.com/foaf/0.1/000000119> rdf:type owl:Class ;
+                                      rdfs:comment "An agent (eg. person, group, software or physical artifact)." ;
+                                      rdfs:label "Agent" ;
+                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A person or entity that acts or has the capacity to act. (https://dictionary.apa.org/agent)" .
+
+
+###  http://xmlns.com/foaf/0.1/000000129
+<http://xmlns.com/foaf/0.1/000000129> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://xmlns.com/foaf/0.1/000000119> ;
+                                      rdfs:label "Person" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A human being regarded as an individual" .
+
+
+###  https://purl.org/turbbo#upper_000000118
+<https://purl.org/turbbo#upper_000000118> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000140> ;
+                                          rdfs:label "Spearman’s" ;
+                                          <http://www.w3.org/2004/02/skos/core#definition> """A nonparametric measure of statistical dependence between two variables that were measured on an ordinal scale; that is, the individual observations (cases) can be ranked into two ordered series. The Spearman correlation coefficient assesses how well the relationship between the variables can be described using a monotonic function. It ranges in value from +1 to −1.
+(https://dictionary.apa.org/spearman-correlation-coefficient)""" .
+
+
+###  https://purl.org/turbbo/RBBO_0000015
+<https://purl.org/turbbo/RBBO_0000015> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000311> ;
+                                       rdfs:label "dissertation" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "a long piece of writing on a particular subject, especially one that is done in order to receive a degree at college or university. (source: Cambridge dictionary https://dictionary.cambridge.org/dictionary/english/dissertation?q=dissertation+)" ;
+                                       <https://purl.org/turbbo/RBBO_0000150> "thesis" .
+
+
+###  https://purl.org/turbbo/RBBO_0000016
+<https://purl.org/turbbo/RBBO_0000016> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000311> ;
+                                       rdfs:label "conference proceeding" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "The conference proceeding is a published record of a conference, congress, symposium, or other gathering with the goal of disseminating original research and new advances within certain disciplines, sub-disciplines, or fields of study." .
+
+
+###  https://purl.org/turbbo/RBBO_0000021
+<https://purl.org/turbbo/RBBO_0000021> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000039> ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <https://purl.org/turbbo/RBBO_0000090> ;
+                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000039>
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <https://purl.org/turbbo/RBBO_0000090> ;
+                                                         owl:someValuesFrom <https://purl.org/turbbo/RBBO_0000133>
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <https://purl.org/turbbo/RBBO_0000091> ;
+                                                         owl:someValuesFrom <https://purl.org/turbbo/RBBO_0000142>
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <https://purl.org/turbbo/RBBO_0000131> ;
+                                                         owl:someValuesFrom <https://purl.org/turbbo/RBBO_0000140>
+                                                       ] ;
+                                       rdfs:label "correlation coefficient r" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> """A numerical index reflecting the degree of linear relationship between two variables. It is scaled so that the value of +1 indicates a perfect positive relationship (such that high scores on variable x are associated with high scores on variable y), –1 indicates a perfect negative relationship (such that high scores on variable x are associated with low scores on variable y, or vice versa), and 0 indicates no relationship. The most commonly used type of correlation coefficient is the Pearson product-moment correlation coefficient.
+(https://dictionary.apa.org/correlation-coefficient)""" .
+
+
+###  https://purl.org/turbbo/RBBO_0000026
+<https://purl.org/turbbo/RBBO_0000026> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000115> ;
+                                       rdfs:label "Small correlation" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "\"Noticeably smaller than medium but not so small as to be trivial\" Cohen (1992, p. 156)" .
+
+
+###  https://purl.org/turbbo/RBBO_0000027
+<https://purl.org/turbbo/RBBO_0000027> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000115> ;
+                                       rdfs:label "Medium correlation" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "\"An effect visible to the naked eye by a careful observer\" Cohen (1992, p. 156)" .
+
+
+###  https://purl.org/turbbo/RBBO_0000028
+<https://purl.org/turbbo/RBBO_0000028> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000115> ;
+                                       rdfs:label "Large correlation" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "\"the same distance above medium as small is below it\" Cohen (1992, p. 156)" .
+
+
+###  https://purl.org/turbbo/RBBO_0000101
+<https://purl.org/turbbo/RBBO_0000101> rdf:type owl:Class ;
+                                       rdfs:label "Outcome" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> """Assessments of the effectiveness of an intervention on the basis of measurements taken before, during, and after the intervention.
+
+APA definition found here: https://dictionary.apa.org/outcome-measures""" .
+
+
+###  https://purl.org/turbbo/RBBO_0000106
+<https://purl.org/turbbo/RBBO_0000106> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000140> ;
+                                       rdfs:label "Pearsons" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A measure of linear correlation between two sets of data. It is the ratio between the covariance of two variables and the product of their standard deviations; thus, it is essentially a normalized measurement of the covariance, such that the result always has a value between −1 and 1." .
+
+
+###  https://purl.org/turbbo/RBBO_0000109
+<https://purl.org/turbbo/RBBO_0000109> rdf:type owl:Class ;
+                                       rdfs:label "Material" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> """An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.
+(BCIO - https://www.bciovocab.org/BCIO:050306)""" ,
+                                                                                        "The equipment, apparatus or consumables used for gathering data." .
+
+
+###  https://purl.org/turbbo/RBBO_0000115
+<https://purl.org/turbbo/RBBO_0000115> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000027> ;
+                                       rdfs:label "Magnitude" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "The magnitude of correlation. Magnitude refers to the strength of association--higher r values represent stronger relationship between the two variables. (Source: https://web.pdx.edu/~newsomj/pa551/lectur14.htm)" .
+
+
+###  https://purl.org/turbbo/RBBO_0000116
+<https://purl.org/turbbo/RBBO_0000116> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000142> ;
+                                       rdfs:label "Psychometrica" .
+
+
+###  https://purl.org/turbbo/RBBO_0000122
+<https://purl.org/turbbo/RBBO_0000122> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000140> ;
+                                       rdfs:label "Point-biserial" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A numerical index reflecting the degree of relationship between two random variables, one continuous and one dichotomous (binary). (https://dictionary.apa.org/point-biserial-correlation-coefficient)" .
+
+
+###  https://purl.org/turbbo/RBBO_0000123
+<https://purl.org/turbbo/RBBO_0000123> rdf:type owl:Class ;
+                                       rdfs:label "Behaviour" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> """Behaviour:
+- Is anything that a person does.
+- Is usually observable (i.e., overt motor or verbal responses) and directly measurable, but can include unobservable or covert activities that can only be measured indirectly like thinking positively.
+- Are physical events that occur in the body and are controlled by the brain.
+- Does not require a rating beyond whether it occurred or not.
+- Includes social practices.
+
+The following are not behaviours:
+- Autonomic or homeostatic processes (e.g., breathing, temperature regulation).
+- Behavioural intentions / motivation (though key to contextualising behaviours)
+- Outcomes (e.g., getting arrested as a result of committing crime), although measuring outcomes can be used to make inferences about (and thus indirectly measure) behaviour.
+- Actions of organisations.
+- Where possible, descriptions that likely reflect multiple behaviours (e.g., raising children), should be broken down into separable behaviours (e.g., cooking meals, buying clothes, reading to the child etc.)""" .
+
+
+###  https://purl.org/turbbo/RBBO_0000133
+<https://purl.org/turbbo/RBBO_0000133> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000027> ;
+                                       rdfs:label "Effect size" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Any of various measures of the magnitude or meaningfulness of a relationship between two variables. APA definition found here https://dictionary.apa.org/effect-size" .
+
+
+###  https://purl.org/turbbo/RBBO_0000134
+<https://purl.org/turbbo/RBBO_0000134> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000133> ;
+                                       rdfs:label "Eta squared" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> """A measure of the amount of variance in a dependent variable that can be explained by one or more independent variables, as calculated in a variety of statistical procedure.
+(https://dictionary.apa.org/eta-squared)""" .
+
+
+###  https://purl.org/turbbo/RBBO_0000135
+<https://purl.org/turbbo/RBBO_0000135> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000133> ;
+                                       rdfs:label "Odds ratios" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> """The quotient of two odds. For example, in a study on a drug, the odds ratio is calculated as the odds of an effect in a treated group divided by the odds of the same effect in a control group. A measure of effect size, it varies from 0 to infinity, with a value of 1 indicating no effect and a value of less than 1 indicating a negative effect.
+(https://dictionary.apa.org/odds-ratio)""" .
+
+
+###  https://purl.org/turbbo/RBBO_0000139
+<https://purl.org/turbbo/RBBO_0000139> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity> ;
+                                       rdfs:label "Frequency" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "The rate at which something occurs over a particular period of time." .
+
+
+###  https://purl.org/turbbo/RBBO_0000140
+<https://purl.org/turbbo/RBBO_0000140> rdf:type owl:Class ;
+                                       rdfs:label "Correlation type" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> """The degree of a relationship (usually linear) between two variable, which may be quantified as a correlation coefficient.
+https://dictionary.apa.org/correlation""" .
+
+
+###  https://purl.org/turbbo/RBBO_0000141
+<https://purl.org/turbbo/RBBO_0000141> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000140> ;
+                                       rdfs:label "Kendall rank" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> """A nonparametric measure of the degree of association between two ordinal variables (i.e., rank-ordered data).
+https://dictionary.apa.org/kendalls-tau""" .
+
+
+###  https://purl.org/turbbo/RBBO_0000142
+<https://purl.org/turbbo/RBBO_0000142> rdf:type owl:Class ;
+                                       rdfs:label "Correlation coefficient conversion tool" .
+
+
+###  https://purl.org/turbbo/RBBO_0000149
+<https://purl.org/turbbo/RBBO_0000149> rdf:type owl:Class ;
+                                       rdfs:comment "Clicking on a DOI link takes you to one or more current URLs or other services related to a single resource. If the URLs or services change over time, e.g., the resource moves, this same DOI will continue to resolve to the correct resources or services at their new locations. (source: https://www.doi.org)" ;
+                                       rdfs:isDefinedBy <http://purl.org/spar/datacite> ;
+                                       rdfs:label "DOI" ;
+                                       <http://www.w3.org/2004/02/skos/core#altLabel> "Digital Object Identifier" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "An identifier that is used as the primary identifier to uniquely identify the primary resource that is the subject of the DataCite metadata record. Within the DataCite metadata record, a Digital Object Identifier is the only permitted primary resource identifier scheme, specified by the individual datacite:doi, that is a member of the class datacite:ResourceIdentifierScheme. (source: The DataCite Ontology)" ;
+                                       <https://purl.org/turbbo_behaviours_0000093> <http://purl.org/spar/datacite/doi> .
+
+
+###  https://purl.org/turbbo/RBBO_0000151
+<https://purl.org/turbbo/RBBO_0000151> rdf:type owl:Class ;
+                                       rdfs:comment "an observation of a behaviour recorded from a study" ;
+                                       rdfs:label "Behaviour observation"@en .
+
+
+###  https://purl.org/turbbo/RBBO_OWLClass_00000000000000000004
+RBBO:OWLClass_00000000000000000004 rdf:type owl:Class ;
+                                   rdfs:comment "this concept is remodelled and instead of a class it is now represented as a data property that has a numerical value" ;
+                                   rdfs:label "DEPRECATED MeasureValue" ;
+                                   owl:deprecated "true"^^xsd:boolean .
+
+
+###  Generated by the OWL API (version 4.5.24.2023-01-14T21:28:32Z) https://github.com/owlcs/owlapi

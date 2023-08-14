@@ -4,7 +4,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://purl.org/turbbo/RBBO_behaviour_properties.owl> .
+@base <https://purl.org/turbbo/RBBO_behaviour_properties.owl#> .
 
 <https://purl.org/turbbo/RBBO_behaviour_properties.owl> rdf:type owl:Ontology ;
                                                          rdfs:comment """RBBO - Behaviour properties
@@ -121,7 +121,8 @@ This module of RBBO consists of classes and data properties which describe the c
 <https://purl.org/turbbo/RBBO_0000111> rdf:type owl:ObjectProperty ;
                                        rdfs:domain <https://purl.org/turbbo/RBBO_0000112> ,
                                                    <https://purl.org/turbbo/RBBO_0000125> ,
-                                                   <https://purl.org/turbbo/RBBO_0000143> .
+                                                   <https://purl.org/turbbo/RBBO_0000143> ;
+                                       rdfs:label "measured by" .
 
 
 ###  https://purl.org/turbbo/RBBO_0000117
@@ -134,7 +135,6 @@ This module of RBBO consists of classes and data properties which describe the c
 ###  https://purl.org/turbbo/RBBO_0000118
 <https://purl.org/turbbo/RBBO_0000118> rdf:type owl:ObjectProperty ;
                                        rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
-                                       rdfs:range <https://purl.org/turbbo/RBBO_0000147> ;
                                        rdfs:label "occurs in" .
 
 
@@ -174,70 +174,167 @@ This module of RBBO consists of classes and data properties which describe the c
 <https://purl.org/turbbo/RBBO_0000001> rdf:type owl:DatatypeProperty ;
                                        rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range xsd:boolean ;
-                                       rdfs:label "is deliberate" .
+                                       rdfs:comment """\"https://link.springer.com/chapter/10.1007/978-3-030-54994-7_32
+Deliberate behaviour is driven by a goal, which not only depends on the knowledge domain but also on a representation of the goal achievement. This representation may be given by a combination of perceptions, actions and cognitive information.\" (Harriet Baird 4th April 2023)
+
+This paper might be useful: https://bpspsychub.onlinelibrary.wiley.com/doi/full/10.1348/014466606X152261
+\"It was theorised that deliberate behaviour is distinguished from spontaneous behaviour with respect to the amount of cognitive effort used in making the decision to carry out the particular behaviour\" ((Harriet Baird 4th April 2023)""" ,
+                                                    "Is this the same as \"is intentional\"? I was tempted to define \"is deliberate\" as intentional behaviour." ;
+                                       rdfs:label "is deliberate" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Deliberate behaviour is driven by a goal, which not only depends on the knowledge domain but also on a representation of the goal achievement. (from https://link.springer.com/chapter/10.1007/978-3-030-54994-7_32)" .
 
 
 ###  https://purl.org/turbbo/RBBO_0000002
 <https://purl.org/turbbo/RBBO_0000002> rdf:type owl:DatatypeProperty ;
                                        rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range xsd:boolean ;
-                                       rdfs:label "is changeable" .
-
-
-###  https://purl.org/turbbo/RBBO_0000003
-<https://purl.org/turbbo/RBBO_0000003> rdf:type owl:DatatypeProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
-                                       rdfs:range xsd:boolean ;
-                                       rdfs:label "is effortless" .
+                                       rdfs:label "is changeable" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Behaviour that is liable to variation" .
 
 
 ###  https://purl.org/turbbo/RBBO_0000004
 <https://purl.org/turbbo/RBBO_0000004> rdf:type owl:DatatypeProperty ;
                                        rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range xsd:boolean ;
-                                       rdfs:label "is habit" .
+                                       rdfs:comment "\"There are other ontologies that use differen definitions - e.g., A pattern of repeat behavior requiring little conscious thought - NCIT & GSSO An acquired pattern of behavior that often occurs automatically and is reliably triggered by some event or stimulus. - COGAT\" (Harriet Baird 4th April 2023)" ;
+                                       rdfs:label "is habitual" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A behaviour that results from a learnt stimulus-behaviour co-occurrence (Source: definition imported from the Behaviour Change Intervention Ontology (BCIO), via Qeios.)" .
 
 
 ###  https://purl.org/turbbo/RBBO_0000005
 <https://purl.org/turbbo/RBBO_0000005> rdf:type owl:DatatypeProperty ;
                                        rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range xsd:boolean ;
-                                       rdfs:label "is heterogenous" .
+                                       rdfs:label "is heterogenous" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "The behaviour has a \"uniform consistency or composition\" (Source: National Cancer Institute Thesaurus via Bioportal)" .
 
 
 ###  https://purl.org/turbbo/RBBO_0000007
 <https://purl.org/turbbo/RBBO_0000007> rdf:type owl:DatatypeProperty ;
                                        rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range xsd:boolean ;
-                                       rdfs:label "is legal" .
+                                       rdfs:label "is legal" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "The behaviour meets the requirements under law; is not in violation of law or anything related to the law. (Source: National Cancer Institute. Legal. NCI Thesaurus. Code C54074, via Qeios)" .
 
 
 ###  https://purl.org/turbbo/RBBO_0000008
 <https://purl.org/turbbo/RBBO_0000008> rdf:type owl:DatatypeProperty ;
                                        rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range xsd:boolean ;
-                                       rdfs:label "is moral" .
+                                       rdfs:label "is moral" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A moral behavior is one that is motivated by an explicit recognition of the prescriptive force of moral rules (Narvaez & Lapsley, 2005) or A moral behaviour is an acceptable way of life in a given society. This acceptable way of life or code of conduct is informed by religious beliefs, cultural beliefs, social beliefs, etc." .
 
 
 ###  https://purl.org/turbbo/RBBO_0000009
 <https://purl.org/turbbo/RBBO_0000009> rdf:type owl:DatatypeProperty ;
                                        rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range xsd:boolean ;
-                                       rdfs:label "is new" .
+                                       rdfs:comment "May need to separate behaviour that is new to the individual from behaviour that is completely new (although perhaps the latter is so uncommon, that the property means new to the individual?)" ;
+                                       rdfs:label "is new" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Having no previous example or precedent or parallel; of a kind not seen before. (Source: National Cancer Institute. New. NCI Thesaurus. Code C25586.)" .
 
 
 ###  https://purl.org/turbbo/RBBO_0000010
 <https://purl.org/turbbo/RBBO_0000010> rdf:type owl:DatatypeProperty ;
                                        rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range xsd:boolean ;
-                                       rdfs:label "is opportunistic" .
+                                       rdfs:comment """\"But there is a definition for behavioural opportunity \"An environmental disposition that enables or facilitates a behaviour.\" This definition was imported from the Behaviour Change Intervention Ontology (see https://bciovocab.org/). Comments and suggestions for improvements are welcome using the Qeios review system.\" (Harriet Baird on 4th April 2023)
+
+\"Perhaps we could draw on the distinction between intentions and willingness here - e.g., opportuniistic behaviour \"is not intended, but rather results from a behavioural opportunity, defined as \"an environmental disposition that enables of facilitates a behaviour\"?\" (ThomasW 15th April 2023)""" ;
+                                       rdfs:label "is opportunistic" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Behaviour that is not intended, but rather results from a behavioural opportunity (\"an environmental disposition that enables of facilitates a behaviour\"). This definition was imported from the Behaviour Change Intervention Ontology (see https://bciovocab.org/)." .
 
 
 ###  https://purl.org/turbbo/RBBO_0000011
 <https://purl.org/turbbo/RBBO_0000011> rdf:type owl:DatatypeProperty ;
                                        rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range xsd:boolean ;
-                                       rdfs:label "is optional" .
+                                       rdfs:label "is optional" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Possible but not necessary; left to personal choice. (Source: National Cancer Institute. Optional. NCI Thesaurus. Code C25603.)" .
+
+
+###  https://purl.org/turbbo/RBBO_0000301
+<https://purl.org/turbbo/RBBO_0000301> rdf:type owl:DatatypeProperty ;
+                                       rdfs:comment "Maybe we need separate properties or \"Is abnormal for the individual\" and \"is abnormal for society\"? There is another definition of Qeios of abnormal which states \"Deviating in any way from the state, position, structure, condition, behavior, or rule which is considered a norm.\" (National Cancer Institute. Abnormal. NCI Thesaurus. Code C25401)" ;
+                                       rdfs:label "is abnormal"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Conduct that is unusual for the individual. (Source: National Cancer Institute. Abnormal Behavior. NCI Thesaurus. Code C122430, via Qeios)" .
+
+
+###  https://purl.org/turbbo/RBBO_0000303
+<https://purl.org/turbbo/RBBO_0000303> rdf:type owl:DatatypeProperty ;
+                                       rdfs:label "is adaptive"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Adaptive behaviors are learned behaviors that reflect an individual's social and practical competence to meet the demands of everyday living (American Association on Intellectual and Developmental Disabilities)" .
+
+
+###  https://purl.org/turbbo/RBBO_0000304
+<https://purl.org/turbbo/RBBO_0000304> rdf:type owl:DatatypeProperty ;
+                                       rdfs:label "is automatic"@en .
+
+
+###  https://purl.org/turbbo/RBBO_0000305
+<https://purl.org/turbbo/RBBO_0000305> rdf:type owl:DatatypeProperty ;
+                                       rdfs:label "is consistent with self-identity"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Behaviour that expresses the person's identity (where self-identity is defined as \"An identity that a person has about themselves\" from the Addiction Ontology, Qeios ID: FDB3BI.2)" .
+
+
+###  https://purl.org/turbbo/RBBO_0000306
+<https://purl.org/turbbo/RBBO_0000306> rdf:type owl:DatatypeProperty ;
+                                       rdfs:comment "Challenge here is whose definition of desirable? And at the time of the behaviour or later?" ;
+                                       rdfs:label "is desirable"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "An evaluative belief about the value of the consequences of behaviour (Source: This definition was imported from the Behaviour Change Intervention Ontology (see https://bciovocab.org/), via Qeois - edited slightly)." .
+
+
+###  https://purl.org/turbbo/RBBO_0000307
+<https://purl.org/turbbo/RBBO_0000307> rdf:type owl:DatatypeProperty ;
+                                       rdfs:label "is impulsive"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Initiation of actions without forethought as to the cost, results or consequences. (Source: National Cancer Institute. Impulsive Behavior. NCI Thesaurus. Code C93213.)" .
+
+
+###  https://purl.org/turbbo/RBBO_0000308
+<https://purl.org/turbbo/RBBO_0000308> rdf:type owl:DatatypeProperty ;
+                                       rdfs:label "is intentional"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Intentional behavior is a goal-directed activity whereby perceptions are sought and actions performed in service of the needs of the organism (Harter & Kozma, 2021)" .
+
+
+###  https://purl.org/turbbo/RBBO_0000309
+<https://purl.org/turbbo/RBBO_0000309> rdf:type owl:DatatypeProperty ;
+                                       rdfs:label "is learned"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A mental disposition to behave in a particular way in response to an internal or external event in the person's environment, which is acquired through habit learning. (Source:This definition was imported from the Behaviour Change Intervention Ontology (see https://bciovocab.org/). Comments and suggestions for improvements are welcome using the Qeios review system, via Qeios)" .
+
+
+###  https://purl.org/turbbo/RBBO_0000310
+<https://purl.org/turbbo/RBBO_0000310> rdf:type owl:DatatypeProperty ;
+                                       rdfs:label "is normative"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "An individual human behaviour that is commonly enacted by people that are part of a social environmental system. This definition was imported from the Behaviour Change Intervention Ontology (see https://bciovocab.org/). Qeios ID: VYZF1Y" .
+
+
+###  https://purl.org/turbbo/RBBO_0000311
+<https://purl.org/turbbo/RBBO_0000311> rdf:type owl:DatatypeProperty ;
+                                       rdfs:label "is physical"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A behaviour that involves a musculoskeletal process in its realisation. (Source: This definition was imported from the Behaviour Change Intervention Ontology (see https://bciovocab.org/). Comments and suggestions for improvements are welcome using the Qeios review system - slightly edited to remove \"capability\")" .
+
+
+###  https://purl.org/turbbo/RBBO_0000312
+<https://purl.org/turbbo/RBBO_0000312> rdf:type owl:DatatypeProperty ;
+                                       rdfs:label "is pleasurable"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Pleasure (an emotion associated with feeling good) that is experienced as a result of engaging in a behaviour. Overall this definition was reused from the Behaviour Change Intervention Ontology (see https://bciovocab.org/) and augmented with a definition of pleasure from National Cancer Institute. Pleasure. NCI Thesaurus. Code C86580." .
+
+
+###  https://purl.org/turbbo/RBBO_0000313
+<https://purl.org/turbbo/RBBO_0000313> rdf:type owl:DatatypeProperty ;
+                                       rdfs:label "is rational"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Behaviour that is based on or in accordance with reason or logic." .
+
+
+###  https://purl.org/turbbo/RBBO_0000314
+<https://purl.org/turbbo/RBBO_0000314> rdf:type owl:DatatypeProperty ;
+                                       rdfs:label "is repetitive"@en .
+
+
+###  https://purl.org/turbbo/RBBO_0000315
+<https://purl.org/turbbo/RBBO_0000315> rdf:type owl:DatatypeProperty ;
+                                       rdfs:label "is spontaneous"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Behaviour that happens or arised without apparent external cause. Adapted from definition of spontaneous from the National Cancer Institute. Spontaneous. NCI Thesaurus. Code C48307." .
 
 
 #################################################################
@@ -376,12 +473,6 @@ This module of RBBO consists of classes and data properties which describe the c
 <https://purl.org/turbbo/RBBO_0000146> rdf:type owl:Class ;
                                        rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000144> ;
                                        rdfs:label "Psychological" .
-
-
-###  https://purl.org/turbbo/RBBO_0000147
-<https://purl.org/turbbo/RBBO_0000147> rdf:type owl:Class ;
-                                       <http://purl.obolibrary.org/obo/IAO_0000115> "The environment within which a behaviour occurs. For example, at home, in school, etc." ;
-                                       rdfs:label "Setting" .
 
 
 ###  https://purl.org/turbbo/RBBO_0000148

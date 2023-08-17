@@ -12,17 +12,10 @@ RBBO consists of the following three modules (each can be downloaded and used as
 
 3. [RBBO - Behaviour Properties](https://github.com/fatibaba/turbbo/blob/main/RBBO_behaviour_properties.owl): consists of classes and data properties which describe the characteristics of behaviours.
 
-The GitHub repository for the TURBBO project is https://github.com/fatibaba/turbbo
 
-We present an ontology of behaviour, which provides a structural model for describing behaviours and formalises characteristics and correlations between the behaviours.
-
-This is the latest version of the TURBBO ontologies which consists of three levels and can be donwloaded and used as separate ontologies:
-1. The upper.owl
-2. the behaviours.owl
-3. The behaviour_properties.owl
-
-There is a merged version of the TURBBO ontologies which is turbbo.owl. 
-
-This repository also contains the SPARQL queries and answers used for evaluation of the ontology see [CompetencyQuestions](https://github.com/fatibaba/turbbo/blob/main/CompetencyQuestions.md). [turbbo-dataset.ttl](https://raw.githubusercontent.com/fatibaba/turbbo/main/turbbo-dataset.ttl) contains the dataset for testing the queries.
-
-To contribute directly (by making comments) to the ontology on WebProtege use this link https://webprotege.stanford.edu/#projects/c4cdd618-b4c2-48e2-85c2-e08837e24669/edit/Classes?selection=Class(%3Chttps://purl.org/turbbo%23Barrier%3E)
+To contribute to the ontology on WebProtege by making comments, use the following links:
+1. For the complete [RBBO](https://webprotege.stanford.edu/#projects/a2dba60e-23e0-4306-baa8-2e379e28696c/edit/Classes)
+2. Or individual modules
+   - [RBBO - Properties of Studies Measuring Behaviours](https://webprotege.stanford.edu/#projects/dbbf0eae-4da5-4e29-adcf-66fd38d5d258/edit/Classes)
+   - [RBBO - Behaviour](https://webprotege.stanford.edu/#projects/dbf774a7-dbce-46f0-b8c9-94b08fa8929a/edit/Classes)
+   - [RBBO - Behaviour Properties](https://webprotege.stanford.edu/#projects/b50e522c-cca0-465a-bd14-63e12ad44d48/edit/Classes)

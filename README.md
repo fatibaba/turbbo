@@ -12,10 +12,14 @@ RBBO consists of the following three modules (each can be downloaded and used as
 
 3. [RBBO - Behaviour Properties](https://github.com/fatibaba/turbbo/blob/main/RBBO_behaviour_properties.owl): consists of classes and data properties which describe the characteristics of behaviours.
 
-
-To contribute to the ontology on WebProtege by making comments, use the following links:
+## Contribute on WebProtégé 
+To contribute to the ontology on WebProtégé by making comments, use the following links:
 1. For the complete [RBBO](https://webprotege.stanford.edu/#projects/a2dba60e-23e0-4306-baa8-2e379e28696c/edit/Classes)
 2. Or individual modules
    - [RBBO - Properties of Studies Measuring Behaviours](https://webprotege.stanford.edu/#projects/dbbf0eae-4da5-4e29-adcf-66fd38d5d258/edit/Classes)
    - [RBBO - Behaviour](https://webprotege.stanford.edu/#projects/dbf774a7-dbce-46f0-b8c9-94b08fa8929a/edit/Classes)
    - [RBBO - Behaviour Properties](https://webprotege.stanford.edu/#projects/b50e522c-cca0-465a-bd14-63e12ad44d48/edit/Classes)
+  
+## Issue tracking
+You can report any issues with ontology files [here](https://github.com/fatibaba/turbbo/issues)
+

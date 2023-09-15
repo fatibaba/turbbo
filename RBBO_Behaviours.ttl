@@ -69,7 +69,7 @@ Every behaviour is associated with mental processes, but not every mental proces
 'behaviours' can involve a series of activities .
 
 'A 'striated muscle' can defined as 'a type of contractile tissue that is marked by transverse striations""" ;
-                                                       rdfs:label "individual human behaviour" .
+                                                       rdfs:label "individual human behaviour2" .
 
 
 ###  http://humanbehaviourchange.org/ontology/BCIO_036002

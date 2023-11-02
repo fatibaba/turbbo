@@ -3,9 +3,8 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix RBBO: <https://purl.org/turbbo/RBBO_> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://purl.org/turbbo/RBBO_behaviour_properties.owl#> .
+@base <https://purl.org/turbbo/RBBO_behaviour_properties.owl> .
 
 <https://purl.org/turbbo/RBBO_behaviour_properties.owl> rdf:type owl:Ontology ;
                                                          rdfs:comment """RBBO - Behaviour properties
@@ -29,6 +28,14 @@ This module of RBBO consists of classes and data properties which describe the c
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.geneontology.org/formats/oboInOwl#created_by
+<http://www.geneontology.org/formats/oboInOwl#created_by> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#creation_date
+<http://www.geneontology.org/formats/oboInOwl#creation_date> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2004/02/skos/core#definition
 <http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
 
@@ -43,63 +50,51 @@ This module of RBBO consists of classes and data properties which describe the c
 
 ###  https://purl.org/turbbo/RBBO_0000085
 <https://purl.org/turbbo/RBBO_0000085> rdf:type owl:ObjectProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000102> ;
-                                       rdfs:range <https://purl.org/turbbo/RBBO_0000102> ;
                                        rdfs:label "occurs before" .
 
 
 ###  https://purl.org/turbbo/RBBO_0000086
 <https://purl.org/turbbo/RBBO_0000086> rdf:type owl:ObjectProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000102> ;
-                                       rdfs:range <https://purl.org/turbbo/RBBO_0000102> ;
                                        rdfs:label "occurs after" .
 
 
 ###  https://purl.org/turbbo/RBBO_0000089
 <https://purl.org/turbbo/RBBO_0000089> rdf:type owl:ObjectProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
-                                       rdfs:range <https://purl.org/turbbo/RBBO_0000102> ;
                                        rdfs:label "composed of" .
 
 
 ###  https://purl.org/turbbo/RBBO_0000092
 <https://purl.org/turbbo/RBBO_0000092> rdf:type owl:ObjectProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range <https://purl.org/turbbo/RBBO_0000107> ;
                                        rdfs:label "facilitated by" .
 
 
 ###  https://purl.org/turbbo/RBBO_0000094
 <https://purl.org/turbbo/RBBO_0000094> rdf:type owl:ObjectProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range <https://purl.org/turbbo/RBBO_0000143> ;
                                        rdfs:label "has effectiveness" .
 
 
 ###  https://purl.org/turbbo/RBBO_0000096
 <https://purl.org/turbbo/RBBO_0000096> rdf:type owl:ObjectProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range <https://purl.org/turbbo/RBBO_0000105> ;
                                        rdfs:label "has goal" .
 
 
 ###  https://purl.org/turbbo/RBBO_0000097
 <https://purl.org/turbbo/RBBO_0000097> rdf:type owl:ObjectProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range <https://purl.org/turbbo/RBBO_0000112> ;
                                        rdfs:label "has impact" .
 
 
 ###  https://purl.org/turbbo/RBBO_0000098
 <https://purl.org/turbbo/RBBO_0000098> rdf:type owl:ObjectProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range <https://purl.org/turbbo/RBBO_0000110> ;
                                        rdfs:label "has intention" .
 
 
 ###  https://purl.org/turbbo/RBBO_0000099
 <https://purl.org/turbbo/RBBO_0000099> rdf:type owl:ObjectProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range <https://purl.org/turbbo/RBBO_0000121> ;
                                        rdfs:label "has legality" .
 
@@ -113,7 +108,6 @@ This module of RBBO consists of classes and data properties which describe the c
 
 ###  https://purl.org/turbbo/RBBO_0000108
 <https://purl.org/turbbo/RBBO_0000108> rdf:type owl:ObjectProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range <https://purl.org/turbbo/RBBO_0000126> ;
                                        rdfs:label "is reflective of" .
 
@@ -128,34 +122,29 @@ This module of RBBO consists of classes and data properties which describe the c
 
 ###  https://purl.org/turbbo/RBBO_0000117
 <https://purl.org/turbbo/RBBO_0000117> rdf:type owl:ObjectProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range <https://purl.org/turbbo/RBBO_0000124> ;
                                        rdfs:label "motivated by" .
 
 
 ###  https://purl.org/turbbo/RBBO_0000118
 <https://purl.org/turbbo/RBBO_0000118> rdf:type owl:ObjectProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:label "occurs in" .
 
 
 ###  https://purl.org/turbbo/RBBO_0000119
 <https://purl.org/turbbo/RBBO_0000119> rdf:type owl:ObjectProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range <https://purl.org/turbbo/RBBO_0000125> ;
                                        rdfs:label "occurs within" .
 
 
 ###  https://purl.org/turbbo/RBBO_0000128
 <https://purl.org/turbbo/RBBO_0000128> rdf:type owl:ObjectProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range <https://purl.org/turbbo/RBBO_0000148> ;
                                        rdfs:label "requires skill" .
 
 
 ###  https://purl.org/turbbo/RBBO_0000129
 <https://purl.org/turbbo/RBBO_0000129> rdf:type owl:ObjectProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range <https://purl.org/turbbo/RBBO_0000120> ;
                                        rdfs:label "restricted by" .
 
@@ -173,7 +162,6 @@ This module of RBBO consists of classes and data properties which describe the c
 
 ###  https://purl.org/turbbo/RBBO_0000001
 <https://purl.org/turbbo/RBBO_0000001> rdf:type owl:DatatypeProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range xsd:boolean ;
                                        rdfs:comment """\"https://link.springer.com/chapter/10.1007/978-3-030-54994-7_32
 Deliberate behaviour is driven by a goal, which not only depends on the knowledge domain but also on a representation of the goal achievement. This representation may be given by a combination of perceptions, actions and cognitive information.\" (Harriet Baird 4th April 2023)
@@ -187,7 +175,6 @@ This paper might be useful: https://bpspsychub.onlinelibrary.wiley.com/doi/full/
 
 ###  https://purl.org/turbbo/RBBO_0000002
 <https://purl.org/turbbo/RBBO_0000002> rdf:type owl:DatatypeProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range xsd:boolean ;
                                        rdfs:label "is changeable" ;
                                        <http://www.w3.org/2004/02/skos/core#definition> "Behaviour that is liable to variation" .
@@ -195,7 +182,6 @@ This paper might be useful: https://bpspsychub.onlinelibrary.wiley.com/doi/full/
 
 ###  https://purl.org/turbbo/RBBO_0000004
 <https://purl.org/turbbo/RBBO_0000004> rdf:type owl:DatatypeProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range xsd:boolean ;
                                        rdfs:comment "\"There are other ontologies that use differen definitions - e.g., A pattern of repeat behavior requiring little conscious thought - NCIT & GSSO An acquired pattern of behavior that often occurs automatically and is reliably triggered by some event or stimulus. - COGAT\" (Harriet Baird 4th April 2023)" ;
                                        rdfs:label "is habitual" ;
@@ -204,7 +190,6 @@ This paper might be useful: https://bpspsychub.onlinelibrary.wiley.com/doi/full/
 
 ###  https://purl.org/turbbo/RBBO_0000005
 <https://purl.org/turbbo/RBBO_0000005> rdf:type owl:DatatypeProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range xsd:boolean ;
                                        rdfs:label "is heterogenous" ;
                                        <http://www.w3.org/2004/02/skos/core#definition> "The behaviour has a \"uniform consistency or composition\" (Source: National Cancer Institute Thesaurus via Bioportal)" .
@@ -212,7 +197,6 @@ This paper might be useful: https://bpspsychub.onlinelibrary.wiley.com/doi/full/
 
 ###  https://purl.org/turbbo/RBBO_0000007
 <https://purl.org/turbbo/RBBO_0000007> rdf:type owl:DatatypeProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range xsd:boolean ;
                                        rdfs:label "is legal" ;
                                        <http://www.w3.org/2004/02/skos/core#definition> "The behaviour meets the requirements under law; is not in violation of law or anything related to the law. (Source: National Cancer Institute. Legal. NCI Thesaurus. Code C54074, via Qeios)" .
@@ -220,7 +204,6 @@ This paper might be useful: https://bpspsychub.onlinelibrary.wiley.com/doi/full/
 
 ###  https://purl.org/turbbo/RBBO_0000008
 <https://purl.org/turbbo/RBBO_0000008> rdf:type owl:DatatypeProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range xsd:boolean ;
                                        rdfs:label "is moral" ;
                                        <http://www.w3.org/2004/02/skos/core#definition> "A moral behavior is one that is motivated by an explicit recognition of the prescriptive force of moral rules (Narvaez & Lapsley, 2005) or A moral behaviour is an acceptable way of life in a given society. This acceptable way of life or code of conduct is informed by religious beliefs, cultural beliefs, social beliefs, etc." .
@@ -228,7 +211,6 @@ This paper might be useful: https://bpspsychub.onlinelibrary.wiley.com/doi/full/
 
 ###  https://purl.org/turbbo/RBBO_0000009
 <https://purl.org/turbbo/RBBO_0000009> rdf:type owl:DatatypeProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range xsd:boolean ;
                                        rdfs:comment "May need to separate behaviour that is new to the individual from behaviour that is completely new (although perhaps the latter is so uncommon, that the property means new to the individual?)" ;
                                        rdfs:label "is new" ;
@@ -237,7 +219,6 @@ This paper might be useful: https://bpspsychub.onlinelibrary.wiley.com/doi/full/
 
 ###  https://purl.org/turbbo/RBBO_0000010
 <https://purl.org/turbbo/RBBO_0000010> rdf:type owl:DatatypeProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range xsd:boolean ;
                                        rdfs:comment """\"But there is a definition for behavioural opportunity \"An environmental disposition that enables or facilitates a behaviour.\" This definition was imported from the Behaviour Change Intervention Ontology (see https://bciovocab.org/). Comments and suggestions for improvements are welcome using the Qeios review system.\" (Harriet Baird on 4th April 2023)
 
@@ -248,7 +229,6 @@ This paper might be useful: https://bpspsychub.onlinelibrary.wiley.com/doi/full/
 
 ###  https://purl.org/turbbo/RBBO_0000011
 <https://purl.org/turbbo/RBBO_0000011> rdf:type owl:DatatypeProperty ;
-                                       rdfs:domain <https://purl.org/turbbo/RBBO_0000123> ;
                                        rdfs:range xsd:boolean ;
                                        rdfs:label "is optional" ;
                                        <http://www.w3.org/2004/02/skos/core#definition> "Possible but not necessary; left to personal choice. (Source: National Cancer Institute. Optional. NCI Thesaurus. Code C25603.)" .
@@ -257,7 +237,7 @@ This paper might be useful: https://bpspsychub.onlinelibrary.wiley.com/doi/full/
 ###  https://purl.org/turbbo/RBBO_0000301
 <https://purl.org/turbbo/RBBO_0000301> rdf:type owl:DatatypeProperty ;
                                        rdfs:comment "Maybe we need separate properties or \"Is abnormal for the individual\" and \"is abnormal for society\"? There is another definition of Qeios of abnormal which states \"Deviating in any way from the state, position, structure, condition, behavior, or rule which is considered a norm.\" (National Cancer Institute. Abnormal. NCI Thesaurus. Code C25401)" ;
-                                       rdfs:label "is abnormal"@en ;
+                                       rdfs:label "is abnormal"^^xsd:string ;
                                        <http://www.w3.org/2004/02/skos/core#definition> "Conduct that is unusual for the individual. (Source: National Cancer Institute. Abnormal Behavior. NCI Thesaurus. Code C122430, via Qeios)" .
 
 
@@ -342,34 +322,128 @@ This paper might be useful: https://bpspsychub.onlinelibrary.wiley.com/doi/full/
 #    Classes
 #################################################################
 
-###  https://purl.org/turbbo/RBBO_0000102
-<https://purl.org/turbbo/RBBO_0000102> rdf:type owl:Class ;
-                                       rdfs:label "Action" ;
-                                       <http://www.w3.org/2004/02/skos/core#definition> """A cognitive schema that when activated, guides a sequence of behaviours.
-(BCIO - https://www.bciovocab.org/BCIO:006046) (Qeios - https://www.qeios.com/read/1XWTM6)""" ,
-                                                                                        "A self-initiated sequence of movements, usually with respect to some goal. It may consist of an integrated set of component behaviors as opposed to a single response.(https://dictionary.apa.org/action)" ,
-                                                                                        "The process of doing something (https://dictionary.cambridge.org/dictionary/english/action)" .
+###  https://purl.org/turbbo/RBBO_0000003
+<https://purl.org/turbbo/RBBO_0000003> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000144> ;
+                                       <http://www.geneontology.org/formats/oboInOwl#created_by> "ThomasW"^^xsd:string ;
+                                       <http://www.geneontology.org/formats/oboInOwl#creation_date> "2023-10-30T13:46:29.117726Z"^^xsd:string ;
+                                       rdfs:label "Habitual"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A behaviour that results from a learnt stimulus-behaviour co-occurrence"^^xsd:string .
+
+
+###  https://purl.org/turbbo/RBBO_0000006
+<https://purl.org/turbbo/RBBO_0000006> rdf:type owl:Class ;
+                                       <http://www.geneontology.org/formats/oboInOwl#created_by> "ThomasW"^^xsd:string ;
+                                       <http://www.geneontology.org/formats/oboInOwl#creation_date> "2023-10-30T14:24:49.070593Z"^^xsd:string ;
+                                       rdfs:label "Correlates with"@en .
+
+
+###  https://purl.org/turbbo/RBBO_0000012
+<https://purl.org/turbbo/RBBO_0000012> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000018> ;
+                                       <http://www.geneontology.org/formats/oboInOwl#created_by> "ThomasW"^^xsd:string ;
+                                       <http://www.geneontology.org/formats/oboInOwl#creation_date> "2023-10-30T13:53:58.369001Z"^^xsd:string ;
+                                       rdfs:label "Effort"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Requires physical or mental energy; hard work."^^xsd:string .
+
+
+###  https://purl.org/turbbo/RBBO_0000013
+<https://purl.org/turbbo/RBBO_0000013> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000144> ;
+                                       <http://www.geneontology.org/formats/oboInOwl#created_by> "ThomasW"^^xsd:string ;
+                                       <http://www.geneontology.org/formats/oboInOwl#creation_date> "2023-10-30T13:59:12.478398Z"^^xsd:string ;
+                                       rdfs:label "Changeable"@en .
+
+
+###  https://purl.org/turbbo/RBBO_0000014
+<https://purl.org/turbbo/RBBO_0000014> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000124> ;
+                                       <http://www.geneontology.org/formats/oboInOwl#created_by> "ThomasW"^^xsd:string ;
+                                       <http://www.geneontology.org/formats/oboInOwl#creation_date> "2023-10-30T14:00:33.283443Z"^^xsd:string ;
+                                       rdfs:label "Unintended"@en .
+
+
+###  https://purl.org/turbbo/RBBO_0000015
+<https://purl.org/turbbo/RBBO_0000015> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000144> ;
+                                       <http://www.geneontology.org/formats/oboInOwl#created_by> "ThomasW"^^xsd:string ;
+                                       <http://www.geneontology.org/formats/oboInOwl#creation_date> "2023-10-30T14:02:24.279538Z"^^xsd:string ;
+                                       rdfs:label "Illegal"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "The behaviour is not allowed by the law (edited from: https://dictionary.cambridge.org/dictionary/english/legality)"^^xsd:string .
+
+
+###  https://purl.org/turbbo/RBBO_0000016
+<https://purl.org/turbbo/RBBO_0000016> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000125> ;
+                                       <http://www.geneontology.org/formats/oboInOwl#created_by> "ThomasW"^^xsd:string ;
+                                       <http://www.geneontology.org/formats/oboInOwl#creation_date> "2023-10-30T14:04:00.35628Z"^^xsd:string ;
+                                       rdfs:label "Outside"@en .
+
+
+###  https://purl.org/turbbo/RBBO_0000017
+<https://purl.org/turbbo/RBBO_0000017> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000125> ;
+                                       <http://www.geneontology.org/formats/oboInOwl#created_by> "ThomasW"^^xsd:string ;
+                                       <http://www.geneontology.org/formats/oboInOwl#creation_date> "2023-10-30T14:04:06.998649Z"^^xsd:string ;
+                                       rdfs:label "Inside"@en .
+
+
+###  https://purl.org/turbbo/RBBO_0000018
+<https://purl.org/turbbo/RBBO_0000018> rdf:type owl:Class ;
+                                       <http://www.geneontology.org/formats/oboInOwl#created_by> "ThomasW"^^xsd:string ;
+                                       <http://www.geneontology.org/formats/oboInOwl#creation_date> "2023-10-30T14:08:55.746298Z"^^xsd:string ;
+                                       rdfs:label "Involves"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Performance of the behaviour involves (i.e., is rarely possible without a minimum level of) one or more of the following"^^xsd:string .
+
+
+###  https://purl.org/turbbo/RBBO_0000019
+<https://purl.org/turbbo/RBBO_0000019> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000006> ;
+                                       <http://www.geneontology.org/formats/oboInOwl#created_by> "ThomasW"^^xsd:string ;
+                                       <http://www.geneontology.org/formats/oboInOwl#creation_date> "2023-10-30T14:25:21.698913Z"^^xsd:string ;
+                                       rdfs:label "largeCorrelation"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "r = 0.50 (Cohen, 1992)"^^xsd:string .
+
+
+###  https://purl.org/turbbo/RBBO_0000020
+<https://purl.org/turbbo/RBBO_0000020> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000006> ;
+                                       <http://www.geneontology.org/formats/oboInOwl#created_by> "ThomasW"^^xsd:string ;
+                                       <http://www.geneontology.org/formats/oboInOwl#creation_date> "2023-10-30T14:25:31.013765Z"^^xsd:string ;
+                                       rdfs:label "mediumCorrelation"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "r = 0.30 (Cohen, 1992)"^^xsd:string .
+
+
+###  https://purl.org/turbbo/RBBO_0000021
+<https://purl.org/turbbo/RBBO_0000021> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000006> ;
+                                       <http://www.geneontology.org/formats/oboInOwl#created_by> "ThomasW"^^xsd:string ;
+                                       <http://www.geneontology.org/formats/oboInOwl#creation_date> "2023-10-30T14:25:42.293692Z"^^xsd:string ;
+                                       rdfs:label "smallCorrelation"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "r = 0.10 (Cohen, 1992)"^^xsd:string .
 
 
 ###  https://purl.org/turbbo/RBBO_0000105
 <https://purl.org/turbbo/RBBO_0000105> rdf:type owl:Class ;
-                                       rdfs:label "Goal" ;
-                                       <http://www.w3.org/2004/02/skos/core#definition> "\"Internal representations of desired states, where states are broadly construed as outcomes, events, or processes.\" (Austin & Vancouver 1996, p. 338)" ,
-                                                                                        """A cognitive representation of an end state towards which one is striving.
-(BCIO - https://www.bciovocab.org/BCIO:006049) Qeios (https://www.qeios.com/read/6M8C05)""" ,
-                                                                                        "The end state toward which a human is striving: the purpose of an activity or endeavor. (edited from: https://dictionary.apa.org/goal)" .
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000124> ;
+                                       rdfs:label "Goal-directed"^^xsd:string ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "Goal = \"Internal representations of desired states, where states are broadly construed as outcomes, events, or processes.\" (Austin & Vancouver 1996, p. 338)"^^xsd:string ,
+                                                                                        """Goal = A cognitive representation of an end state towards which one is striving.
+(BCIO - https://www.bciovocab.org/BCIO:006049) Qeios (https://www.qeios.com/read/6M8C05)"""^^xsd:string ,
+                                                                                        "Goal = The end state toward which a human is striving: the purpose of an activity or endeavor. (edited from: https://dictionary.apa.org/goal)"^^xsd:string .
 
 
 ###  https://purl.org/turbbo/RBBO_0000107
 <https://purl.org/turbbo/RBBO_0000107> rdf:type owl:Class ;
-                                       rdfs:label "Facilitator" ;
+                                       rdfs:label "Facilitated by"^^xsd:string ;
                                        <http://www.w3.org/2004/02/skos/core#definition> "A factor that facilitates or supports performance of a behaviour" ,
                                                                                         "Something that facilities or supports progress or the achievement of an ultimate objective or end." .
 
 
 ###  https://purl.org/turbbo/RBBO_0000110
 <https://purl.org/turbbo/RBBO_0000110> rdf:type owl:Class ;
-                                       rdfs:label "Intention" ;
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000124> ;
+                                       rdfs:label "Intended"^^xsd:string ;
                                        <http://www.w3.org/2004/02/skos/core#definition> """A mental disposition to commit to enact or not enact a behaviour.
 (BCIO - https://www.bciovocab.org/BCIO:006016) Qeios (https://www.qeios.com/read/5FTW17)""" ,
                                                                                         "A prior conscious decision to perform a behavior. (https://dictionary.apa.org/intention)" ,
@@ -384,20 +458,16 @@ This paper might be useful: https://bpspsychub.onlinelibrary.wiley.com/doi/full/
 
 ###  https://purl.org/turbbo/RBBO_0000120
 <https://purl.org/turbbo/RBBO_0000120> rdf:type owl:Class ;
-                                       rdfs:label "Barrier" ;
+                                       rdfs:label "Barriers to"^^xsd:string ;
                                        <http://www.w3.org/2004/02/skos/core#definition> "A factor that hinders or obstructs performance of a behaviour" ,
-                                                                                        "Something that restricts, impedes, or blocks progress or the achievement of an ultimate objective or end. (https://dictionary.apa.org/barrier)" .
+                                                                                        "Barrier: Something that restricts, impedes, or blocks progress or the achievement of an ultimate objective or end. (https://dictionary.apa.org/barrier)"^^xsd:string .
 
 
 ###  https://purl.org/turbbo/RBBO_0000121
 <https://purl.org/turbbo/RBBO_0000121> rdf:type owl:Class ;
-                                       rdfs:label "Legality" ;
-                                       <http://www.w3.org/2004/02/skos/core#definition> "The extent to which a behaviour is allowed by the law (edited from: https://dictionary.cambridge.org/dictionary/english/legality)" .
-
-
-###  https://purl.org/turbbo/RBBO_0000123
-<https://purl.org/turbbo/RBBO_0000123> rdf:type owl:Class ;
-                                       rdfs:label "Behaviour" .
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000144> ;
+                                       rdfs:label "Legal"^^xsd:string ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "The behaviour is allowed by the law (edited from: https://dictionary.cambridge.org/dictionary/english/legality)"^^xsd:string .
 
 
 ###  https://purl.org/turbbo/RBBO_0000124
@@ -417,7 +487,8 @@ This paper might be useful: https://bpspsychub.onlinelibrary.wiley.com/doi/full/
 
 ###  https://purl.org/turbbo/RBBO_0000126
 <https://purl.org/turbbo/RBBO_0000126> rdf:type owl:Class ;
-                                       rdfs:label "Identity" ;
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000144> ;
+                                       rdfs:label "Consistent with actors identity"^^xsd:string ;
                                        <http://www.w3.org/2004/02/skos/core#definition> """A cognitive representation of themselves by a person or group.
 (BCIO - https://www.bciovocab.org/ADDICTO:0000381)""" ,
                                                                                         "An individual’s sense of self defined by (a) a set of physical, psychological, and interpersonal characteristics that is not wholly shared with any other person and (b) a range of affiliations (e.g., ethnicity) and social roles. Identity involves a sense of continuity, or the feeling that one is the same person today that one was yesterday or last year (despite physical or other changes). (https://dictionary.apa.org/identity)" .
@@ -452,6 +523,7 @@ This paper might be useful: https://bpspsychub.onlinelibrary.wiley.com/doi/full/
 
 ###  https://purl.org/turbbo/RBBO_0000143
 <https://purl.org/turbbo/RBBO_0000143> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000112> ;
                                        rdfs:label "Effectiveness" ;
                                        <http://www.w3.org/2004/02/skos/core#definition> "The degree of success of a behaviour in achieving its goals. (edited from:https://dictionary.apa.org/effectiveness-evaluation)" .
 
@@ -478,14 +550,9 @@ This paper might be useful: https://bpspsychub.onlinelibrary.wiley.com/doi/full/
 
 ###  https://purl.org/turbbo/RBBO_0000148
 <https://purl.org/turbbo/RBBO_0000148> rdf:type owl:Class ;
-                                       rdfs:label "Skill" ;
-                                       <http://www.w3.org/2004/02/skos/core#definition> "An ability or proficiency acquired through training and practice. (https://dictionary.apa.org/skill)" .
-
-
-###  https://purl.org/turbbo/RBBO_0000300
-<https://purl.org/turbbo/RBBO_0000300> rdf:type owl:Class ;
-                                       rdfs:label "Knowledge"@en ;
-                                       <http://www.w3.org/2004/02/skos/core#definition> "The extent of one’s understanding or information. (edited from: https://dictionary.apa.org/knowledge)" .
+                                       rdfs:subClassOf <https://purl.org/turbbo/RBBO_0000018> ;
+                                       rdfs:label "Skill"^^xsd:string ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "An ability or proficiency acquired through training and practice. (https://dictionary.apa.org/skill)"^^xsd:string .
 
 
 ###  https://purl.org/turbbo/RBBO_0000302
@@ -497,4 +564,4 @@ This paper might be useful: https://bpspsychub.onlinelibrary.wiley.com/doi/full/
 (BCIO - https://www.bciovocab.org/BCIO:006307) Synonyms: Controlled Motivation (Qeios - https://www.qeios.com/read/KHN5CN)""" .
 
 
-###  Generated by the OWL API (version 4.5.24.2023-01-14T21:28:32Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
